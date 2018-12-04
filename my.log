@@ -1,0 +1,3 @@
+2018-12-02 21:47:23.625  INFO 9016 --- [restartedMain] com.example.school.SchoolApplication     : Starting SchoolApplication on DESKTOP-88HLS6I with PID 9016 (started by admin in D:\大三\ZXSY)
+2018-12-02 21:47:23.626  INFO 9016 --- [restartedMain] com.example.school.SchoolApplication     : No active profile set, falling back to default profiles: default
+2018-12-02 21:47:27.059  INFO 9016 --- [restartedMain] com.example.school.SchoolApplication     : Started SchoolApplication in 3.936 seconds (JVM running for 4.791)
