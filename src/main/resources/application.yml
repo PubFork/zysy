@@ -13,7 +13,7 @@ spring:
       max-lifetime: 1800000
       connection-timeout: 30000
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.105.96.18:3306/school
+    url: jdbc:mysql://47.105.96.18:3306/zysy
     username: root
     password: ad310e80d6f3ef1848f49e71.
     

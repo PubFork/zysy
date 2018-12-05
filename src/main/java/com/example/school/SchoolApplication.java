@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @return:
  * @author: 
  * @version 1.0
- * @date: 2018/8/23 23:37
+ * @date: 
  */
 @SpringBootApplication
 public class SchoolApplication {
