@@ -17,5 +17,7 @@ public interface UserMapper {
 	Set<String> queryRoleByUserId(@Param("userId")Integer userid);
 	
 	Set<String> queryPermissionByUserId(@Param("userId")Integer userid);
+	
+	int registerUserByNameAndPass(@Param("username")String username,@Param("password") String password);
 
 }

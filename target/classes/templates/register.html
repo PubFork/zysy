@@ -129,12 +129,12 @@
                     jQuery('.formcon .zhucebox p:eq(0) input').next('span').show();
                     return false;
                 }
-                umail = jQuery.trim(jQuery('.formcon .zhucebox p:eq(1) input').val());
+               /*  umail = jQuery.trim(jQuery('.formcon .zhucebox p:eq(1) input').val());
                 if (umail.length < 1) {
                     jQuery('.formcon .zhucebox p:eq(1) input').next('span').html('Email 不能为空');
                     jQuery('.formcon .zhucebox p:eq(1) input').next('span').show();
                     return false;
-                }
+                } */
                 upass = jQuery.trim(jQuery('.formcon .zhucebox p:eq(2) input').val());
                 if (upass.length < 1) {
                     jQuery('.formcon .zhucebox p:eq(2) input').next('span').html('密码不能为空');
@@ -160,11 +160,11 @@
                     bootbox.alert('请输入正确的验证码');
                     return false;
                 }
-                var mobile = jQuery.trim($("input[name='mobile']").val());
+                /*  var mobile = jQuery.trim($("input[name='mobile']").val());
                 if (!(/^1[3|5|8|7][0-9]\d{4,8}$/.test(mobile))) {
                     bootbox.alert('请输入正确的手机号');
                     return false;
-                }
+                } 
                 var code = jQuery.trim($("input[name='code']").val());
                 if (code.length < 1) {
                     bootbox.alert('请输入正确的手机验证码');
@@ -218,7 +218,7 @@
                 setTimeout(function() {
                   settime()
                 },1000)
-            }
+            } */
 //
         });
     </script>
@@ -256,14 +256,14 @@
     <div class="w1000 formtit"><p><span>注册</span></p></div>
     <div class="formcon clear">
         <div class="formbox zhucebox">
-            <form action="http://usr.005.tv/User/register_do.html" method="post">
+            <form action="/user/register_do" method="post">
                 <p class="clear"><label class="adminico adminname">用户名</label><input type="text" name="username" value="" placeholder="请输入用户名" class="inputlogin" maxlength="20">
                     <span class="tipsbox" style="display:none;">用户名不能小于3个字符</span>
                 </p>
 
-                <p class="clear"><label class="adminico adminmail">邮箱</label><input type="text" name="email" value="" placeholder="请输入邮箱" class="inputlogin" maxlength="50">
+                <!-- <p class="clear"><label class="adminico adminmail">邮箱</label><input type="text" name="email" value="" placeholder="请输入邮箱" class="inputlogin" maxlength="50">
                     <span class="tipsbox" style="display:none;">邮箱需要符合邮箱格式</span>
-                </p>
+                </p> -->
 
                 <p class="clear"><label class="adminico adminpassword">密码</label><input type="password" name="password" value="" placeholder="密码（6-16个字符组成，区分大小写）" class="inputlogin" maxlength="16">
                     <span class="tipsbox" style="display:none;">密码（6-16个字符组成，区分大小写）</span>
@@ -274,21 +274,21 @@
                 </p>
 
                 <!--<p class="clear" ><label class="adminico adminyzm">验证码</label>-->
-                    <input type="text" style="display: none;" name="verify" class="inputyzm" maxlength="4">
+                    <!-- <input type="text" style="display: none;" name="verify" class="inputyzm" maxlength="4"> -->
                     <!--<span><img id="verifyImg" src="" onClick="changeVerify()" title="点击刷新"></span>-->
                 <!--</p>-->
                 <!--wb_whr_4-13+-->
-                <p class="clear">
+                <!-- <p class="clear">
                     <label class="adminico  register-mobile">手机号码</label>
                     <input type="text" name="mobile" value="" placeholder="请输入手机号码" class="inputlogin" maxlength="11">
                     <span class="tipsbox" style="display:none;">手机号码需要符合手机格式</span>
-                </p>
-                <p class="clear">
+                </p> -->
+                <!-- <p class="clear">
                     <label class="adminico adminyzm">手机验证码</label>
                     <input style="width: 150px;float: left;display: block;" type="text" name="code" value="" placeholder="请输入手机验证码" class="inputlogin" maxlength="6">
                     <span id="code" class="register-code2">获取验证码</span>
                     <span class="tipsbox" style="display:none;">手机验证码错误</span>
-                </p>
+                </p> -->
                 <div id="slider" style="margin: 20px 0px 0px; display: none;">
                     <div id="slider_bg" style="width: 0px;"></div>
                     <span id="label" style="left: 0px;">&gt;&gt;</span> <span id="labelTip">向右滑动验证</span>
