@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0036)http://usr.005.tv/User/register.html -->
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">    
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -253,7 +253,7 @@
 <!--公用顶部结束-->
 <div class="loginpage">
     <!-- <div class="bigtit"><strong></strong>中心<em></em></div> -->
-    <div class="w1000 formtit"><p><span>注册</span></p></div>
+    <div class="w1000 formtit"><p><span th:text="${msg==null?'注册':msg}">注册</span></p></div>
     <div class="formcon clear">
         <div class="formbox zhucebox">
             <form action="/user/register_do" method="post">

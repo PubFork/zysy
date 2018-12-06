@@ -42,6 +42,9 @@ public class UserServiceImpl implements UserService {
 
 		return userMapper.queryPermissionByUserId(userid);
 	}
+	/**
+	 * @author 祝靖雯   用户注册
+	 */
 
 	@Override
 	public boolean registerUserByNameAndPass(String username, String password) {
@@ -51,8 +54,8 @@ public class UserServiceImpl implements UserService {
 			userMapper.registerUserByNameAndPass(username, password);
 			return true;
 		} catch (Exception e) {
+			e.printStackTrace();
 			return false;
 		}
 	}
-
 }

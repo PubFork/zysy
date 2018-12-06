@@ -3,145 +3,99 @@
 <html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="applicable-device" content="pc,mobile">
-    <title>登录页</title>
-    <meta name="Description" content="羁绊网会员中心">
-    <meta name="Keywords" content="会员中心">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="applicable-device" content="pc,mobile">
+<title>登录页</title>
+<meta name="Description" content="羁绊网会员中心">
+<meta name="Keywords" content="会员中心">
 
-    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
-    <link rel="stylesheet" th:href="@{/css/master.css}" >
-    <link rel="stylesheet" th:href="@{/css/slide-unlock.css}">
-    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css/master.css}">
+<link rel="stylesheet" th:href="@{/css/slide-unlock.css}">
+<link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
 
-    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
-    <script type="text/javascript" th:src="@{/js/005tv.js}"></script>
-    <script type="text/javascript" th:src="@{/js/main.js}"></script>
-    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
-    <script type="text/javascript" th:src="@{/js/bootstrap-datetimepicker.min.js}"></script>
-    <script type="text/javascript" th:src="@{/js/bootstrap-datetimepicker.zh-CN.js}"></script>
-    <script type="text/javascript" th:src="@{/js/bootbox.js}" ></script>
-    <script type="text/javascript" th:src="@{/js/jquery.slideunlock.js}"></script>
-    <script>
-        jQuery(function () {
-            //登录
-            jQuery(".formcon .formbox").delegate('.loginbtn', 'click', function () {
-                if (jQuery.trim(jQuery(".loginpage .inputlogin:eq(0)").val()).length < 1 || jQuery.trim(jQuery(".loginpage .inputlogin:eq(1)").val()).length < 1) {
-                    bootbox.alert('用户名或密码不能为空');
-                    return false;
-                }
-                return true;
-            }).delegate('.zhucebtn', 'click', function () {
-                window.location.href = '/User/register.html';
-            });
-            var slider = new SliderUnlock("#slider", {
-                successLabelTip: "验证码发送成功"
-            }, function () {
-                $("input[type='submit']").attr('disabled', false);
-            });
-            slider.init();
-        });
-    </script>
+<script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+<script type="text/javascript" th:src="@{/js/005tv.js}"></script>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript"
+	th:src="@{/js/bootstrap-datetimepicker.min.js}"></script>
+<script type="text/javascript"
+	th:src="@{/js/bootstrap-datetimepicker.zh-CN.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootbox.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.slideunlock.js}"></script>
+
 </head>
 
 <body onload="changeVerify()">
-    <!--公用顶部开始-->
-    <div class="topnav clear fonthui">
-        <div class="w1000 clear">
-            <div class="topnavlist fleft">
-                <a class="current" href="javascript:;">MENU</a>
-                <a href="http://www.005.tv/" target="_blank">NiKiShare视频网站</a>
-                <!-- <a href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a>
-                <a href="http://www.xcmh.cc/" target="_blank">星辰漫画</a>
-                <a href="http://www.93w.net/" target="_blank">93励志网</a>
-                <a href="http://moe.005.tv/" target="_blank">萌娘资源站</a>
-                <a href="http://bbs.005.tv/" target="_blank">羁绊论坛</a> -->
-            </div>
-            <div class="loginbox fright">
-                <div class="loginbefore"><a href="http://usr.005.tv/User/login.html">登录</a>
-                    <a href="http://usr.005.tv/User/register.html">注册</a></div>
-            </div>
-        </div>
-    </div>
-    <div id="navsite">羁绊网</div>
-    <!--公用顶部结束-->
-    <div class="loginpage">
-        <div class="bigtit">会员中心<em></em></div>
-        <div class="w1000 formtit">
-            <p><span>登录</span></p>
-        </div>
-        <div class="formcon clear">
-            <div class="loginbanner fleft">
-                <img src="/img/banner.jpg">
-            </div>
-            <div class="formbox fright">
-                <form action="http://usr.005.tv/User/login_do.html" method="post">
-                    <p class="clear">
-                        <label class="adminico adminname">用户名</label>
-                        <input type="text" name="username" value="" placeholder="请输入用户名或者邮箱" class="inputlogin">
-                    </p>
+	<!--公用顶部开始-->
+	<div class="topnav clear fonthui">
+		<div class="w1000 clear">
+			<div class="topnavlist fleft">
+				<a class="current" href="javascript:;">MENU</a> <a
+					href="http://www.005.tv/" target="_blank">NiKiShare视频网站</a>
+			</div>
+			<div class="loginbox fright">
+				<div class="loginbefore">
+					<a href="http://usr.005.tv/User/login.html">登录</a> <a
+						href="http://usr.005.tv/User/register.html">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="navsite">羁绊网</div>
+	<!--公用顶部结束-->
+	<div class="loginpage">
+		<div class="bigtit">
+			会员中心<em></em>
+		</div>
+		<div class="w1000 formtit">
+			<p>
+				<span>登录</span>
+			</p>
+		</div>
+		<div class="formcon clear">
+			<div class="loginbanner fleft">
+				<img src="/img/banner.jpg">
+			</div>
+			<div class="formbox fright">
+				<form action="/user/login_do" method="post">
+					<p class="clear">
+						<label class="adminico adminname">用户名</label> <input type="text"
+							name="username" value="" placeholder="请输入用户名或者邮箱"
+							class="inputlogin">
+					</p>
 
-                    <p class="clear">
-                        <label class="adminico adminpassword">密码</label>
-                        <input type="password" name="password" value="" placeholder="******" class="inputlogin">
-                    </p>
-                    <!--whr++-->
-                    <!-- <div id="slider" style="margin: 0;margin-top: 20px;">
-                        <div id="slider_bg" style="width: 0px;"></div>
-                        <span id="label" style="left: 0px;">&gt;&gt;</span> <span id="labelTip">向右滑动验证</span>
-                    </div> -->
-                    <!--<p class="clear">-->
-                    <!--<label class="adminico adminyzm">验证码</label>-->
-                    <!--<input type="text" name="verify" class="inputyzm" maxlength="4"><span>-->
-                    <!--<img src="" id="verifyImg" onClick="changeVerify()" title="点击刷新"></span></p>-->
-                    <!-- <script language="JavaScript">
-                        function changeVerify() {
-                            //                            var timenow = new Date().getTime();
-                            //                            document.getElementById('verifyImg').src = '/User/verify.html?' + timenow;
-                        }
-                    </script> -->
+					<p class="clear">
+						<label class="adminico adminpassword">密码</label> <input
+							type="password" name="userpassword" value="" placeholder="******"
+							class="inputlogin">
+					</p>
 
-                    <p>
-                        <input type="submit" value="登录" class="formbtn loginbtn" disabled="disabled">
-                        <input type="button" value="注册" class="formbtn zhucebtn">
-                    </p>
+					<p>
+						<input type="submit" value="登录" class="formbtn loginbtn"
+							disabled="disabled"> <input type="button" value="注册"
+							class="formbtn zhucebtn">
+					</p>
 
-                    <p class="lostpassword fontblue"><a href="http://usr.005.tv/User/findpasswd.html">忘记密码</a></p>
-                    <!--<div class="loginway">-->
-                    <!--<a href="http://bbs.005.tv/connect.php?mod=login&amp;op=init&amp;referer=index.php&amp;statfrom=login_simple"><img src="/Style/images/qq_login.gif"></a>-->
-                    <!--</div>-->
-                    <input type="hidden" name="refurl" value="http://www.dilidili.wang/">
-                    <input type="hidden" name="__hash__" value="be046d869ce23097eb9858b40dad2d7c_ebabb41344b9298e97667e009a268b44">
-                </form>
-            </div>
-        </div>
-    </div>
-    <!--公用尾部开始-->
-    <!-- <div class="footer w1000 clear">
-        <div class="footleft fleft">
+					<p class="lostpassword fontblue">
+						<a href="http://usr.005.tv/User/findpasswd.html">忘记密码</a>
+					</p>
 
-            <div class="footlink">
-                <a href="http://www.005.tv/">资讯</a><span>|</span><a href="http://moe.005.tv/">资源</a><span>|</span><a
-                    href="http://www.dilidili.com/anime/">新番</a><span>|</span><a href="http://bbs.005.tv/forum.php">论坛</a><span>|</span><a
-                    href="http://weibo.com/005dilidili/">官方微博</a>
-            </div>
-            <div class="copyright">
-                <p>互联网ICP备案：闽ICP备12004074号-8 闽网文（2015）1788-036号</p>
-                <p>© 2016 羁绊网络 本站不提供任何视听上传服务，所有内容均来自视频分享站点所提供的公开引用资源</p>
-            </div>
-        </div>
-        <div class="weixinbox fright">
-            <img th:src="@{/img/weixin.png}">
-            <p>扫描二维码收听公共号</p>
-        </div>
-    </div> -->
-    <div class="divfixbox" style="display: none">
-        <span>...</span>
-    </div>
-    <div class="riseinfo_box"> <span></span> </div>
+					</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="divfixbox" style="display: none">
+		<span>...</span>
+	</div>
+	<div class="riseinfo_box">
+		<span></span>
+	</div>
 
 </body>
 

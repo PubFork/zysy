@@ -3,123 +3,195 @@ package com.example.school.pojo;
 import java.util.Date;
 
 public class User {
-    private Integer userid;
+	private Integer userid;
 
-    private Integer memberId;
+	private Integer memberid;
 
-    private String userpass;
+	private String username;
 
-    private String usersname;
+	private String nickname;
 
-    private String nickname;
+	private String sex;
 
-    private String sex;
+	private Date birthday;
 
-    private Date brithday;
+	private String headportrait;
 
-    private String headportrait;
+	private String userpassword;
 
-    private Integer state;
+	private Boolean userislockout;
 
-    private String user;
+	private Date userupdatetime;
 
-    private Integer gold;
+	private Date usercreatetime;
 
-    private Integer roleId;
+	private Date userlastlogintime;
 
-    public Integer getUserid() {
-        return userid;
-    }
+	private String userlastloginip;
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
-    }
+	private Byte userpasswrongcout;
 
-    public Integer getMemberId() {
-        return memberId;
-    }
+	private Date userlockouttime;
 
-    public void setMemberId(Integer memberId) {
-        this.memberId = memberId;
-    }
+	private String useremail;
 
-    public String getUserpass() {
-        return userpass;
-    }
+	private String usertelephone;
 
-    public void setUserpass(String userpass) {
-        this.userpass = userpass == null ? null : userpass.trim();
-    }
+	private Integer gold;
 
-    public String getUsersname() {
-        return usersname;
-    }
+	public Integer getUserid() {
+		return userid;
+	}
 
-    public void setUsersname(String usersname) {
-        this.usersname = usersname == null ? null : usersname.trim();
-    }
+	public void setUserid(Integer userid) {
+		this.userid = userid;
+	}
 
-    public String getNickname() {
-        return nickname;
-    }
+	public Integer getMemberid() {
+		return memberid;
+	}
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname == null ? null : nickname.trim();
-    }
+	public void setMemberid(Integer memberid) {
+		this.memberid = memberid;
+	}
 
-    public String getSex() {
-        return sex;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public void setSex(String sex) {
-        this.sex = sex == null ? null : sex.trim();
-    }
+	public void setUsername(String username) {
+		this.username = username == null ? null : username.trim();
+	}
 
-    public Date getBrithday() {
-        return brithday;
-    }
+	public String getNickname() {
+		return nickname;
+	}
 
-    public void setBrithday(Date brithday) {
-        this.brithday = brithday;
-    }
+	public void setNickname(String nickname) {
+		this.nickname = nickname == null ? null : nickname.trim();
+	}
 
-    public String getHeadportrait() {
-        return headportrait;
-    }
+	public String getSex() {
+		return sex;
+	}
 
-    public void setHeadportrait(String headportrait) {
-        this.headportrait = headportrait == null ? null : headportrait.trim();
-    }
+	public void setSex(String sex) {
+		this.sex = sex == null ? null : sex.trim();
+	}
 
-    public Integer getState() {
-        return state;
-    }
+	public Date getBirthday() {
+		return birthday;
+	}
 
-    public void setState(Integer state) {
-        this.state = state;
-    }
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
 
-    public String getUser() {
-        return user;
-    }
+	public String getHeadportrait() {
+		return headportrait;
+	}
 
-    public void setUser(String user) {
-        this.user = user == null ? null : user.trim();
-    }
+	public void setHeadportrait(String headportrait) {
+		this.headportrait = headportrait == null ? null : headportrait.trim();
+	}
 
-    public Integer getGold() {
-        return gold;
-    }
+	public String getUserpassword() {
+		return userpassword;
+	}
 
-    public void setGold(Integer gold) {
-        this.gold = gold;
-    }
+	public void setUserpassword(String userpassword) {
+		this.userpassword = userpassword == null ? null : userpassword.trim();
+	}
 
-    public Integer getRoleId() {
-        return roleId;
-    }
+	public Boolean getUserislockout() {
+		return userislockout;
+	}
 
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
-    }
+	public void setUserislockout(Boolean userislockout) {
+		this.userislockout = userislockout;
+	}
+
+	public Date getUserupdatetime() {
+		return userupdatetime;
+	}
+
+	public void setUserupdatetime(Date userupdatetime) {
+		this.userupdatetime = userupdatetime;
+	}
+
+	public Date getUsercreatetime() {
+		return usercreatetime;
+	}
+
+	public void setUsercreatetime(Date usercreatetime) {
+		this.usercreatetime = usercreatetime;
+	}
+
+	public Date getUserlastlogintime() {
+		return userlastlogintime;
+	}
+
+	public void setUserlastlogintime(Date userlastlogintime) {
+		this.userlastlogintime = userlastlogintime;
+	}
+
+	public String getUserlastloginip() {
+		return userlastloginip;
+	}
+
+	public void setUserlastloginip(String userlastloginip) {
+		this.userlastloginip = userlastloginip == null ? null : userlastloginip.trim();
+	}
+
+	public Byte getUserpasswrongcout() {
+		return userpasswrongcout;
+	}
+
+	public void setUserpasswrongcout(Byte userpasswrongcout) {
+		this.userpasswrongcout = userpasswrongcout;
+	}
+
+	public Date getUserlockouttime() {
+		return userlockouttime;
+	}
+
+	public void setUserlockouttime(Date userlockouttime) {
+		this.userlockouttime = userlockouttime;
+	}
+
+	public String getUseremail() {
+		return useremail;
+	}
+
+	public void setUseremail(String useremail) {
+		this.useremail = useremail == null ? null : useremail.trim();
+	}
+
+	public String getUsertelephone() {
+		return usertelephone;
+	}
+
+	public void setUsertelephone(String usertelephone) {
+		this.usertelephone = usertelephone == null ? null : usertelephone.trim();
+	}
+
+	public Integer getGold() {
+		return gold;
+	}
+
+	public void setGold(Integer gold) {
+		this.gold = gold;
+	}
+
+	@Override
+	public String toString() {
+		return "User [userid=" + userid + ", memberid=" + memberid + ", username=" + username + ", nickname=" + nickname
+				+ ", sex=" + sex + ", birthday=" + birthday + ", headportrait=" + headportrait + ", userpassword="
+				+ userpassword + ", userislockout=" + userislockout + ", userupdatetime=" + userupdatetime
+				+ ", usercreatetime=" + usercreatetime + ", userlastlogintime=" + userlastlogintime
+				+ ", userlastloginip=" + userlastloginip + ", userpasswrongcout=" + userpasswrongcout
+				+ ", userlockouttime=" + userlockouttime + ", useremail=" + useremail + ", usertelephone="
+				+ usertelephone + ", gold=" + gold + "]";
+	}
+
 }

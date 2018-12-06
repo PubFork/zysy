@@ -52,7 +52,7 @@ public class MyShiroRealm extends AuthorizingRealm {
 			return null;
 		}
 
-		return new SimpleAuthenticationInfo(user, user.getUserpass(), ByteSource.Util.bytes(username), getName());
+		return new SimpleAuthenticationInfo(user, user.getUserpassword(), ByteSource.Util.bytes(username), getName());
 	}
 
 	@Override

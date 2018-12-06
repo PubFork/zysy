@@ -13,5 +13,7 @@ public interface UserService {
 	Set<String> queryPermissionByUserId(Integer userid);
 
 	boolean registerUserByNameAndPass(String username, String password);
+	
+	
 
 }
