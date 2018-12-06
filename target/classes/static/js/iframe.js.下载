@@ -1,0 +1,99 @@
+function iframe() {
+    var oMeta = document.createElement('meta');
+
+    oMeta.name = 'renderer';
+
+    oMeta.content = 'webkit';
+
+    document.getElementsByTagName('head')[0].appendChild(oMeta);
+
+    var huanyinClick = document.createElement('a');
+
+    document.getElementsByTagName('body')[0].appendChild(huanyinClick);
+
+    huanyinClick.style.visibility = 'hidden';
+
+    huanyinClick.target = 'huanyin';
+
+    window.addEventListener('message', function (event) {
+        if (event.origin === "http://net.huanmusic.com" && event.data === 'f5') {
+            var iframes = document.getElementsByClassName('hy');
+            for (var m=0;m < iframes.length ;m ++) {
+                huanyinClick.href = (iframes[m].src.indexOf('0020') !== -1) ? iframes[m].src.replace('0020','0021') : iframes[m].src.replace('0021','0020');
+                huanyinClick.click();
+            }
+        }
+    }, false);
+
+    var scriptSrc = document.getElementById('huanyin').src;
+
+    var args = scriptSrc.split('?')[1];
+
+    var group = args.split('&end=true&');
+
+    for (var i = 0; i <= group.length - 1; i++) {
+        var temp = group[i].split('&');
+
+        var name, bigDom;
+
+        var iframe = document.createElement('iframe');
+
+        iframe.borderWidth = '0px';
+
+        iframe.frameBorder = '0';
+
+        iframe.border = '0px';
+
+        iframe.marginWidth = '0';
+
+        iframe.marginHeight = '0';
+
+        iframe.name = 'huanyin';
+
+        iframe.scrolling = 'no';
+
+        iframe.className = iframe.className + ' hy';
+
+        for (var j = 0; j < temp.length; j++) {
+
+            if (temp[j].split('=')[0] === 'name') {
+
+                name = temp[j].split('=')[1];
+
+                if (name.substr(0, 1) === '.') {
+                    if (name.indexOf('____') !== -1) {
+                        bigDom = document.getElementsByClassName(name.slice(1, name.indexOf('____')))[name.slice(name.indexOf('____') + 4)];
+                    } else {
+                        bigDom = document.getElementsByClassName(name.slice(1))[0];
+                    }
+
+                } else {
+                    bigDom = document.getElementById(name);
+                }
+
+            } else if (temp[j].split('=')[0].indexOf('data') === 0) {
+                if (temp[j].split('=')[0].indexOf('data-big') === 0) {
+                    iframe.src = 'http://net.huanmusic.com/www/dilidili/dilidili-02.html#big=' + temp[j].split('=')[1];
+                }
+                if (temp[j].split('=')[0].indexOf('data-class') === 0) {
+                    iframe.className = iframe.className + ' ' + temp[j].split('=')[1];
+                }
+                if (temp[j].split('=')[0].indexOf('data-after') === 0) {
+                    if (bigDom && bigDom.parentNode) {
+                        bigDom.parentNode.insertBefore(iframe, bigDom.nextSibling);
+                    } else if (bigDom && bigDom.nextSibling) {
+                        document.querySelector('body').insertBefore(iframe, bigDom.nextSibling);
+                    }
+                }
+            } else {
+                iframe.style[temp[j].split('=')[0]] = temp[j].split('=')[1];
+            }
+        }
+        if (iframe.style.position === 'absolute') {
+            bigDom.parentNode.style.position = 'relative';
+            bigDom.appendChild(iframe);
+        }
+    }
+
+}
+window.onload = iframe();

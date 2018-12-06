@@ -1,0 +1,86 @@
+//header
+$(function () {
+    $(window).scroll(function () {
+        height = $(window).scrollTop();
+        if (height < 200) {
+            $('header>div').css({
+                "padding": "10rem 0 0",
+                "transition": "padding .15s"
+            });
+        } else {
+            $('header>div').css({
+                "padding": "3rem 0 0"
+            });
+        };
+    });
+
+    0,function(){
+        let str= nick_name.innerText;
+        if(str!="")
+        {
+            div0.style.display="none";
+            div1.parentNode.style.display="inline-block";
+        }
+        else{
+            div0.style.display="inline-block";
+            div1.parentNode.style.display="none";
+        }
+    }();
+});
+
+// top menu
+(function () {
+    var top_menuToggle = document.querySelector('.toggle'),
+        top_menuNav = document.querySelector('.menu'),
+        hasClass = function (elem, className) {
+            return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+        },
+        toggleClass = function (elem, className) {
+            var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+            if (hasClass(elem, className)) {
+                while (newClass.indexOf(' ' + className + ' ') >= 0) {
+                    newClass = newClass.replace(' ' + className + ' ', ' ');
+                }
+                elem.className = newClass.replace(/^\s+|\s+$/g, '');
+            } else {
+                elem.className += ' ' + className;
+            }
+        },
+        top_menuToggleNav = function () {
+            toggleClass(top_menuToggle, "toggle-active");
+            toggleClass(top_menuNav, "menu-open");
+        }
+
+    if (!top_menuToggle.addEventListener) {
+        top_menuToggle.attachEvent("onclick", top_menuToggleNav);
+    } else {
+        top_menuToggle.addEventListener('click', top_menuToggleNav);
+    }
+})();
+
+// back to top
+$(document).ready(function () {
+    $.goup({
+        trigger: 100,
+        bottomOffset: 20,
+        locationOffset: 20,
+        containerColor : '#1aa1c7',
+        arrowColor : '#fff'
+    });
+});
+
+$('a').attr('target','_blank');
+$(".selectors a").attr('target','_self');
+
+//baidu-20171120
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a4af3d965fe98b6552d4e2ceecde35a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	window.location = "http://m.dilidili.wang/"; 
+}

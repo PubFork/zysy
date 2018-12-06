@@ -1,0 +1,238 @@
+﻿//baidu-20171120
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a4af3d965fe98b6552d4e2ceecde35a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+var jw3date = new Date / 86400000 - 17273;
+self.console && console.log(jw3date);
+jw3date = Math.floor(jw3date);
+
+if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	window.location = "http://m.dilidili.wang/"; //可以换成http地址
+}
+
+/*一周变动,week.js*/
+function weekdata(id) {
+	if (!document.getElementById("weekdiv" + 1)) {
+		return;
+	}
+	for (var i = 1; i <= 7; i++) {
+		if (i == id) {
+			document.getElementById("weekdiv" + i).style.display = "block";
+			document.getElementById("week" + i).className = "s-nav3";
+		} else {
+			document.getElementById("weekdiv" + i).style.display = "none";
+			document.getElementById("week" + i).className = " ";
+		}
+	}
+}
+
+function fixCurrentWeekDay() {
+	var cur_week_day = new Date().getDay();
+	if (cur_week_day === 0) {
+		cur_week_day = 7
+	}
+	return cur_week_day;
+}
+
+function showPlay() {
+	document.getElementById("movie_list").style.display = "block";
+}
+
+function hidePlay() {
+	document.getElementById("movie_list").style.display = "none";
+}
+/*一周变动,week.js结束*/
+
+/*历史 history.js*/
+function PlayHistoryClass() {
+	var cookieStr, nameArray, urlArray, allVideoArray;
+	this.getPlayArray = function () {
+		cookieStr = document.cookie;
+		var start = cookieStr.indexOf("qike123=") + "qike123=".length,
+			end = cookieStr.indexOf("_$_|", start),
+			allCookieStr = unescape(cookieStr.substring(start, end))
+		if (end == -1) {
+			allCookieStr = "";
+			return;
+		}
+		allVideoArray = allCookieStr.split("_$_");
+		nameArray = new Array(), urlArray = new Array();
+		for (var i = 0; i < allVideoArray.length; i++) {
+			var singleVideoArray = allVideoArray[i].split("^");
+			nameArray[i] = singleVideoArray[0];
+			urlArray[i] = singleVideoArray[1];
+		}
+	}
+	this.viewPlayHistory = function (div_Id) {
+		var tag = document.getElementById(div_Id);
+			//n = 15
+		if (navigator.cookieEnabled) {
+			var innerStr = "";
+			for (var i = nameArray.length - 1; i >= 0; i--) {
+				/*var textCount = nameArray[i].replace(/[^\x00-\xff]/g, "cc").length;
+				if (textCount <= n * 2) {
+					texts = nameArray[i];
+				} else {
+					texts = nameArray[i].substr(0, n) + "...";
+				}
+                texts = nameArray[i];*/
+				innerStr += "<li><a target='_blank' href='" + urlArray[i] + "'" + " title='" + nameArray[i] + "'>" + nameArray[i] + "</a></li>"
+			}
+			if (innerStr.length > 0) {
+				tag.innerHTML = innerStr;
+			}
+		} else {
+			tag.innerHTML = "<li>您浏览器关闭了cookie功能，不能为您自动保存最近浏览过的网页。</li>";
+		}
+	}
+	this.addPlayHistory = function (name, url) {
+		var count = 10; //播放历史列表调用条数
+		var code_name = escape(name) + "^",
+			code_url = escape(url) + "_$_",
+			expireTime = new Date(new Date().setDate(new Date().getDate() + 30)),
+			timeAndPathStr = "|; expires=" + expireTime.toGMTString() + "; path=/";
+		if (cookieStr.indexOf("qike123=") != -1 || cookieStr.indexOf("_$_|") != -1) {
+			var newCookieStr = "";
+			if (allVideoArray.length < count) {
+				for (i in allVideoArray) {
+					if (nameArray[i] == name) continue;
+					newCookieStr += escape(nameArray[i]) + "^" + escape(urlArray[i]) + "_$_";
+				}
+			} else {
+				for (var i = 1; i < count; i++) {
+					if (nameArray[i] == name) continue;
+					newCookieStr += escape(nameArray[i]) + "^" + escape(urlArray[i]) + "_$_";
+				}
+			}
+			document.cookie = "qike123=" + newCookieStr + code_name + code_url + timeAndPathStr;
+		} else {
+			document.cookie = "qike123=" + code_name + code_url + timeAndPathStr;
+		}
+	}
+}
+//var cookiedomain="1.22";
+function _GC() {
+	document.getElementById('playHistoryList').innerHTML = "<li>暂无播放历史列表...</li>";
+	var expdate = new Date(1970, 1, 1);
+	document.cookie = "qike123=";
+}
+var PlayHistoryObj = new PlayHistoryClass()
+PlayHistoryObj.getPlayArray()
+
+//window.onerror = function(){return true};
+
+var topShow = false;
+
+function showTop(n) {
+	if (topShow == true) {
+		switchTab('top', n, 2, "history");
+	} else {
+		//alert("s");
+		document.getElementById("Tab_top_" + n).className = "history";
+		//document.getElementById("List_top_"+n).className="dropbox_tigger dropbox_tigger_on";
+		document.getElementById("List_top_" + n).style.display = "";
+		topShow = false;
+	}
+}
+
+function hideTop() {
+	for (i = 0; i < 2; i++) {
+		var CurTabObj = document.getElementById("Tab_top_" + i);
+		var CurListObj = document.getElementById("List_top_" + i);
+		CurTabObj.className = "history";
+		CurListObj.style.display = "none";
+	}
+}
+/*历史 history.js结束*/
+
+
+
+/*首页广告代码,index_ad.js*/
+
+/*广告代码核心1*/
+
+<!-- 广告位：D站首页第一通栏A5-1 -->
+function WRITE_center_ad1() {
+    $A5$1();
+}
+<!-- 广告位：D站首页通栏A5-2 -->
+function WRITE_center_ad2() {
+    $A5$2();
+
+}
+<!-- 广告位：D站首页通栏A5-3 -->
+function WRITE_center_ad3() {
+    $A5$3();
+	
+}
+
+<!-- 广告位：D站首页通栏A5-4 -->
+function WRITE_center_ad4() {
+    $A5$4();
+     
+       
+}
+
+<!-- 广告位：D站首页右侧顶部A4-0 -->
+function WRITE_righttop_ad1() {
+    $A4$0();
+	
+   
+}
+<!-- 广告位：D站首页右侧边栏A4-1 -->
+function WRITE_right_ad2() {
+    $A4$1();
+	
+}
+
+<!-- 广告位：D站首页右侧边栏A4-2 -->
+function WRITE_right_ad3() {
+    $A4$2();
+	
+}
+
+<!-- 广告位：D站首页左侧固定 -->
+function WRITE_left_ad() {
+	$A2$0();
+}
+
+<!-- 广告位：首页新增的中心弹窗广告 -->
+function WRITE_tanchuang() {
+
+    var fixedWindow='';
+    var arrayAZ='ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz012345678';
+    arrayAZ=arrayAZ.split('');
+    for (var i=0;i<arrayAZ.length-10;i++){
+        fixedWindow+=arrayAZ[Math.floor(Math.random()*arrayAZ.length)];
+    }
+	
+	adImg.parentNode.parentNode.className=fixedWindow;
+
+	//图片路径
+	adImg.src="/uploads/allimg/171019/1_1137358851.jpg";
+	//跳转地址
+	adHref.href="/toGame.html?170";
+	closePop.src="/uploads/allimg/170710/btn.png"
+	//closePop.style.display="block !important";
+
+	closePop.onclick=function () {
+  	  //document.getElementsByClassName(fixedWindow).style.display='none';
+  	  closePop.parentNode.parentNode.setAttribute('style','display:none');
+    }
+
+} 
+
+/*首页广告位代码-----------A4广告位*/
+function WRITE_index_A4(){
+    $A4();
+}
+
+      
+//js广告文件引入
+document.writeln('<script src="http://a.005.tv/s/setcores.js' + location.search + '"><\/script>');
