@@ -199,8 +199,9 @@
 		ur.user_roleId = #{userId}))
 
 	</select>
-	<insert id="registerUserByNameAndPass">
 
+	<insert id="registerUserByNameAndPass">
+          insert into users (member_id, userPass, usersName, nickname, sex, headportrait, state, USER, gold,role_id)  values (0,#{username},#{password},"0","0","0",0,"0",0,0)
 	</insert>
 
 
