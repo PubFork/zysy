@@ -72,5 +72,23 @@ public class UserController {
 		return "personalCenter.html";
 	}
 	
+	@RequestMapping(value= {"/index"})
+	public String index() {
+		
+		return "index.html";
+	}
+	
+	@GetMapping("/logout")
+	public String logout() {
+		SecurityUtils.getSubject().logout();
+		return "/login.html";
+	}
+	
+	@RequestMapping("/findpass")
+	public String findpass() {
+		
+		return "findpass.html";
+	}
+	
 
 }
