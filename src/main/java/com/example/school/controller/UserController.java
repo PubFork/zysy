@@ -55,22 +55,16 @@ public class UserController {
 	 * @author: 祝靖雯 管理员登录
 	 */
 	@RequestMapping("/login_do")
-	@ResponseBody
-	public Json login(User user) {
+	public String login(User user , Model model) {
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getUserpassword());
-		Json json;
 		try {
 			subject.login(token);
-			json = new Json(200, 0, null, "登录成功");
-		} catch (IncorrectCredentialsException e) {
-			json = new Json(500, 0, null, "密码输入错误!!!");
-		} catch (LockedAccountException e) {
-			json = new Json(500, 0, null, "账号已被冻结");
-		} catch (AuthenticationException e) {
-			json = new Json(500, 0, null, "用户名不存在");
+			return "index.html";
+		} catch (Exception e) {
+		    model.addAttribute("msg","账号或者密码错误");
+		    return "login.html";
 		}
-		return json;
 	}
 
 }

@@ -51,8 +51,13 @@ public class UserServiceImpl implements UserService {
 		ByteSource salt = ByteSource.Util.bytes(username);
 		password = new SimpleHash("md5", password, salt, 5).toHex();
 		try {
-			userMapper.registerUserByNameAndPass(username, password);
-			return true;
+		    // 判断用户名是否存在
+		    User user = userMapper.findUserByName(username);
+		    if(user==null){
+                userMapper.registerUserByNameAndPass(username, password);
+                return true;
+            }
+		    return false;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;

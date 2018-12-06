@@ -2,6 +2,7 @@ package com.example.school.config.shiro;
 
 import com.example.school.service.UserService;
 import com.example.school.pojo.User;
+import com.example.school.service.UserServiceImpl;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -26,7 +27,7 @@ import java.util.Set;
 public class MyShiroRealm extends AuthorizingRealm {
 
 	@Autowired
-	private UserService userService;
+	private UserServiceImpl userService;
 	/*
 	 * @Autowired private RoleService roleService;
 	 * 
@@ -51,7 +52,6 @@ public class MyShiroRealm extends AuthorizingRealm {
 		if (user == null) {
 			return null;
 		}
-
 		return new SimpleAuthenticationInfo(user, user.getUserpassword(), ByteSource.Util.bytes(username), getName());
 	}
 

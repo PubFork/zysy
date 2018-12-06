@@ -54,7 +54,7 @@
 		</div>
 		<div class="w1000 formtit">
 			<p>
-				<span>登录</span>
+				<span th:text="{msg==null?'登录':msg}">登录</span>
 			</p>
 		</div>
 		<div class="formcon clear">
@@ -76,9 +76,8 @@
 					</p>
 
 					<p>
-						<input type="submit" value="登录" class="formbtn loginbtn"
-							disabled="disabled"> <input type="button" value="注册"
-							class="formbtn zhucebtn">
+						<input type="submit" value="登录" class="formbtn loginbtn">
+                        <a href="/user/register"><input type="button" value="注册" class="formbtn zhucebtn"></a>
 					</p>
 
 					<p class="lostpassword fontblue">
