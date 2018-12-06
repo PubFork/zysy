@@ -66,5 +66,11 @@ public class UserController {
 		    return "login.html";
 		}
 	}
+	@RequestMapping("/personalCenter")
+	public String personalCenter() {
+		
+		return "personalCenter.html";
+	}
+	
 
 }
