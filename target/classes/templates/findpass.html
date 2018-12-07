@@ -49,12 +49,12 @@
     <div class="w1000 clear">
         <div class="topnavlist fleft">
             <a class="current" href="javascript:;">MENU</a>
-            <a href="http://www.005.tv/" target="_blank">羁绊资讯</a>
-            <a href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a>
+            <a href="http://www.005.tv/" target="_blank">NiKi share</a>
+            <!-- <a href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a>
             <a href="http://www.xcmh.cc/" target="_blank">星辰漫画</a>
             <a href="http://www.93w.net/" target="_blank">93励志网</a>
             <a href="http://moe.005.tv/" target="_blank">萌娘资源站</a>
-            <a href="http://bbs.005.tv/" target="_blank">羁绊论坛</a>
+            <a href="http://bbs.005.tv/" target="_blank">羁绊论坛</a> -->
         </div>
         <div class="loginbox fright">
                         <div class="loginbefore"><a href="/user/login">登录</a>
@@ -74,17 +74,15 @@
                 <a href="http://usr.005.tv/User/findpasswd.html#"><img src="/img/banner.jpg"></a>
             </div>
             <div class="formbox fright">
-                <form action="http://usr.005.tv/User/findpasswd_do.html" method="post">
+                <form action="/user/findpass" method="post">
                     <p class="clear">
                         <label class="adminico adminname">用户名</label>
                         <input type="text" name="username" value="" placeholder="请输入用户名" class="inputlogin" maxlength="20">
                     </p>
 
-                  
-
                     <p class="clear">
                         <label class="adminico adminyzm">验证码</label>
-                        <input type="text" name="verify" class="inputyzm" maxlength="4"><span><usrimg src="./找回密码_files/verify.html" id="verifyImg" onclick="changeVerify()" title="点击刷新"></span></p>
+                        <input type="text" name="verify" class="inputyzm" maxlength="4"><span><usrimg src="/findpass/verify.html" id="verifyImg" onclick="changeVerify()" title="点击刷新"></span></p>
                     <script language="JavaScript">
                         function changeVerify() {
                             var timenow = new Date().getTime();
@@ -109,13 +107,17 @@
 			 友情链接：<a href="http://www.ishuhui.com/">鼠绘汉化网</a><a href="http://www.bilibilijj.com/">哔哩哔哩唧唧</a><a href="http://pc.tgbus.com/ku_73_1/">单机游戏库</a><a href="http://dota2.178.com/">dota2</a><a href="http://www.kan300.com/">看撒动漫</a><a href="http://www.93w.net/">励志网</a><a href="http://www.733dm.com/">好看的动漫</a><a href="http://www.idanmu.com/">爱弹幕</a><a href="http://www.xxdm.org/">星星动漫</a>
 		</div>
 -->
-		<div class="footlink">
-           <a href="http://www.005.tv/">资讯</a><span>|</span><a href="http://moe.005.tv/">资源</a><span>|</span><a href="http://www.dilidili.com/anime/">新番</a><span>|</span><a href="http://bbs.005.tv/forum.php">论坛</a><span>|</span><a href="http://weibo.com/005dilidili/">官方微博</a>
-		</div>
+		<!-- <div class="footlink">
+           <a href="http://www.005.tv/">资讯</a>
+           <span>|</span><a href="http://moe.005.tv/">资源</a>
+           <span>|</span><a href="http://www.dilidili.com/anime/">新番</a><span>|</span>
+           <a href="http://bbs.005.tv/forum.php">论坛</a><span>|</span>
+           <a href="http://weibo.com/005dilidili/">官方微博</a>
+		</div> -->
 	</div>
-	<div class="weixinbox fright">
-		<img src="./找回密码_files/weixin.png">
-	</div>
+	<!-- <div class="weixinbox fright">
+		<img src="/img/weixin.png">
+	</div> -->
 </div>
 <div class="divfixbox" style="display: none">
     <span>...</span>
