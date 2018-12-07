@@ -57,7 +57,8 @@ public class UserController {
 	@RequestMapping("/login_do")
 	public String login(User user , Model model) {
 		Subject subject = SecurityUtils.getSubject();
-		UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getUserpassword());
+		UsernamePasswordToken token = new UsernamePasswordToken(user.getUserName(), user.getUserPassWord());
+		System.err.println(token);
 		try {
 			subject.login(token);
 			return "index.html";
@@ -89,6 +90,10 @@ public class UserController {
 		
 		return "findpass.html";
 	}
-	
+	@RequestMapping("/information")
+	public String information() {
+		
+		return "information.html";
+	}
 
 }

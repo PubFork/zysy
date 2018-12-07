@@ -52,16 +52,16 @@ public class MyShiroRealm extends AuthorizingRealm {
 		if (user == null) {
 			return null;
 		}
-		return new SimpleAuthenticationInfo(user, user.getUserpassword(), ByteSource.Util.bytes(username), getName());
+		return new SimpleAuthenticationInfo(user, user.getUserPassWord(), ByteSource.Util.bytes(username), getName());
 	}
 
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
 		SimpleAuthorizationInfo authorizationInfo = new SimpleAuthorizationInfo();
 		User user = (User) principalCollection.getPrimaryPrincipal();
-		Set<String> roles = userService.queryRoleByUserId(user.getUserid());
+		Set<String> roles = userService.queryRoleByUserId(user.getUserId());
 		authorizationInfo.setRoles(roles);
-		Set<String> permissions = userService.queryPermissionByUserId(user.getUserid());
+		Set<String> permissions = userService.queryPermissionByUserId(user.getUserId());
 		authorizationInfo.setStringPermissions(permissions);
 		return authorizationInfo;
 	}
