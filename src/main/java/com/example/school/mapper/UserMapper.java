@@ -26,4 +26,11 @@ public interface UserMapper {
 	 * @return 结果　０：修改失败　　１：修改成功
 	 * */
 	int updateById(User record);
+	/**
+	 * 修改用户密码
+	 * @param id 要修改的用户id
+	 * @return 结果　０：修改失败　　１：修改成功
+	 * */
+    int changePassWord(@Param("userId")Integer userId,@Param("userPassWord")String userPassWord);
+	
 }

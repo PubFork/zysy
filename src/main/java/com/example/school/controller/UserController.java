@@ -149,5 +149,11 @@ public class UserController {
 		
 		return "information.html";
 	}
+	
+	@RequestMapping("/changePassWord")
+	public String changePassWord() {
+		
+		return "changePassWord.html";
+	}
 
 }
