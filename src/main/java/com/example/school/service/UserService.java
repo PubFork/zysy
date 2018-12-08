@@ -14,6 +14,10 @@ public interface UserService {
 
 	boolean registerUserByNameAndPass(String username, String password);
 	
-	
+	/**
+	 * 修改用户信息
+	 * 
+	 * */
+	int updateById(User record);
 
 }

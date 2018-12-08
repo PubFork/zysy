@@ -303,6 +303,14 @@
 	(0,#{password},#{username},"0","0",now())
 
 </insert>
-
+<update id="updateById">
+    update users
+      set userName = #{userName},
+      sex = #{sex},
+      marry = #{marry},
+      birthday = #{birthday},
+      userTelephone = #{userTelephone,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR} where userId = 1
+  </update>
 
 </mapper>

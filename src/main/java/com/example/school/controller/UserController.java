@@ -3,6 +3,12 @@ package com.example.school.controller;
 import com.example.school.service.UserServiceImpl;
 import com.example.school.util.Json;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -27,6 +33,8 @@ public class UserController {
 	@Autowired
 	private UserServiceImpl userService;
 
+	Map<String,Object> map = new HashMap<String,Object>();
+	
 	@GetMapping("/login")
 	public String toLogin() {
 
@@ -66,6 +74,52 @@ public class UserController {
 		    model.addAttribute("msg","账号或者密码错误");
 		    return "login.html";
 		}
+	}
+	
+	
+	/**
+	 * 修改用户信息
+	 * @param id 要修改的用户id
+	 * @return 结果　０：修改失败　　１：修改成功
+	 * @throws ParseException 
+	 * */
+	@RequestMapping("/update")
+	@ResponseBody
+	public Map<String,Object> updateById(String userName,String sex,String marry,String userTelephone,String address,Integer birthyear,Integer birthmonth,Integer birth) throws ParseException{
+		
+		SimpleDateFormat str=new SimpleDateFormat("yyyy-MM-dd");
+		
+		String string=birthyear+"-"+birthmonth+"-"+birth;
+		
+		Date strDate=str.parse(string);
+		String birthday = str.format(strDate);
+		//System.out.println(str.format(string));
+		
+		User user = new User();
+		user.setUserName(userName);
+		user.setSex(sex);
+		user.setMarry(marry);
+		user.setBirthday(birthday);
+		user.setUserTelephone(userTelephone);
+		user.setAddress(address);
+		
+		System.out.println("userName"+userName);
+		int us = userService.updateById(user);
+		
+		if(us>0){
+			
+			
+			map.put("success",true);
+			map.put("message", "保存成功");
+			
+		}else {
+			
+			map.put("success",false);
+			map.put("message", "保存失败");
+		}
+		return map;
+		
+		
 	}
 	@RequestMapping("/personalCenter")
 	public String personalCenter() {

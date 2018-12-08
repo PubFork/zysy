@@ -63,4 +63,13 @@ public class UserServiceImpl implements UserService {
 			return false;
 		}
 	}
+	
+	/**
+	 * 修改用户信息
+	 * */
+	public int updateById(User record) {
+
+		return userMapper.updateById(record);
+	}
+	
 }
