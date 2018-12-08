@@ -30,8 +30,10 @@
 	<header>
 		<div class="head-title">
 			<ul>
-				<li><!-- <img src="/img/logo.png" width="100"> --> <a
-					href="/user/index" target="_blank">首页</a></li>
+				<li>
+					<!-- <img src="/img/logo.png" width="100"> --> <a
+					href="/user/index" target="_blank">首页</a>
+				</li>
 				<li><a href="javascript:void(0)" target="_blank">投稿</a></li>
 				<!-- <li><a href="http://www.dilidili.wang/anime/201801/"
 					target="_blank">新番</a></li> -->
@@ -79,6 +81,11 @@
 							type="hidden" name="rg" value="1">
 					</form>
 				</div>
+
+				<form action="/user/upVideo" method="post" enctype="multipart/form-data">
+					<input type="file" >
+					<input type="submit" value="上传"/>					
+				</form>
 			</ul>
 		</div>
 		<hr>
@@ -116,14 +123,14 @@
           });
           
       </script>
-      
-<!-- 			<p
+
+			<!-- 			<p
 				style="font-size: 2em; position: relative; left: 50%; margin-left: -5em; line-height: 2em;">
 				请<a
 					href="http://usr.005.tv/?refurl=http%3A%2F%2F110.80.136.9%3A2000%2Fupload.html"
 					style="color: rgb(242, 93, 142) !important;" class="logIn">登录</a>后再进行投稿！
 			</p> -->
-			
+
 			<div class="intro">
 				上传视频，即表示您已同意<a style="color: rgb(242, 93, 142) !important;"
 					href="/user/notice" target="_blank">使用协议</a>，请勿上传色情、反动等违法视频。
@@ -214,7 +221,17 @@
 						</div>
 					</div>
 				</div>
-
+                          
+			</div>
+			<div>
+			
+			
+				<form action="/user/upVideo" method="post" enctype="multipart/form-data">
+					<input type="file" >
+					<input type="submit" value="上传"/>					
+				</form>
+			
+			
 			</div>
 		</div>
 		<!--/页面中部-->
