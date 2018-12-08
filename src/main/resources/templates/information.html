@@ -219,14 +219,17 @@
 					    birth:birth
 
 					}, function(res) {
-						alert(1)
+						//alert(1)
 						if (res.success) {
+							
+	                     //$.messager.alert("提示信息", res.message, "info"); 
 
-							$.messager.alert("提示信息", res.message, "info");
-
+						alert(res.message);
+						
 						} else {
 
-							$.messager.alert("提示信息", res.message, "error");
+							alert(res.message);
+							//$.messager.alert("提示信息", res.message, "error");
 						}
 
 					}, "json")

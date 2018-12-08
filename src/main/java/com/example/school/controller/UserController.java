@@ -149,10 +149,6 @@ public class UserController {
 		
 		return "information.html";
 	}
-	
-	
-	
-	
 	@RequestMapping("/upVideo")
 	public String upVideo() {
 		
@@ -168,5 +164,12 @@ public class UserController {
 		
 		return "post.html";
 	}
+	
+	@RequestMapping("/changePassWord")
+	public String changePassWord() {
+		
+		return "changePassWord.html";
+	}
+	
 
 }
