@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://110.80.136.9:2000/upload.html -->
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<title>上传视频</title>
+<!--CSS全局定义-->
+<link rel="stylesheet" href="/css/zhicwl.css">
+<!--CSS通用样式-->
+<link rel="stylesheet" href="/css/zhicwl-zj.css">
+<!--CSS布局样式-->
+<link rel="stylesheet" href="/css/zhicwl-bj.css">
+<script src="/js/jquery-1.11.3.min.js.下载"></script>
+<script src="/js/jquery.SuperSlide.2.1.2.js.下载"></script>
+<link rel="stylesheet" type="text/css" href="/css/up.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/ugcStyle.css">
+</head>
+
+<body>
+	<!--栏目导航-->
+	<header>
+		<div class="head-title">
+			<ul>
+				<li><!-- <img src="/img/logo.png" width="100"> --> <a
+					href="/user/index" target="_blank">首页</a></li>
+				<li><a href="javascript:void(0)" target="_blank">投稿</a></li>
+				<!-- <li><a href="http://www.dilidili.wang/anime/201801/"
+					target="_blank">新番</a></li> -->
+
+				<a href="http://www.dilidili.wang/zxgx.html" title="最新更新"><i
+					class="box1"></i></a>
+				<script>
+                    searchToggle = function()
+                    {
+                        if($('.box3').parent().attr('title') == '切换至360搜索')
+                        {
+                            $('.box3').css('background','rgb(252, 171, 103) url("http://www.dilidili.wang/newimages/search_baidu.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+                            $('.search-box').hide();
+                            $('#so360').show();
+                            $('.box3').parent().attr('title','切换至百度搜索');
+                        }
+                        else
+                        {
+                            $('.box3').css('background','rgb(252, 171, 103) url("http://www.dilidili.wang/newimages/search_360.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+                            $('#so360').hide();
+                            $('.search-box').show();
+                            $('.box3').parent().attr('title','切换至360搜索');
+                        }
+                    }
+                </script>
+				<a onclick="searchToggle()" title="切换至360搜索"><i class="box3"></i></a>
+				<form action="http://110.80.136.9:2000/search/index.html"
+					target="_blank" class="search-box" style="box-sizing: border-box">
+					<input type="hidden" name="kwtype" value="0" class="s_inp">
+					<input name="q" type="text" placeholder="百度搜索"> <i
+						class="box2" onclick="$(&#39;.search-box&#39;).submit()"></i> <input
+						type="hidden" name="ie" value="utf8"> <input type="hidden"
+						name="src" value="zz"> <input type="hidden" name="site"
+						value="www.dilidili.wang"> <input type="hidden" name="rg"
+						value="1">
+				</form>
+				<div id="so360" style="box-sizing: border-box">
+					<form action="http://www.so.com/s" target="_blank" id="so360form">
+						<input type="text" autocomplete="off" name="q" id="so360_keyword"
+							placeholder="360搜索"> <input type="submit"
+							id="so360_submit" value=""> <input type="hidden"
+							name="ie" value="utf8"> <input type="hidden" name="src"
+							value="zz_www.dilidili.wang"> <input type="hidden"
+							name="site" value="www.dilidili.wang"> <input
+							type="hidden" name="rg" value="1">
+					</form>
+				</div>
+			</ul>
+		</div>
+		<hr>
+	</header>
+	<!--/栏目导航-->
+
+	<!--页面中部-->
+	<div class="lksmrh">
+		<div class="lksmrh-coke">
+			<!--分类:
+      <select name="category" id="category"></select>-->
+			<div id="div0" style="display: none"></div>
+			<div id="div1" style="display: none">
+				<li id="nick_name"></li>
+			</div>
+
+			<script src="./上传视频_files/header99.html"></script>
+			<script>
+          0,function(){
+              var str= nick_name.innerText;
+              if(str!="")
+              {
+                  $(".lksmrh-coke").append('<div class="shangchuan_biaodan" id="chose0"><div id="chosevideo"></div><div id="divFileProgressContainer"></div><div class="clear"></div></div>');
+              }
+              else{
+                  $(".lksmrh-coke").append('<p style="font-size: 2em; position:  relative; left: 50%; margin-left: -5em; line-height: 2em;">请<a href="//usr.005.tv" style="color:rgb(242, 93, 142)!important;" class="logIn">登录</a>后再进行投稿！</p>');
+              }
+          }();
+          //log&register
+          $(window).load(function() {
+            var refurl = 'refurl=' + encodeURIComponent(location);
+            var logUrl = 'http://usr.005.tv?' + refurl;
+            var registerUrl = 'http://usr.005.tv/?' + refurl;
+            $(".logIn").attr('href',registerUrl);
+          });
+          
+      </script>
+      
+<!-- 			<p
+				style="font-size: 2em; position: relative; left: 50%; margin-left: -5em; line-height: 2em;">
+				请<a
+					href="http://usr.005.tv/?refurl=http%3A%2F%2F110.80.136.9%3A2000%2Fupload.html"
+					style="color: rgb(242, 93, 142) !important;" class="logIn">登录</a>后再进行投稿！
+			</p> -->
+			
+			<div class="intro">
+				上传视频，即表示您已同意<a style="color: rgb(242, 93, 142) !important;"
+					href="/user/notice" target="_blank">使用协议</a>，请勿上传色情、反动等违法视频。
+			</div>
+			<div class="status">
+				<!-- <div class="status_now">
+					当前审核队列：<strong>爆满</strong>
+				</div> -->
+				<div class="status_now_2">
+					<!-- 意见反馈请加up主专属反馈群。群号829674484 -->
+				</div>
+				<i></i>
+			</div>
+
+			<div class="klspjx">
+				<div class="klspjx-kalw">
+					<div class="klspjx-cker">
+						<h3>投稿信息</h3>
+						<div class="alkmst">
+							<form action="http://110.80.136.9:8123/submit.aspx" method="post"
+								id="upInfo">
+								<div class="srkmsy">
+									<span style="color: #A7A7A7;">文件标题：</span>
+									<p>
+										<input style="border: 1px solid #D3D3D3;" readonly="true"
+											type="text" name="title" id="title" value="">
+									</p>
+								</div>
+								<div class="srkmsy">
+									<span>UP主名称：</span>
+									<p>
+										<input type="text" name="upName" id="upName" value="">
+									</p>
+								</div>
+								<div class="srkmsy">
+									<span>投稿类型：</span>
+									<p>
+										<select name="isOriginal" id="isOriginal"
+											style="border: 1px solid; padding: 0 7px; margin-left: 3px; width: 98%;">
+											<option value="1">自制</option>
+											<option value="0">转载</option>
+										</select>
+									</p>
+								</div>
+								<div class="srkmsy">
+									<span>选择分区：</span>
+									<p>
+										<select name="zone" id="zone"
+											style="border: 1px solid; padding: 0 7px; margin-left: 3px; width: 98%;">
+											<option value="yinyue">音乐</option>
+											<option value="youxi">游戏</option>
+											<option value="wudao">舞蹈</option>
+											<option value="guichu">鬼畜</option>
+											<option value="yule">娱乐</option>
+											<option value="shenghuo">生活</option>
+											<option value="dongman">动漫</option>
+											<option value="yingshi">影视</option>
+											<option value="kejiao">科教</option>
+											<option value="yundong">运动</option>
+										</select>
+									</p>
+								</div>
+								<div class="srkmsy">
+									<span>稿件标题：</span>
+									<p>
+										<input type="text" name="title" id="title" value="">
+									</p>
+								</div>
+								<div class="srkmsy">
+									<span>稿件关键字：</span>
+									<p>
+										<input type="text" name="keyWords" id="keyWords" value="">
+									</p>
+								</div>
+								<div class="srkmsy">
+									<span>稿件简介：</span>
+									<p>
+										<input type="text" name="description" id="description"
+											value="">
+									</p>
+								</div>
+								<input type="hidden" name="uid" id="uid" value=""> <input
+									type="hidden" name="path" id="path" value=""> <input
+									type="submit" id="submit" value="提交信息">
+								<div class="clear"></div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--/页面中部-->
+
+		<!--底部-->
+
+		<!--/底部-->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./上传视频_files/jquery-1.11.2.min.js.下载"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script language="javascript">
+    //上传地址
+    var hostname = window.location.hostname
+    var port = window.location.port || '80';
+    var ServerUrl = "http://" + hostname + ":" + port + "/uploads";
+    if (port == 80) {
+      ServerUrl = "http://" + hostname + "/uploads";
+    }
+  </script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="/js/jquery-1.11.2.min.js.下载"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="/js/bootstrap.min.js.下载"></script>
+		<script type="text/javascript" src="/js/webuploader.js.下载"></script>
+		<script type="text/javascript" src="/js/md5.js.下载"></script>
+		<script type="text/javascript" src="/js/upload.js.下载"></script>
+		<script src="/js/zhicwl.js.下载"></script>
+		<script language="javascript">
+    $.ajax({
+      url: "/category",
+      dataType: "json",
+      success: function (data) {
+        var result = "<option value=''>默认</option>";
+        for (var i = 0; i < data.length; i++) {
+          result += "<option value='" + data[i] + "'>" + data[i] + "</option>"
+
+        }
+        $("#category")
+          .change(function () {
+            var str = "";
+            $("select option:selected").each(function () {
+              str += $(this).text();
+            });
+           userInfo.category = str;
+          })
+          .change();
+        $("#category").html(result)
+      }
+    });
+    0,function(){
+        var str= nick_name.innerText;
+        uid.value=str;
+    }();
+    $("#upInfo").submit(
+      function(e){
+        //alert("Submitted");
+      }
+    );
+  </script>
+
+
+
+	</div>
+</body>
+</html>

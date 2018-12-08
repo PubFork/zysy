@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*全局*/
+body { 
+	min-width: 320px; /*设置页面最小宽度为320像素*/
+	margin: 0 auto;
+	line-height: 1; /*行高默认1倍*/
+	/*-webkit-user-select: none; /*禁用长按空白后复制*/
+}
+
+/*让字体风格、大小、颜色继承其父元素并清空h1-h6的默认边距*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit; 
+	font-weight: normal;
+	margin-top: 0; 
+	margin-bottom: 0; 
+}
+
+/*移除默认下划线并且背景颜色设置为透明*/
+a, a:visited {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/*移除点击后出现的灰色背景*/
+a, input, button, textarea, select, .avkdot, li, img, p { -webkit-tap-highlight-color:rgba(0,0,0,0); }
+
+/*移除输入框自动填充后出现的默认黄色背景*/
+input:-webkit-autofill { 
+	-webkit-box-shadow: 0 0 0px 1000px white inset !important; 
+} 
+
+/*移除当元素被点击后或获取到焦点时候出现的焦点虚线-轮廓线*/
+input, textarea, select, button, a { outline: 0;}
+
+/*禁止手动调整编辑框调整的尺寸*/				                        
+textarea { resize: none;}
+
+/*移除type="number"的上下箭头（type="number"，规定只能输入阿拉伯数字）*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+/*隐藏滚动条*/
+/*
+::-webkit-scrollbar{ 
+	width: 0; 
+	height: 0;
+}
+*/
+
+a, img { border: none;} /*移除默认的边框*/
+
+input, fieldset { 
+	padding-top: 0; 
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+button { margin: 0;}
+a, a:visited, a:hover, a:focus, a:active, samp, input, button, textarea, select, tt, code, kbd { color: inherit;} 
+input{ line-height: normal !important;}
+dl, dd, input, select { margin: 0;}
+ul {
+	margin-top: 0; 
+	margin-bottom: 0; 
+	padding-left: 0; 
+	padding-right: 0;
+	list-style-type: none; 
+}
+p, figure { margin: 0;}
+samp, input, button, textarea, select, tt, code, kbd {
+	font-family: inherit; 
+	font-size: inherit;
+	color: inherit; 
+}
+/*/全局*/
+
+
+
