@@ -1,6 +1,7 @@
 package com.example.school;
 
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date: 
  */
 @SpringBootApplication
+@MapperScan("/com.example.school.mapper")
 public class SchoolApplication {
 
     public static void main(String[] args) {

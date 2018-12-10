@@ -26,6 +26,75 @@
 <script type="text/javascript" src="/js/bootbox.js.下载"></script>
 </head>
 
+<script type="text/javascript">
+
+   $(function(){
+	   
+	   existSign();
+	   
+   })
+
+/* 判断 是否已签到*/
+    function existSign(){
+	
+	    $.post("../UserChecks/selectState",
+	    		
+	    	{   	
+	    	userId:2
+	    	
+	    	},function(res){
+	    		
+	    		if(res.state==0){
+	    			
+	    			$('#btn-sign-user1').hide('fast');//快速隐藏已签到
+	    			
+	    			$("#btn-sign-user").show();//显示签到	
+	    		
+	    		}else{
+	    			
+	    		//   if(res.msg=='已签到'){
+	    				
+	    			  $('#btn-sign-user').hide('fast');//快速隐藏签到
+	    			  
+	    			  $('#btn-sign-user1').show();//显示已签到
+	    			  
+	    			  //$('#btn-sign-user1').removeAttr("onclick");	    				
+	    		//	}	    			
+	    		}
+	    		
+	    	},"json")
+     
+        }
+
+    /* 签到 */
+    function sign(){
+    	
+    	$.post("../UserChecks/userSign",
+    			
+    			{   		      
+    		      userId:2,
+    		      gold:5,
+    		      userName:'阿甘'
+    		
+    			},function(res){
+    				
+    				if(res.success){
+    					
+    					$("#btn-sign-user").hide('fast');
+						
+    					$("#btn-sign-user1").show();    		
+               		
+               	 }else{
+               			$("#btn-sign-user").show();
+               			
+               			$("#btn-sign-user1").hide();
+               	}
+    				
+    			},"json")
+           }
+
+   </script>
+
 <body>
 	<!--公用顶部开始-->
 	<div class="topnav clear fonthui">
@@ -65,10 +134,14 @@
 					</div>
 					<div class="adminname fonttips">XXX</div>
 					<div class="adminlink">
-						<button id="btn-sign-user" data-checked="0" data-group="1"
+						<!-- <button id="btn-sign-user" data-checked="0" data-group="1"
 							class="btn primary">
 							<i class="icon icon-check-circle"></i>签到
-						</button>
+						</button> -->
+						<div class="adminlink">
+                        <button id="btn-sign-user"  class="btn primary" hidden="true" onclick="sign()">签到</button>
+                        <button id="btn-sign-user1"  class="btn primary" hidden="true">已签到</button>
+				   </div>
 					</div>
 					<div class="admin-extra">
 						<div class="space"></div>
@@ -171,8 +244,7 @@
 							<span>XXX</span> <span>经验：</span> <span>等级：LV1</span>
 						</div>
 
-						<button id="btn-sign-user" data-checked="0" data-group="1"
-							class="btn primary">
+						<button id="btn-sign-user" data-checked="0" data-group="1" class="btn primary">
 							<i class="icon icon-check-circle"></i>签到
 						</button>
 					</div>

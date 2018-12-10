@@ -29,20 +29,19 @@
 	<div class="topnav clear fonthui">
 		<div class="w1000 clear">
 			<div class="topnavlist fleft">
-				<a class="current" href="javascript:;">MENU</a> <a
-					href="http://www.005.tv/" target="_blank">羁绊资讯</a> <a
-					href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a> <a
-					href="http://www.xcmh.cc/" target="_blank">星辰漫画</a> <a
-					href="http://www.93w.net/" target="_blank">93励志网</a> <a
-					href="http://moe.005.tv/" target="_blank">萌娘资源站</a> <a
-					href="http://bbs.005.tv/" target="_blank">羁绊论坛</a>
+				<a class="current" href="javascript:;">MENU</a> 
+				<a href="http://www.005.tv/" target="_blank">羁绊资讯</a> 
+				<a href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a> 
+				<a href="http://www.xcmh.cc/" target="_blank">星辰漫画</a> 
+				<a href="http://www.93w.net/" target="_blank">93励志网</a> 
+				<a href="http://moe.005.tv/" target="_blank">萌娘资源站</a> 
+				<a href="http://bbs.005.tv/" target="_blank">羁绊论坛</a>
 			</div>
 			<div class="loginbox fright">
 				<div class="logined">
 					<strong>啊婷yt</strong> <a
 						href="javascript:bootIFrame(&#39;&#39;,&#39;/Pm/&#39;,&#39;100%&#39;,&#39;580px&#39;);">短消息</a>
-					<a href="/user/index">主页</a> <a
-						href="/user/logout">退出</a>
+					<a href="/user/index">主页</a> <a href="/user/logout">退出</a>
 				</div>
 			</div>
 		</div>
@@ -55,7 +54,8 @@
 
 			<div class="leftside fleft">
 				<h1 class="adminlogo">
-					<strong>会员</strong>中心<!-- <em>usr.005.tv</em> -->
+					<strong>会员</strong>中心
+					<!-- <em>usr.005.tv</em> -->
 				</h1>
 				<div class="adminbox">
 					<div class="adminpic">
@@ -204,28 +204,28 @@
 					var birthyear = $("#birthyear").val();
 					var birthmonth = $("#birthmonth").val();
 					var birth = $("#birth").val();
-                    //var birthday= birthyear+birthmonth+birth;
-                    //alert(birthday)
+					//var birthday= birthyear+birthmonth+birth;
+					//alert(birthday)
 					$.post("../user/update", {
 
 						userName : userName,
-						sex :sex,
+						sex : sex,
 						marry : marry,
 						//birthday : birthday,
 						userTelephone : userTelephone,
-					    address:address,
-					    birthyear:birthyear,
-					    birthmonth:birthmonth,
-					    birth:birth
+						address : address,
+						birthyear : birthyear,
+						birthmonth : birthmonth,
+						birth : birth
 
 					}, function(res) {
 						//alert(1)
 						if (res.success) {
-							
-	                     //$.messager.alert("提示信息", res.message, "info"); 
 
-						alert(res.message);
-						
+							//$.messager.alert("提示信息", res.message, "info"); 
+
+							alert(res.message);
+
 						} else {
 
 							alert(res.message);
@@ -255,7 +255,9 @@
 									<tbody>
 										<tr>
 											<th>用户名</th>
-											<td><a href="http://usr.005.tv/User/passwd.html"><!-- 修改密码 --></a></td>
+											<td><a href="http://usr.005.tv/User/passwd.html">
+													<!-- 修改密码 -->
+											</a></td>
 										</tr>
 										<tr>
 											<th>真实姓名</th>
@@ -265,11 +267,10 @@
 										<tr>
 											<th>性别</th>
 											<td><select id="sexa" for="sexm">
-											     <option value="1"> 男</option>
-											     <option value="2"> 女</option>
-											</select>
-											<span style="font-weight: bold; color: red;">(确定后无法再次修改)</span>
-											
+													<option value="1">男</option>
+													<option value="2">女</option>
+											</select> <span style="font-weight: bold; color: red;">(确定后无法再次修改)</span>
+
 											</td>
 										</tr>
 										<tr>
