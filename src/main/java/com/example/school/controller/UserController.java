@@ -170,6 +170,10 @@ public class UserController {
 		
 		return "changePassWord.html";
 	}
-	
+	@RequestMapping("/thankspost")
+	public String thankspost() {
+		
+		return "thankspost.html";
+	}
 
 }
