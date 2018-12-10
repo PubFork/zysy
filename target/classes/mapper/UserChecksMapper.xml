@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.school.mapper.UserChecksMapper">
+
+     <!-- 签到前先去查询签到的状态 -->
+     <select id="selectState" parameterType="int" resultType="string">
+     
+        select DISTINCT checkState from UserChecks where userId=#{userId} and checkInTime>CURDATE()
+          
+     </select>
+     
+     <!-- 签到 -->
+     <insert id="userSign">
+     
+        insert into userchecks(userId,userName,checkInTime,checkState)
+        
+        values(#{userId},#{userName},now(),'已签到')
+     
+     </insert>
+     
+     <insert id="addGold" parameterType="int">
+     
+        UPDATE users SET gold=#{gold}+5 WHERE userId=#{userId}
+
+     </insert>
+
+
+</mapper>

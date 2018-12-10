@@ -28,7 +28,32 @@
 <script type="text/javascript" th:src="@{/js/bootbox.js}"></script>
 <script type="text/javascript" th:src="@{/js/jquery.slideunlock.js}"></script>
 
+<script type="text/javascript">
+ function login(){
+
+ 	$.post("http://localhost:8080/user/login_do",
+		$("#ff").serialize(),
+	function (res){
+ 		if(res.success){
+ 			window.localStorage.setItem("userId",res.msg.userId );
+ 			window.localStorage.setItem("userName",res.msg.userName );
+
+ 			 window.location.href="index.html"; 
+ 	
+ 		}else{
+ 			alert(res.msg)
+ 		}
+		
+	},"json");
+	 
+	
+}  
+
+
+</script>
 </head>
+
+
 
 <body onload="changeVerify()">
 	<!--公用顶部开始-->
@@ -55,6 +80,7 @@
 		<div class="w1000 formtit">
 			<p>
 				<span th:text="${msg==null?'登录':msg}">登录</span>
+				<input id="u" type="hidden" th:value="${data}"/>
 			</p>
 		</div>
 		<div class="formcon clear">
@@ -62,7 +88,7 @@
 				<img src="/img/banner.jpg">
 			</div>
 			<div class="formbox fright">
-				<form action="/user/login_do" method="post">
+				<form id="ff" >
 					<p class="clear">
 						<label class="adminico adminname">用户名</label> <input type="text"
 							name="userName" value="" placeholder="请输入用户名或者邮箱"
@@ -76,7 +102,7 @@
 					</p>
 
 					<p>
-						<input type="submit" value="登录" class="formbtn loginbtn">
+						<input type="button" value="登录" class="formbtn loginbtn" onclick="login()">
                         <a href="/user/register"><input type="button" value="注册" class="formbtn zhucebtn"></a>
 					</p>
 

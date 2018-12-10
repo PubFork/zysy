@@ -63,16 +63,22 @@ public class UserController {
 	 * @author: 祝靖雯 管理员登录
 	 */
 	@RequestMapping("/login_do")
-	public String login(User user , Model model) {
+	@ResponseBody
+	public Object login(User user , Model model) {
+	
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(user.getUserName(), user.getUserPassWord());
 		System.err.println(token);
+	/*	model.addAttribute ("data",subject.getPrincipal());*/
 		try {
 			subject.login(token);
-			return "index.html";
+			map.put("success", true);
+			map.put("msg", subject.getPrincipal());
+			return map;
 		} catch (Exception e) {
-		    model.addAttribute("msg","账号或者密码错误");
-		    return "login.html";
+			map.put("success", false);
+		   map.put("msg","账号或者密码错误");
+		    return map;
 		}
 	}
 	
