@@ -33,8 +33,8 @@ public class UserController {
 	@Autowired
 	private UserServiceImpl userService;
 
-	Map<String,Object> map = new HashMap<String,Object>();
-	
+	Map<String, Object> map = new HashMap<String, Object>();
+
 	@GetMapping("/login")
 	public String toLogin() {
 
@@ -64,43 +64,48 @@ public class UserController {
 	 */
 	@RequestMapping("/login_do")
 	@ResponseBody
-	public Object login(User user , Model model) {
-	
+	public Object login(User user, Model model) {
+
 		Subject subject = SecurityUtils.getSubject();
 		UsernamePasswordToken token = new UsernamePasswordToken(user.getUserName(), user.getUserPassWord());
 		System.err.println(token);
-	/*	model.addAttribute ("data",subject.getPrincipal());*/
+		/* model.addAttribute ("data",subject.getPrincipal()); */
 		try {
 			subject.login(token);
+			User u = (User) subject.getPrincipal();
 			map.put("success", true);
-			map.put("msg", subject.getPrincipal());
-			return map;
+			map.put("msg", u);
+			map.put("role", userService.queryRoleByUserId(u.getUserId()));
+
 		} catch (Exception e) {
 			map.put("success", false);
-		   map.put("msg","账号或者密码错误");
-		    return map;
+			map.put("msg", "账号或者密码错误");
+
 		}
+		return map;
 	}
-	
-	
+
 	/**
 	 * 修改用户信息
-	 * @param id 要修改的用户id
-	 * @return 结果　０：修改失败　　１：修改成功
-	 * @throws ParseException 
-	 * */
+	 * 
+	 * @param id
+	 *            要修改的用户id
+	 * @return 结果 ０：修改失败 １：修改成功
+	 * @throws ParseException
+	 */
 	@RequestMapping("/update")
 	@ResponseBody
-	public Map<String,Object> updateById(String userName,String sex,String marry,String userTelephone,String address,Integer birthyear,Integer birthmonth,Integer birth) throws ParseException{
-		
-		SimpleDateFormat str=new SimpleDateFormat("yyyy-MM-dd");
-		
-		String string=birthyear+"-"+birthmonth+"-"+birth;
-		
-		Date strDate=str.parse(string);
+	public Map<String, Object> updateById(String userName, String sex, String marry, String userTelephone,
+			String address, Integer birthyear, Integer birthmonth, Integer birth) throws ParseException {
+
+		SimpleDateFormat str = new SimpleDateFormat("yyyy-MM-dd");
+
+		String string = birthyear + "-" + birthmonth + "-" + birth;
+
+		Date strDate = str.parse(string);
 		String birthday = str.format(strDate);
-		//System.out.println(str.format(string));
-		
+		// System.out.println(str.format(string));
+
 		User user = new User();
 		user.setUserName(userName);
 		user.setSex(sex);
@@ -108,77 +113,81 @@ public class UserController {
 		user.setBirthday(birthday);
 		user.setUserTelephone(userTelephone);
 		user.setAddress(address);
-		
-		System.out.println("userName"+userName);
+
+		System.out.println("userName" + userName);
 		int us = userService.updateById(user);
-		
-		if(us>0){
-			
-			
-			map.put("success",true);
+
+		if (us > 0) {
+
+			map.put("success", true);
 			map.put("message", "保存成功");
-			
-		}else {
-			
-			map.put("success",false);
+
+		} else {
+
+			map.put("success", false);
 			map.put("message", "保存失败");
 		}
 		return map;
-		
-		
+
 	}
+
 	@RequestMapping("/personalCenter")
 	public String personalCenter() {
-		
+
 		return "personalCenter.html";
 	}
-	
-	@RequestMapping(value= {"/index"})
+
+	@RequestMapping(value = { "/index" })
 	public String index() {
-		
+
 		return "index.html";
 	}
-	
+
 	@GetMapping("/logout")
 	public String logout() {
 		SecurityUtils.getSubject().logout();
 		return "/login.html";
 	}
-	
+
 	@RequestMapping("/findpass")
 	public String findpass() {
-		
+
 		return "findpass.html";
 	}
+
 	@RequestMapping("/information")
 	public String information() {
-		
+
 		return "information.html";
 	}
+
 	@RequestMapping("/upVideo")
 	public String upVideo() {
-		
+
 		return "upVideo.html";
 	}
+
 	@RequestMapping("/notice")
 	public String notice() {
-		
+
 		return "notice.html";
 	}
+
 	@RequestMapping("/post")
 	public String post() {
-		
+
 		return "post.html";
 	}
-	
+
 	@RequestMapping("/changePassWord")
 	public String changePassWord() {
-		
+
 		return "changePassWord.html";
 	}
+
 	@RequestMapping("/thankspost")
 	public String thankspost() {
-		
+
 		return "thankspost.html";
 	}
 

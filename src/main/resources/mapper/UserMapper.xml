@@ -279,11 +279,10 @@
 
 </select>
 
-<select id="queryRoleByUserId" resultType="java.lang.String">
-	SELECT r.rolename FROM role r WHERE r.roleId IN
-
-	(SELECT t.roleId FROM user_role t WHERE t.userId = #{userId})
-
+<select id="queryRoleByUserId" resultType="com.example.school.pojo.Role">
+	SELECT roleid,rolename,mark FROM role WHERE roleid IN(
+SELECT roleid FROM user_role WHERE userid=#{userId}
+)
 </select>
 
 <select id="queryPermissionByUserId" resultType="java.lang.String">

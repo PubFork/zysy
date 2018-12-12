@@ -37,6 +37,18 @@
  		if(res.success){
  			window.localStorage.setItem("userId",res.msg.userId );
  			window.localStorage.setItem("userName",res.msg.userName );
+ 	
+ 		var roleIds=[]; 
+ 		var roleNames=[];
+ 		for(var p in res.role){
+ 			roleIds.push(res.role[p].roleId);
+ 			roleNames.push(res.role[p].roleName)
+ 		}
+ 			
+ 		/*	window.localStorage.setItem("role", (typeof(res.role) == "object")?JSON.stringify(res.role):res.role);
+ 			alert(window.sessionStorage.getItem("role"))*/
+ 			window.localStorage.setItem("roleId",roleIds);
+ 			window.localStorage.setItem("roleName",roleNames);
 
  			 window.location.href="index.html"; 
  	
