@@ -70,6 +70,7 @@ public class ShiroConfiguration {
 
 		defaultFilterMap.put("/user/login_do", "anon");
 		defaultFilterMap.put("/user/register_do", "anon");
+		defaultFilterMap.put("/admin/adminLogin", "anon");
 		shiroFilterFactoryBean.setLoginUrl("/user/login");
 		shiroFilterFactoryBean.setUnauthorizedUrl("/user/login");
 

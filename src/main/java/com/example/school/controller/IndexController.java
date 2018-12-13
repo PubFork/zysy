@@ -24,4 +24,8 @@ public class IndexController {
         return "admin/login";
     }
 
+    @RequestMapping("/welcome")
+    public String welcome(){
+        return "admin/welcome";
+    }
 }
