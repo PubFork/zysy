@@ -16,8 +16,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @MapperScan("/com.example.school.mapper")
 public class SchoolApplication {
-
+    // 祝靖雯
     public static void main(String[] args) {
         SpringApplication.run(SchoolApplication.class, args);
     }
 }
+
