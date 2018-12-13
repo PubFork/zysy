@@ -1,7 +1,6 @@
 package com.example.school.controller;
 
-import com.example.school.service.UserServiceImpl;
-import com.example.school.util.Json;
+import com.example.school.service.impl.UserServiceImpl;
 import com.example.school.util.PasswordEncoder;
 
 import java.text.ParseException;
@@ -11,25 +10,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.processing.SupportedOptions;
-
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.LockedAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.school.pojo.User;
-import com.example.school.service.UserService;
 
 @Controller
 @RequestMapping("/user")
@@ -197,7 +188,6 @@ public class UserController {
 	 */
 	@RequestMapping(value = { "/index" })
 	public String index() {
-
 		return "index.html";
 	}
 
@@ -265,7 +255,7 @@ public class UserController {
 	@RequestMapping("/thankspost")
 	public String thankspost() {
 
-		return "thankspost.html";
+		return "thanksPost.html";
 	}
 
 }

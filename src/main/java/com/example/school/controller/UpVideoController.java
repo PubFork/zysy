@@ -1,12 +1,20 @@
 package com.example.school.controller;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Objects;
 
+import com.example.school.pojo.Video;
+import com.example.school.service.VideoService;
+import com.example.school.util.ShiroUtil;
 import org.apache.shiro.SecurityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.aliyun.oss.OSSClient;
@@ -16,118 +24,68 @@ import com.example.school.pojo.User;
 @Controller
 @RequestMapping("/video")
 public class UpVideoController {
-	
-	private static final String END_POINT  = "oss-cn-beijing.aliyuncs.com";
-    private static final String ACCESS_KEY_ID  = "LTAIsAPAnAV1YgIf";
-    private static final String ACCESS_KEY_SECRET  = "WjJsMAGTlYHfdxjyvREAITnU0VQXPd";
-    private static final String BUCKET_NAME  = "netschool";
-	
+
+    private static final String END_POINT = "oss-cn-beijing.aliyuncs.com";
+    private static final String ACCESS_KEY_ID = "LTAIsAPAnAV1YgIf";
+    private static final String ACCESS_KEY_SECRET = "WjJsMAGTlYHfdxjyvREAITnU0VQXPd";
+    private static final String BUCKET_NAME = "netschool";
+
+    @Autowired
+    private VideoService videoService;
+
     /**
-     * @author: 祝靖雯
-     * 上传文件
-     * @param belongId 视频分类
+     * zjw
+     *
+     * @param file 上传文件
+     * @throws IOException 文件上传异常
      */
+    public static String upload(MultipartFile file) throws IOException {
 
-/*  
-    public String fileUpload(MultipartFile multipartFile , long belongId) throws IOException {
+        if(file == null){
+            return null;
+        }
 
-    	// shiro完成登录之后，获取用户信息
-    	User user = (User) SecurityUtils.getSubject().getPrincipal();
-    	
-        // 设置白名单
-//        List<String> strings = new ArrayList<>();
-//        strings.add("http://47.105.96.18:8080");
-
-
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String data = simpleDateFormat.format(new Date());
         OSSClient ossClient = new OSSClient(END_POINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
-        long newFileName = System.currentTimeMillis();
-
-//        BucketReferer bucketReferer = new BucketReferer(true,strings);
-
+        String suffix = file.getOriginalFilename().substring(Objects.requireNonNull(file.getOriginalFilename()).lastIndexOf("."));
+        String fileName = data + File.separator + System.currentTimeMillis() + suffix;
+        System.out.println(fileName);
         BucketReferer bucketReferer = new BucketReferer();
-
-        String suffixName = belongId + "/" + multipartFile.getOriginalFilename() ;
-
-        ossClient.setBucketReferer(BUCKET_NAME,bucketReferer);
-        ossClient.putObject(BUCKET_NAME,  suffixName ,multipartFile.getInputStream());
-
-
+        ossClient.setBucketReferer(BUCKET_NAME, bucketReferer);
+        ossClient.putObject(BUCKET_NAME, fileName, file.getInputStream());
         ossClient.shutdown();
-        return "https://netschool.oss-cn-beijing.aliyuncs.com/" + suffixName;
+        return "https://netschool.oss-cn-beijing.aliyuncs.com/" + fileName;
+    }
 
-    }*/
-    
-    
-    /**
-    *
-    * TODO: 图片上传,地址
-    * @param: 上传文件对象
-    * @return: 文件远程地址
-    * @author: zjw
-    * @version 1.0
-    * @date: 
-    */
     @PostMapping("/upload")
-   public String imageUpload(MultipartFile multipartFile) throws IOException {
+    public String insertVideo(MultipartFile file,
+                              @RequestParam(value = "title" , required = false) String title , // 稿件标题
+                              @RequestParam(value = "zone" , required = false) Integer zone , // 选择类别
+                              @RequestParam(value = "description" , required = false) String description  // 简介
+                              ) {
 
-       // 设置白名单
-//       List<String> strings = new ArrayList<>();
-//       strings.add("http://47.105.96.18:8080");
+        User user = ShiroUtil.getUser();
 
+        try {
 
-       OSSClient ossClient = new OSSClient(END_POINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
-       long newFileName = System.currentTimeMillis();
+            Video video = new Video();
+            String path = upload(file);
+            video.setVideoInfo(description); // 视频描述
+            video.setVideoPicture(path);     // 视频地址
+            video.setVideoName(title);       // 视频标题
+            video.setVideoCategoryId(zone); // 视频类别
+            video.setUserId(user.getUserId()); // 用户ID
 
-       Integer suffix = Objects.requireNonNull(multipartFile.getOriginalFilename()).lastIndexOf(".");
-       String suffixName = multipartFile.getOriginalFilename().substring(suffix);
-       suffixName ="image/" + newFileName  + suffixName;
+            videoService.insertVideo(video);
 
-//       BucketReferer bucketReferer = new BucketReferer(true,strings);
-       BucketReferer bucketReferer = new BucketReferer();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("文件上传失败");
+            return "upVideo.html";
+        }
+        return "thanksPost.html";
+    }
 
-       ossClient.setBucketReferer(BUCKET_NAME,bucketReferer);
-       ossClient.putObject(BUCKET_NAME, suffixName ,multipartFile.getInputStream());
-
-       ossClient.shutdown();
-       System.out.println("https://netschool.oss-cn-beijing.aliyuncs.com/" + suffixName);
-       return "thankspost.html";
-
-   }
-
-    /**
-    *
-    * TODO: 图片上传,地址
-    * @param: 上传文件对象
-    * @return: 文件远程地址
-    * @author: zjw
-    * @version 1.0
-    * @date: 
-    */
-    @RequestMapping("/photoUpload")
-   public String photoUpload(MultipartFile multipartFile) throws IOException {
-
-       // 设置白名单
-//       List<String> strings = new ArrayList<>();
-//       strings.add("http://47.105.96.18:8080");
-
-
-       OSSClient ossClient = new OSSClient(END_POINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
-       long newFileName = System.currentTimeMillis();
-
-       Integer suffix = Objects.requireNonNull(multipartFile.getOriginalFilename()).lastIndexOf(".");
-       String suffixName = multipartFile.getOriginalFilename().substring(suffix);
-       suffixName ="image/" + newFileName  + suffixName;
-
-//       BucketReferer bucketReferer = new BucketReferer(true,strings);
-       BucketReferer bucketReferer = new BucketReferer();
-
-       ossClient.setBucketReferer(BUCKET_NAME,bucketReferer);
-       ossClient.putObject(BUCKET_NAME, suffixName ,multipartFile.getInputStream());
-
-       ossClient.shutdown();
-       System.out.println("https://netschool.oss-cn-beijing.aliyuncs.com/" + suffixName);
-       return "personalCenter.html";
-
-   }
 
 }

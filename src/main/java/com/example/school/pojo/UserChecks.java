@@ -10,7 +10,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserChecks {
-	 private Integer checId;
+
+	 private Integer checkId;
 	 private Integer userId;
 	 private String userName;
 	 private Timestamp checkInTime;

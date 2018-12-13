@@ -7,14 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 /**
- * @param:
- * @return:
- * @author: 
- * @version 1.0
- * @date: 
+ * @author zjw
  */
 @SpringBootApplication
-@MapperScan("/com.example.school.mapper")
 public class SchoolApplication {
     // 祝靖雯
     public static void main(String[] args) {

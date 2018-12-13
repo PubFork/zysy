@@ -1,8 +1,9 @@
-package com.example.school.service;
+package com.example.school.service.impl;
 
 import java.util.List;
 import java.util.Set;
 
+import com.example.school.service.UserService;
 import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;

@@ -1,8 +1,7 @@
 package com.example.school.config.shiro;
 
-import com.example.school.service.UserService;
 import com.example.school.pojo.User;
-import com.example.school.service.UserServiceImpl;
+import com.example.school.service.impl.UserServiceImpl;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
