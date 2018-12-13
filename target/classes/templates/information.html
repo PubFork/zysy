@@ -29,13 +29,13 @@
 	<div class="topnav clear fonthui">
 		<div class="w1000 clear">
 			<div class="topnavlist fleft">
-				<a class="current" href="javascript:;">MENU</a> 
-				<a href="http://www.005.tv/" target="_blank">羁绊资讯</a> 
-				<a href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a> 
-				<a href="http://www.xcmh.cc/" target="_blank">星辰漫画</a> 
-				<a href="http://www.93w.net/" target="_blank">93励志网</a> 
-				<a href="http://moe.005.tv/" target="_blank">萌娘资源站</a> 
-				<a href="http://bbs.005.tv/" target="_blank">羁绊论坛</a>
+				<a class="current" href="javascript:;">MENU</a> <a
+					href="http://www.005.tv/" target="_blank">羁绊资讯</a> <a
+					href="http://www.dilidili.com/" target="_blank">嘀哩嘀哩</a> <a
+					href="http://www.xcmh.cc/" target="_blank">星辰漫画</a> <a
+					href="http://www.93w.net/" target="_blank">93励志网</a> <a
+					href="http://moe.005.tv/" target="_blank">萌娘资源站</a> <a
+					href="http://bbs.005.tv/" target="_blank">羁绊论坛</a>
 			</div>
 			<div class="loginbox fright">
 				<div class="logined">
@@ -62,7 +62,7 @@
 						<a href="http://usr.005.tv/User/avatar.html"><img
 							src="/img/avatar.php"></a>
 					</div>
-					<div class="adminname fonttips">啊婷yt</div>
+					<div class="adminname fonttips" id="uname1">啊婷yt</div>
 					<div class="adminlink">
 						<button id="btn-sign-user" data-checked="0" data-group="1"
 							class="btn primary">
@@ -78,14 +78,14 @@
 							class="hint">等级</span></a> <span class="clearfix"></span>
 					</div>
 					<div class="adminlink">
-						<a class="fontblue" href="http://usr.005.tv/User/setting.html">设置</a><a
+						<a class="fontblue" href="/user/information">设置</a><a
 							href="http://usr.005.tv/User/loginout.html">退出</a>
 					</div>
 				</div>
 				<ul class="leftnav">
 					<li><a href="http://usr.005.tv/"><em class="zhuye"></em>个人主页</a></li>
-					<li><a href="http://usr.005.tv/Doing/index.html"><em
-							class="mood"></em>心情</a></li>
+					<li><a href="/member/members"><em
+							class="mood"></em>会员</a></li>
 					<li><a href="http://usr.005.tv/Collection/index.html"><em
 							class="shoucang"></em>收藏夹</a></li>
 					<li><a href="http://usr.005.tv/Aftersome/index.html"><em
@@ -100,7 +100,7 @@
 							class="guanli"></em>账号管理<span class="openico"></span></a>
 						<div class="navsonbox" style="display: block;">
 							<a href="http://usr.005.tv/User/setting.html" class="active">信息设置</a>
-							<a href="http://usr.005.tv/User/passwd.html">安全管理</a> <a
+							<a href="/user/changePassWord">安全管理</a> <a
 								href="/user/logout">退出登录</a>
 						</div></li>
 					<li><a class="opennavbtn" herf="javascript:;"><em
@@ -133,7 +133,7 @@
 						<ul class="dropdown-menu pull-right">
 							<li><a href="/user/personalCenter">个人主页</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="http://usr.005.tv/Doing/index.html">心情</a></li>
+							<li><a href="/member/members">会员</a></li>
 							<li role="separator" class="divider"></li>
 							<li><a href="http://usr.005.tv/Collection/index.html">收藏夹</a></li>
 							<li role="separator" class="divider"></li>
@@ -179,7 +179,28 @@
 				</div>
 			</div>
 			<script>
+				var userId;
 				$(function() {
+
+					userId = window.localStorage.getItem("userId");
+
+					var userName = window.localStorage.getItem("userName");
+					$("#uname").text(userName);
+					$("#uname1").text(userName);
+
+					$.post("../user/selectById", {
+
+						userId : userId
+
+					}, function(res) {
+
+						$("#nickName").val(res.nickName);
+						/* $("#sexa").text(res.sex);
+						 $("#marrys").text(res.marry);
+						 */
+
+					}, "json")
+
 					$("body").on('click', '[data-stopPropagation]',
 							function(e) {
 								e.stopPropagation();
@@ -204,8 +225,8 @@
 					var birthyear = $("#birthyear").val();
 					var birthmonth = $("#birthmonth").val();
 					var birth = $("#birth").val();
-					//var birthday= birthyear+birthmonth+birth;
-					//alert(birthday)
+					var userId = window.localStorage.getItem("userId");
+
 					$.post("../user/update", {
 
 						userName : userName,
@@ -216,7 +237,8 @@
 						address : address,
 						birthyear : birthyear,
 						birthmonth : birthmonth,
-						birth : birth
+						birth : birth,
+						userId : userId
 
 					}, function(res) {
 						//alert(1)
@@ -245,7 +267,7 @@
 					<div class="onebox">
 						<div class="mintitle">
 							<a class="active" href="http://usr.005.tv/User/setting.html">基本信息</a><a
-								href="http://usr.005.tv/User/avatar.html">我的头像</a>
+								href="/user/myHead">我的头像</a>
 						</div>
 						<div class="databox">
 							<form id="addform" method="post" class="c_form"
@@ -254,14 +276,12 @@
 									class="formtable">
 									<tbody>
 										<tr>
-											<th>用户名</th>
-											<td><a href="http://usr.005.tv/User/passwd.html">
-													<!-- 修改密码 -->
-											</a></td>
+											<th>用户名：</th>
+											<td><span id="uname"></span></td>
 										</tr>
 										<tr>
-											<th>真实姓名</th>
-											<td><input type="text" id="name" name="userName"
+											<th>昵称</th>
+											<td><input type="text" id="nickName" name="nickName"
 												value="" class="t_input"></td>
 										</tr>
 										<tr>
@@ -275,7 +295,7 @@
 										</tr>
 										<tr>
 											<th>婚恋状态</th>
-											<td><select id="marry" name="marry">
+											<td><select id="marrys" name="marry">
 													<option value="0" selected="">&nbsp;</option>
 													<option value="1">单身</option>
 													<option value="2">非单身</option>

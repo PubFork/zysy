@@ -27,13 +27,27 @@
 </head>
 
 <script type="text/javascript">
-
+var userId ;
    $(function(){
 	   
+	    userId = window.localStorage.getItem("userId");
+	  
+	   var userName = window.localStorage.getItem("userName");
+	    //alert(userName)
+	    
+	   $("#uname").text(userName);
+	   $("#uname1").text(userName);
 	   existSign();
 	   
    })
 
+/**
+ * 用户退出清空localStorage缓存
+ */
+function out(){
+	
+	localStorage.clear();
+}
 /* 判断 是否已签到*/
     function existSign(){
 	
@@ -109,10 +123,10 @@
 			</div>
 			<div class="loginbox fright">
 				<div class="logined">
-					<strong>XXX</strong> <a
+					<strong></strong> <a
 						href="javascript:bootIFrame(&#39;&#39;,&#39;/Pm/&#39;,&#39;100%&#39;,&#39;580px&#39;);">短消息</a>
 					<a href="/user/index">主页</a> <a
-						href="/user/logout">退出</a>
+						href="/user/logout" onclick="out()">退出</a>
 				</div>
 			</div>
 		</div>
@@ -132,7 +146,7 @@
 						<a href="http://usr.005.tv/User/avatar.html"><img
 							src="/img/avatar.php"></a>
 					</div>
-					<div class="adminname fonttips">XXX</div>
+					<div class="adminname fonttips" id="uname">XXX</div>
 					<div class="adminlink">
 						<!-- <button id="btn-sign-user" data-checked="0" data-group="1"
 							class="btn primary">
@@ -267,7 +281,7 @@
 				<div class="mainbox">
 					<div class="zytop clear">
 						<div class="adminzy fleft">
-							<div class="adminnametext">
+							<div class="adminnametext" id="uname1">
 								XXX<span>1点赞币：<strong>0</strong>个
 								</span>
 							</div>

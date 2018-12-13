@@ -88,10 +88,45 @@ public class UpVideoController {
        ossClient.setBucketReferer(BUCKET_NAME,bucketReferer);
        ossClient.putObject(BUCKET_NAME, suffixName ,multipartFile.getInputStream());
 
-
        ossClient.shutdown();
        System.out.println("https://netschool.oss-cn-beijing.aliyuncs.com/" + suffixName);
        return "thankspost.html";
+
+   }
+
+    /**
+    *
+    * TODO: 图片上传,地址
+    * @param: 上传文件对象
+    * @return: 文件远程地址
+    * @author: zjw
+    * @version 1.0
+    * @date: 
+    */
+    @RequestMapping("/photoUpload")
+   public String photoUpload(MultipartFile multipartFile) throws IOException {
+
+       // 设置白名单
+//       List<String> strings = new ArrayList<>();
+//       strings.add("http://47.105.96.18:8080");
+
+
+       OSSClient ossClient = new OSSClient(END_POINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
+       long newFileName = System.currentTimeMillis();
+
+       Integer suffix = Objects.requireNonNull(multipartFile.getOriginalFilename()).lastIndexOf(".");
+       String suffixName = multipartFile.getOriginalFilename().substring(suffix);
+       suffixName ="image/" + newFileName  + suffixName;
+
+//       BucketReferer bucketReferer = new BucketReferer(true,strings);
+       BucketReferer bucketReferer = new BucketReferer();
+
+       ossClient.setBucketReferer(BUCKET_NAME,bucketReferer);
+       ossClient.putObject(BUCKET_NAME, suffixName ,multipartFile.getInputStream());
+
+       ossClient.shutdown();
+       System.out.println("https://netschool.oss-cn-beijing.aliyuncs.com/" + suffixName);
+       return "personalCenter.html";
 
    }
 
