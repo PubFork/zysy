@@ -1,7 +1,9 @@
 package com.example.school.service;
 
+import java.util.List;
 import java.util.Set;
 
+import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -72,10 +74,33 @@ public class UserServiceImpl implements UserService {
 		return userMapper.updateById(record);
 	}
 
-	@Override
-	public int changePassWord(Integer userId, String userPassWord) {
-		// TODO Auto-generated method stub
-		return 0;
+	/**
+	 * 根据用户Id查询密码
+	 * @param id 要修改的用户id
+	 * */
+  	public User selUserById(Integer userId){
+  		
+		return userMapper.selUserById(userId);
+  		
+  		
+  	}
+	/**
+	 * 根据用户Id修改密码
+	 * @param id 要修改的用户id
+	 * @author 杨婷
+	 * */
+	public int changePassWord(Integer userId, String userPassWord,@Param("newPassWord")String newPassWord) {
+		
+		return userMapper.changePassWord(userId, userPassWord, newPassWord);
+	}
+	/**
+	 * 根据用户Id查询所有信息
+	 * @param id 要修改的用户id
+	 * @author 杨婷
+	 * */
+	public List<User> selectById(Integer userId) {
+		
+		return userMapper.selectById(userId);
 	}
 	
 }

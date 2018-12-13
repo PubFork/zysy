@@ -29,6 +29,22 @@
         _czc.push(["_setAccount", "1255455330"]);
 
 
+function turn(){
+	
+	
+	var userId = window.localStorage.getItem("userId");
+	
+	
+	if(userId==null){
+		
+		window.location.href= "/user/login";
+	}else{
+		
+		window.location.href = "/user/personalCenter";
+	}
+	
+}
+
 
 
     </script>
@@ -83,7 +99,7 @@
                     <script>PlayHistoryObj.viewPlayHistory('playHistoryList')</script>
                 </li>
                 <li id="div0" style="display: inline-block;">
-                    <a href="/user/personalCenter" target="_blank">个人中心</a>
+                    <a target="_blank" onclick="turn()">个人中心</a>
                     <ul class="sub">
                         <li><a href="/user/register" target="_blank">注册</a></li>
                         <li><a href="/user/login" target="_blank">登录</a></li>

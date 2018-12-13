@@ -302,14 +302,36 @@ SELECT roleid FROM user_role WHERE userid=#{userId}
 	(0,#{password},#{username},"0","0",now())
 
 </insert>
+<!-- 通过用户id查询所有信息 -->
+
+<select id="selectById" resultMap="BaseResultMap">
+
+select nickName,sex,marry,birthday,userTelephone,address 
+from users where userId = #{0}
+
+</select>
+<!-- 通过用户id查询密码 -->
+
+<select id="selUserById" resultMap="BaseResultMap">
+
+ select userPassWord from users where userId=#{0}
+
+</select>
+<!-- 用户修改密码 -->
+<update id="changePassWord">
+  update users
+     set userPassWord = #{newPassWord}
+     where userId = #{userId}
+</update>
+<!-- 通过用户id修改信息 -->
 <update id="updateById">
     update users
       set userName = #{userName},
       sex = #{sex},
       marry = #{marry},
       birthday = #{birthday},
-      userTelephone = #{userTelephone,jdbcType=VARCHAR},
-      address = #{address,jdbcType=VARCHAR} where userId = 1
+      userTelephone = #{userTelephone},
+      address = #{address} where userId = #{userId}
   </update>
 
 </mapper>
