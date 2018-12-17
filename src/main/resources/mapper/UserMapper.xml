@@ -1,291 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.example.school.mapper.UserMapper">
-	<resultMap id="BaseResultMap" type="com.example.school.pojo.User">
-		<id column="userId" property="userId" jdbcType="INTEGER" />
-		<result column="memberId" property="memberId" jdbcType="INTEGER" />
-		<result column="userName" property="userName" jdbcType="VARCHAR" />
-		<result column="nickName" property="nickName" jdbcType="VARCHAR" />
-		<result column="sex" property="sex" jdbcType="VARCHAR" />
-		<result column="birthday" property="birthday" jdbcType="VARCHAR" />
-		<result column="headportrait" property="headportrait" jdbcType="VARCHAR" />
-		<result column="userPassWord" property="userPassWord" jdbcType="VARCHAR" />
-		<result column="userIsLockout" property="userIsLockout"
-			jdbcType="BIT" />
-		<result column="userUpdateTime" property="userUpdateTime"
-			jdbcType="TIMESTAMP" />
-		<result column="userCreateTime" property="userCreateTime"
-			jdbcType="TIMESTAMP" />
-		<result column="userLastLoginTime" property="userLastLoginTime"
-			jdbcType="TIMESTAMP" />
-		<result column="userLastLoginIp" property="userLastLoginIp"
-			jdbcType="VARCHAR" />
-		<result column="userPassWrongCout" property="userPassWrongCout"
-			jdbcType="TINYINT" />
-		<result column="userLockoutTime" property="userLockoutTime"
-			jdbcType="TIMESTAMP" />
-		<result column="userEmail" property="userEmail" jdbcType="VARCHAR" />
-		<result column="userTelephone" property="userTelephone"
-			jdbcType="VARCHAR" />
-		<result column="address" property="address" jdbcType="VARCHAR" />
-		<result column="marry" property="marry" jdbcType="VARCHAR" />
-	</resultMap>
-	<!-- <sql id="Base_Column_List">
-		userId, memberId, userName, nickName, sex, birthday, headportrait,
-		userPassWord,
-		userIsLockout, userUpdateTime, userCreateTime, userLastLoginTime, userLastLoginIp,
-		userPassWrongCout, userLockoutTime, userEmail, userTelephone, address,
-		marry
-	</sql>
-	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
-		parameterType="java.lang.Integer">
-		select
-		<include refid="Base_Column_List" />
-		from users
-		where userId = #{userId,jdbcType=INTEGER}
-	</select>
-	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-		delete from users
-		where userId = #{userId,jdbcType=INTEGER}
-	</delete>
-	<insert id="insert" parameterType="com.example.school.pojo.User">
-		insert into users (userId, memberId, userName,
-		nickName, sex, birthday,
-		headportrait, userPassWord, userIsLockout,
-		userUpdateTime, userCreateTime, userLastLoginTime,
-		userLastLoginIp, userPassWrongCout, userLockoutTime,
-		userEmail, userTelephone, address,
-		marry)
-		values (#{userId,jdbcType=INTEGER}, #{memberId,jdbcType=INTEGER},
-		#{userName,jdbcType=VARCHAR},
-		#{nickname,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, #{birthday,jdbcType=VARCHAR},
-		#{headportrait,jdbcType=VARCHAR}, #{userpassword,jdbcType=VARCHAR},
-		#{userislockout,jdbcType=BIT},
-		#{userupdatetime,jdbcType=TIMESTAMP}, #{usercreatetime,jdbcType=TIMESTAMP},
-		#{userlastlogintime,jdbcType=TIMESTAMP},
-		#{userlastloginip,jdbcType=VARCHAR},
-		#{userpasswrongcout,jdbcType=TINYINT},
-		#{userlockouttime,jdbcType=TIMESTAMP},
-		#{useremail,jdbcType=VARCHAR}, #{usertelephone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR},
-		#{marry,jdbcType=VARCHAR})
-	</insert>
-	<insert id="insertSelective" parameterType="com.example.school.pojo.User">
-		insert into users
-		<trim prefix="(" suffix=")" suffixOverrides=",">
-			<if test="userId != null">
-				userId,
-			</if>
-			<if test="memberId != null">
-				memberId,
-			</if>
-			<if test="userName != null">
-				userName,
-			</if>
-			<if test="nickname != null">
-				nickName,
-			</if>
-			<if test="sex != null">
-				sex,
-			</if>
-			<if test="birthday != null">
-				birthday,
-			</if>
-			<if test="headportrait != null">
-				headportrait,
-			</if>
-			<if test="userpassword != null">
-				userPassWord,
-			</if>
-			<if test="userislockout != null">
-				userIsLockout,
-			</if>
-			<if test="userupdatetime != null">
-				userUpdateTime,
-			</if>
-			<if test="usercreatetime != null">
-				userCreateTime,
-			</if>
-			<if test="userlastlogintime != null">
-				userLastLoginTime,
-			</if>
-			<if test="userlastloginip != null">
-				userLastLoginIp,
-			</if>
-			<if test="userpasswrongcout != null">
-				userPassWrongCout,
-			</if>
-			<if test="userlockouttime != null">
-				userLockoutTime,
-			</if>
-			<if test="useremail != null">
-				userEmail,
-			</if>
-			<if test="usertelephone != null">
-				userTelephone,
-			</if>
-			<if test="address != null">
-				address,
-			</if>
-			<if test="marry != null">
-				marry,
-			</if>
-		</trim>
-		<trim prefix="values (" suffix=")" suffixOverrides=",">
-			<if test="userId != null">
-				#{userId,jdbcType=INTEGER},
-			</if>
-			<if test="memberId != null">
-				#{memberId,jdbcType=INTEGER},
-			</if>
-			<if test="userName != null">
-				#{userName,jdbcType=VARCHAR},
-			</if>
-			<if test="nickname != null">
-				#{nickname,jdbcType=VARCHAR},
-			</if>
-			<if test="sex != null">
-				#{sex,jdbcType=VARCHAR},
-			</if>
-			<if test="birthday != null">
-				#{birthday,jdbcType=VARCHAR},
-			</if>
-			<if test="headportrait != null">
-				#{headportrait,jdbcType=VARCHAR},
-			</if>
-			<if test="userpassword != null">
-				#{userpassword,jdbcType=VARCHAR},
-			</if>
-			<if test="userislockout != null">
-				#{userislockout,jdbcType=BIT},
-			</if>
-			<if test="userupdatetime != null">
-				#{userupdatetime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="usercreatetime != null">
-				#{usercreatetime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="userlastlogintime != null">
-				#{userlastlogintime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="userlastloginip != null">
-				#{userlastloginip,jdbcType=VARCHAR},
-			</if>
-			<if test="userpasswrongcout != null">
-				#{userpasswrongcout,jdbcType=TINYINT},
-			</if>
-			<if test="userlockouttime != null">
-				#{userlockouttime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="useremail != null">
-				#{useremail,jdbcType=VARCHAR},
-			</if>
-			<if test="usertelephone != null">
-				#{usertelephone,jdbcType=VARCHAR},
-			</if>
-			<if test="address != null">
-				#{address,jdbcType=VARCHAR},
-			</if>
-			<if test="marry != null">
-				#{marry,jdbcType=VARCHAR},
-			</if>
-		</trim>
-	</insert>
-	<update id="updateByPrimaryKeySelective" parameterType="com.example.school.pojo.User">
-		update users
-		<set>
-			<if test="memberId != null">
-				memberId = #{memberId,jdbcType=INTEGER},
-			</if>
-			<if test="userName != null">
-				userName = #{userName,jdbcType=VARCHAR},
-			</if>
-			<if test="nickname != null">
-				nickName = #{nickname,jdbcType=VARCHAR},
-			</if>
-			<if test="sex != null">
-				sex = #{sex,jdbcType=VARCHAR},
-			</if>
-			<if test="birthday != null">
-				birthday = #{birthday,jdbcType=VARCHAR},
-			</if>
-			<if test="headportrait != null">
-				headportrait = #{headportrait,jdbcType=VARCHAR},
-			</if>
-			<if test="userpassword != null">
-				userPassWord = #{userpassword,jdbcType=VARCHAR},
-			</if>
-			<if test="userislockout != null">
-				userIsLockout = #{userislockout,jdbcType=BIT},
-			</if>
-			<if test="userupdatetime != null">
-				userUpdateTime = #{userupdatetime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="usercreatetime != null">
-				userCreateTime = #{usercreatetime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="userlastlogintime != null">
-				userLastLoginTime = #{userlastlogintime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="userlastloginip != null">
-				userLastLoginIp = #{userlastloginip,jdbcType=VARCHAR},
-			</if>
-			<if test="userpasswrongcout != null">
-				userPassWrongCout = #{userpasswrongcout,jdbcType=TINYINT},
-			</if>
-			<if test="userlockouttime != null">
-				userLockoutTime = #{userlockouttime,jdbcType=TIMESTAMP},
-			</if>
-			<if test="useremail != null">
-				userEmail = #{useremail,jdbcType=VARCHAR},
-			</if>
-			<if test="usertelephone != null">
-				userTelephone = #{usertelephone,jdbcType=VARCHAR},
-			</if>
-			<if test="address != null">
-				address = #{address,jdbcType=VARCHAR},
-			</if>
-			<if test="marry != null">
-				marry = #{marry,jdbcType=VARCHAR},
-			</if>
-		</set>
-		where userId = #{userId,jdbcType=INTEGER}
-	</update>
-	<update id="updateByPrimaryKey" parameterType="com.example.school.pojo.User">
-		update users
-		set memberId = #{memberId,jdbcType=INTEGER},
-		userName = #{userName,jdbcType=VARCHAR},
-		nickName = #{nickname,jdbcType=VARCHAR},
-		sex = #{sex,jdbcType=VARCHAR},
-		birthday = #{birthday,jdbcType=VARCHAR},
-		headportrait = #{headportrait,jdbcType=VARCHAR},
-		userPassWord = #{userpassword,jdbcType=VARCHAR},
-		userIsLockout = #{userislockout,jdbcType=BIT},
-		userUpdateTime = #{userupdatetime,jdbcType=TIMESTAMP},
-		userCreateTime = #{usercreatetime,jdbcType=TIMESTAMP},
-		userLastLoginTime = #{userlastlogintime,jdbcType=TIMESTAMP},
-		userLastLoginIp = #{userlastloginip,jdbcType=VARCHAR},
-		userPassWrongCout = #{userpasswrongcout,jdbcType=TINYINT},
-		userLockoutTime = #{userlockouttime,jdbcType=TIMESTAMP},
-		userEmail = #{useremail,jdbcType=VARCHAR},
-		userTelephone = #{usertelephone,jdbcType=VARCHAR},
-		address = #{address,jdbcType=VARCHAR},
-		marry = #{marry,jdbcType=VARCHAR}
-		where userId = #{userId,jdbcType=INTEGER}
-	</update> -->
-	
-<select id="findUserByName" resultMap="BaseResultMap">
+    <resultMap id="BaseResultMap" type="com.example.school.pojo.User">
+        <id column="userId" property="userId" jdbcType="INTEGER"/>
+        <result column="memberId" property="memberId" jdbcType="INTEGER"/>
+        <result column="userName" property="userName" jdbcType="VARCHAR"/>
+        <result column="nickName" property="nickName" jdbcType="VARCHAR"/>
+        <result column="sex" property="sex" jdbcType="VARCHAR"/>
+        <result column="birthday" property="birthday" jdbcType="VARCHAR"/>
+        <result column="headportrait" property="headportrait" jdbcType="VARCHAR"/>
+        <result column="userPassWord" property="userPassWord" jdbcType="VARCHAR"/>
+        <result column="userIsLockout" property="userIsLockout"
+                jdbcType="BIT"/>
+        <result column="userUpdateTime" property="userUpdateTime"
+                jdbcType="TIMESTAMP"/>
+        <result column="userCreateTime" property="userCreateTime"
+                jdbcType="TIMESTAMP"/>
+        <result column="userLastLoginTime" property="userLastLoginTime"
+                jdbcType="TIMESTAMP"/>
+        <result column="userLastLoginIp" property="userLastLoginIp"
+                jdbcType="VARCHAR"/>
+        <result column="userPassWrongCout" property="userPassWrongCout"
+                jdbcType="TINYINT"/>
+        <result column="userLockoutTime" property="userLockoutTime"
+                jdbcType="TIMESTAMP"/>
+        <result column="userEmail" property="userEmail" jdbcType="VARCHAR"/>
+        <result column="userTelephone" property="userTelephone"
+                jdbcType="VARCHAR"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="marry" property="marry" jdbcType="VARCHAR"/>
+        <result column="gold" property="gold" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="findUserByName" resultMap="BaseResultMap">
 
 	select * from users where userName =#{name}
 
 </select>
 
-<select id="queryRoleByUserId" resultType="com.example.school.pojo.Role">
+    <select id="queryRoleByUserId" resultType="com.example.school.pojo.Role">
 	SELECT roleid,rolename,mark FROM role WHERE roleid IN(
 SELECT roleid FROM user_role WHERE userid=#{userId}
 )
 </select>
 
-<select id="queryPermissionByUserId" resultType="java.lang.String">
+    <select id="queryPermissionByUserId" resultType="java.lang.String">
 
 	SELECT p.permissionname FROM permission p WHERE p.permissionId IN (SELECT
 	rp.permissionId FROM rolepermission rp
@@ -295,36 +54,36 @@ SELECT roleid FROM user_role WHERE userid=#{userId}
 
 </select>
 
-<insert id="registerUserByNameAndPass">
+    <insert id="registerUserByNameAndPass">
 
 	INSERT INTO users (memberId, userPassword, userName, sex,
 	headportrait,userLastLoginTime) VALUES
 	(0,#{password},#{username},"0","0",now())
 
 </insert>
-<!-- 通过用户id查询所有信息 -->
+    <!-- 通过用户id查询所有信息 -->
 
-<select id="selectById" resultMap="BaseResultMap">
+    <select id="selectById" resultMap="BaseResultMap">
 
 select nickName,sex,marry,birthday,userTelephone,address 
 from users where userId = #{0}
 
 </select>
-<!-- 通过用户id查询密码 -->
+    <!-- 通过用户id查询密码 -->
 
-<select id="selUserById" resultMap="BaseResultMap">
+    <select id="selUserById" resultMap="BaseResultMap">
 
  select userPassWord from users where userId=#{0}
 
 </select>
-<!-- 用户修改密码 -->
-<update id="changePassWord">
+    <!-- 用户修改密码 -->
+    <update id="changePassWord">
   update users
      set userPassWord = #{newPassWord}
      where userId = #{userId}
 </update>
-<!-- 通过用户id修改信息 -->
-<update id="updateById">
+    <!-- 通过用户id修改信息 -->
+    <update id="updateById">
     update users
       set userName = #{userName},
       sex = #{sex},

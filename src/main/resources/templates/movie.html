@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.dilidili.wang/movies/ -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>影视</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="/js/hm.js.下载"></script>
+<script src="/js/uaredirect.js.下载" type="text/javascript"></script>
+<script type="text/javascript">uaredirect("http://m.dilidili.wang/movies/");</script>
+<meta name="mobile-agent"
+	content="format=html5;url=http://m.dilidili.wang/movies/">
+<link rel="alternate" media="only screen and (max-width: 640px)"
+	href="http://m.dilidili.wang/movies/">
+<link rel="canonical" href="http://www.dilidili.wang/movies/">
+<script src="/js/jquery-3-2-1.js.下载"></script>
+<!--<script src="/js/swiper-3.4.2.min.js"></script>-->
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/ugcStyle.css" type="text/css">
+<!--<link rel="stylesheet" href="/css/swiper-3.4.2.min.css">-->
+</head>
+
+<body class="widescreen" data-cover-preview="true">
+
+	<!--header s-->
+	<header>
+		<div class="head-title">
+			<ul>
+				<li><!-- <img src="/img/logo.png" width="100"> --> <a
+					href="http://www.dilidili.wang/" target="_blank">首页</a></li>
+				<li><a href="/user/upVideo"
+					target="_blank">投稿</a></li>
+				<!-- <li><a href="http://www.dilidili.wang/anime/201801/"
+					target="_blank">新番</a></li> -->
+
+				<a href="http://www.dilidili.wang/zxgx.html" title="最新更新"><i
+					class="box1"></i></a>
+				<script>
+                    searchToggle = function()
+                    {
+                        if($('.box3').parent().attr('title') == '切换至360搜索')
+                        {
+                            $('.box3').css('background','rgb(252, 171, 103) url("http://www.dilidili.wang/newimages/search_baidu.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+                            $('.search-box').hide();
+                            $('#so360').show();
+                            $('.box3').parent().attr('title','切换至百度搜索');
+                        }
+                        else
+                        {
+                            $('.box3').css('background','rgb(252, 171, 103) url("http://www.dilidili.wang/newimages/search_360.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+                            $('#so360').hide();
+                            $('.search-box').show();
+                            $('.box3').parent().attr('title','切换至360搜索');
+                        }
+                    }
+                </script>
+				<a onclick="searchToggle()" title="切换至360搜索"><i class="box3"></i></a>
+				<form action="http://www.dilidili.wang/search/index.html"
+					target="_blank" class="search-box" style="box-sizing: border-box">
+					<input type="hidden" name="kwtype" value="0" class="s_inp">
+					<input name="q" type="text" placeholder="百度搜索"> <i
+						class="box2" onclick="$(&#39;.search-box&#39;).submit()"></i> <input
+						type="hidden" name="ie" value="utf8"> <input type="hidden"
+						name="src" value="zz"> <input type="hidden" name="site"
+						value="www.dilidili.wang"> <input type="hidden" name="rg"
+						value="1">
+				</form>
+				<div id="so360" style="box-sizing: border-box">
+					<form action="http://www.so.com/s" target="_blank" id="so360form">
+						<input type="text" autocomplete="off" name="q" id="so360_keyword"
+							placeholder="360搜索"> <input type="submit"
+							id="so360_submit" value=""> <input type="hidden"
+							name="ie" value="utf8"> <input type="hidden" name="src"
+							value="zz_www.dilidili.wang"> <input type="hidden"
+							name="site" value="www.dilidili.wang"> <input
+							type="hidden" name="rg" value="1">
+					</form>
+				</div>
+			</ul>
+		</div>
+		<hr>
+	</header>
+	<script>
+
+    </script>
+	<!--header e-->
+
+	<div class="b-page-body">
+		<div class="main-inner">
+			<div class="container-body">
+				<div class="list-custom-wrp ">
+					<script>
+                    orderSwitch = function(order)
+                    {
+                    	//alert(order);
+                    	if(order == 'list_order_default')
+                        {
+                    		if(!$('#list_order_default').hasClass('on'))
+                    		{
+                    			$('#list_order_default').toggleClass('on');$('#list_order_hot').toggleClass('on');
+                    			$('#orderTime').show();$('#orderHot').hide();
+                            }
+                    	}
+                    	else
+                        {
+                            if(!$('#list_order_hot').hasClass('on'))
+                    		{
+                    			$('#list_order_hot').toggleClass('on');$('#list_order_default').toggleClass('on');
+                    			$('#orderHot').show();$('#orderTime').hide();
+                            }
+                        }
+                    }
+                </script>
+					<div class="tag-list-wrp">
+						<div class="b-head">
+							<span class="b-head-i"></span><span class="b-head-t">选择分区</span><span
+								class="b-head-s">点击即可查看本区的相关内容</span>
+						</div>
+						<div class="tag-list-cnt" id="tag_list" style="height: auto;">
+							<ul class="tag-list">
+								<a href="/interface/movie"><li class="tag-item"
+									id="all"><span>全部</span></li></a>
+								<a href="http://www.dilidili.wang/music"><li
+									class="tag-item" id="yinyue"><span>音乐</span></li></a>
+								<a href="/interface/movie"><li
+									class="tag-item on" id="yingshi"><span>影视</span></li></a>
+								<a href="/interface/cartoon"><li
+									class="tag-item" id="dongman"><span>动漫</span></li></a>
+								<!-- <a href="http://www.dilidili.wang/life"><li class="tag-item"
+									id="shenghuo"><span>生活</span></li></a>
+								<a href="http://www.dilidili.wang/entertainment"><li
+									class="tag-item" id="yule"><span>娱乐</span></li></a>
+								<a href="http://www.dilidili.wang/sports"><li
+									class="tag-item" id="yungdong"><span>运动</span></li></a>
+								<a href="http://www.dilidili.wang/ga"><li class="tag-item"
+									id="guichu"><span>鬼畜</span></li></a>
+								<a href="http://www.dilidili.wang/dance"><li
+									class="tag-item" id="wudao"><span>舞蹈</span></li></a>
+								<a href="http://www.dilidili.wang/game"><li class="tag-item"
+									id="youxi"><span>游戏</span></li></a>
+								<a href="http://www.dilidili.wang/Culture"><li
+									class="tag-item" id="kejiao"><span>科教</span></li></a> -->
+							</ul>
+							<script>
+//var typeName='影视';
+$("span:contains('影视')").parent().addClass('on')
+</script>
+						</div>
+						<!--<div class="b-toggle-block tag-more" style="display: none;"><div class="b-toggle-btn" id="btn_tag_more" b-stat="tag_toggle" b-stat-v="20"><span>展开</span><i class="b-icon b-icon-toggle-down"></i></div></div>-->
+					</div>
+					<!--左-->
+					<div class="b-page-large b-f-left">
+						<div class="vl-dyn-wrp">
+							<div class="b-head" id="vl_dyn_hd">
+								<span class="b-head-i"></span><span class="b-head-t">本区推荐</span>
+							</div>
+							<div class="vl-dyn-cnt">
+								<ul class="v-list" id="vl_dyn_list">
+									<div id="allTag">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/74967/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1119079101.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/74967/"
+																	target="_blank" title="【银魂x漫威】绯红女巫奥妹扮成了神乐 ？！然后就...">
+																	<div class="t">【银魂x漫威】绯红女巫奥妹扮成了神乐 ？！然后就...</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>530</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-10-29</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/76251/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_0958211621.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/76251/"
+																	target="_blank"
+																	title="【盘点怪-1】吐槽盘点2018年10大国产烂片，你今年被辣过眼睛吗？">
+																	<div class="t">【盘点怪-1】吐槽盘点2018年10大国产烂片，你今年被辣过眼睛吗？</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>115</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-12-11</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/71918/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1638122901.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/71918/"
+																	target="_blank" title="《画皮师2》10月9日 画皮归来  惊天浩劫 妖魔开战">
+																	<div class="t">《画皮师2》10月9日 画皮归来 惊天浩劫 妖魔开战</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>610</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-09-20</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/75659/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1506127331.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/75659/"
+																	target="_blank" title="贱翔陪你看电影——《低压槽—欲望之城》">
+																	<div class="t">贱翔陪你看电影——《低压槽—欲望之城》</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>489</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-11-26</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/76179/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1700333381.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/76179/"
+																	target="_blank" title="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评">
+																	<div class="t">【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>1326</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-12-07</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+												</tr>
+												<tr>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/74076/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1628042431.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/74076/"
+																	target="_blank" title="【馒夫子】那些《电影中的盛世美颜》第2期">
+																	<div class="t">【馒夫子】那些《电影中的盛世美颜》第2期</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>1150</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-10-18</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/72498/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_0954153931.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/72498/"
+																	target="_blank" title="许你浮生若梦：偷心大盗罗浮生，往后余生皆是你">
+																	<div class="t">许你浮生若梦：偷心大盗罗浮生，往后余生皆是你</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>298</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-09-28</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/71681/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1040336441.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/71681/"
+																	target="_blank" title="【漫威/踩点/节奏向】漫威宇宙大裁员-灭霸：尔等英雄都是垃圾!">
+																	<div class="t">【漫威/踩点/节奏向】漫威宇宙大裁员-灭霸：尔等英雄都是垃圾!</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>259</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-09-17</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/72320/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_0940474391.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/72320/"
+																	target="_blank" title="巴尼之西装舞">
+																	<div class="t">巴尼之西装舞</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>552</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-09-26</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+													<td width="20%">
+														<li>
+															<div class="v">
+																<a class="preview cover-preview"
+																	href="http://www.dilidili.wang/huiyuan/76226/"
+																	target="_blank"> <img data-img=""
+																	src="/img/296_1608536021.jpg" loaded="loaded"
+																	style="opacity: 1;">
+																</a> <a href="http://www.dilidili.wang/huiyuan/76226/"
+																	target="_blank" title="【时光笔记】特摄篇简评#02 归来的宇宙英雄——杰克奥特曼">
+																	<div class="t">【时光笔记】特摄篇简评#02 归来的宇宙英雄——杰克奥特曼</div>
+																	<div class="i">
+																		<span><i class="b-icon b-icon-v-play"></i><em>260</em></span><span
+																			class="v-date"><i class="b-icon b-icon-date"></i>2018-12-10</span>
+																	</div>
+																</a>
+															</div>
+													</li>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+
+									</div>
+								</ul>
+							</div>
+						</div>
+						<div class="video-list list-c">
+							<div class="vl-hd clearfix">
+								<div class="left">
+									<ul class="vl-tab" id="tab_list_order">
+										<li class="tab-i on" id="list_order_default"
+											onclick="orderSwitch(this.id)">投稿时间排序</li>
+										<li class="tab-i" id="list_order_hot"
+											onclick="orderSwitch(this.id)">视频热度排序</li>
+									</ul>
+								</div>
+							</div>
+							<div class="vd-list-cnt loaded">
+								<ul class="vd-list l2">
+									<div id="orderTime">
+										<div id="allTag">
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76333/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1354171461.jpg"
+															loaded="loaded" alt="我是大哥大彩蛋" style="opacity: 1;">
+														</a><a href="http://www.dilidili.wang/huiyuan/76333/"
+															target="_blank" class="title" title="我是大哥大彩蛋">我是大哥大彩蛋</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">我是大哥大彩蛋</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>439</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="ZED">ZED</a><span class="v-date"
+																title="日期">2018-12-13 13:51:15</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76251/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_0958211621.jpg"
+															loaded="loaded" alt="【盘点怪-1】吐槽盘点2018年10大国产烂片，你今年被辣过眼睛吗？"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76251/"
+															target="_blank" class="title"
+															title="【盘点怪-1】吐槽盘点2018年10大国产烂片，你今年被辣过眼睛吗？">【盘点怪-1】吐槽盘点2018年10大国产烂片，你今年被辣过眼睛吗？</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">时光飞逝，2018年马上已成过去，2019年也快正式开始，本期盘点怪第一期节目，为大家盘点2018年为大家所熟知的10大国产烂片，如觉的不妥欢迎大家留言讨论.
+															1.爱情公寓 2.闺蜜2 3.阿修罗 4.欧洲攻略 5.谜巢 6.战神纪 7.卧底巨星 8.猛虫过江
+															9.胖子行动队 10.祖宗19代</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>115</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="放驴的伟名">放驴的伟名</a><span
+																class="v-date" title="日期">2018-12-11 09:55:20</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76226/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1608536021.jpg"
+															loaded="loaded" alt="【时光笔记】特摄篇简评#02 归来的宇宙英雄——杰克奥特曼"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76226/"
+															target="_blank" class="title"
+															title="【时光笔记】特摄篇简评#02 归来的宇宙英雄——杰克奥特曼">【时光笔记】特摄篇简评#02
+															归来的宇宙英雄——杰克奥特曼</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">这次算是为自己三大特摄的入坑作做的视频系列；目前龙骑和杰克都已经完成剩下的侍战队有机会一定会做的</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>260</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="风潜雨zero">风潜雨zero</a><span
+																class="v-date" title="日期">2018-12-10 16:06:46</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76179/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1700333381.jpg"
+															loaded="loaded" alt="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76179/"
+															target="_blank" class="title"
+															title="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评">【时光笔记】特摄篇#01
+															拿瓦剧场版——铠甲勇士雅塔莱斯简评</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">这期的雅塔莱斯，算是匆忙之中做出来的一个作品，不足之处还请见谅</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>1326</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="风潜雨zero">风潜雨zero</a><span
+																class="v-date" title="日期">2018-12-07 16:55:41</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76163/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_0941154051.jpg"
+															loaded="loaded" alt="【Gin酱】凯文·费奇接班！从1变N缔造漫威影视帝国「考验」《漫威传》"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76163/"
+															target="_blank" class="title"
+															title="【Gin酱】凯文·费奇接班！从1变N缔造漫威影视帝国「考验」《漫威传》">【Gin酱】凯文·费奇接班！从1变N缔造漫威影视帝国「考验」《漫威传》</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">简介被吃了￣ω￣</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>144</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="干货Gin酱">干货Gin酱</a><span
+																class="v-date" title="日期">2018-12-07 09:37:00</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76167/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1433441631.jpg"
+															loaded="loaded" alt="《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76167/"
+															target="_blank" class="title"
+															title="《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球">《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">简介被吃了￣ω￣</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>380</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="子涵娱乐">子涵娱乐</a><span
+																class="v-date" title="日期">2018-12-06 14:28:39</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76068/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1858445191.jpg"
+															loaded="loaded" alt="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76068/"
+															target="_blank" class="title"
+															title="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural">非自然死亡
+															Lemon カタルシス 治愈二合一混剪 Unnatural</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">治愈系</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>3714</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="落雪sama">落雪sama</a><span
+																class="v-date" title="日期">2018-12-04 18:50:15</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/75659/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1506127331.jpg"
+															loaded="loaded" alt="贱翔陪你看电影——《低压槽—欲望之城》"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/75659/"
+															target="_blank" class="title" title="贱翔陪你看电影——《低压槽—欲望之城》">贱翔陪你看电影——《低压槽—欲望之城》</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">被吃掉了￣ω￣</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>489</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="贱翔君">贱翔君</a><span class="v-date"
+																title="日期">2018-11-26 15:03:38</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/75564/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_0946205721.jpg"
+															loaded="loaded" alt="【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/75564/"
+															target="_blank" class="title"
+															title="【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》">【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">被吃掉了￣ω￣</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>419</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="干货Gin酱">干货Gin酱</a><span
+																class="v-date" title="日期">2018-11-22 09:42:05</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/75478/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1703159331.jpg"
+															loaded="loaded" alt="尘封的历史！九九年圣战！！！" style="opacity: 1;">
+														</a><a href="http://www.dilidili.wang/huiyuan/75478/"
+															target="_blank" class="title" title="尘封的历史！九九年圣战！！！">尘封的历史！九九年圣战！！！</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">被吃掉了￣ω￣</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>312</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="墨画千语">墨画千语</a><span
+																class="v-date" title="日期">2018-11-19 17:00:23</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									<div id="orderHot" style="display: none;">
+										<div id="allTag">
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/75287/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1509097761.jpg"
+															loaded="loaded" alt="暴走小男孩六周年回馈公演宣传pv"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/75287/"
+															target="_blank" class="title" title="暴走小男孩六周年回馈公演宣传pv">暴走小男孩六周年回馈公演宣传pv</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">2019，邀您见证热血的力量！暴走小男孩社团公演计划开启！</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>71272</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="嘀哩嘀哩">嘀哩嘀哩</a><span
+																class="v-date" title="日期">2018-11-14 15:09:15</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/69853/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_1647397491.jpg"
+															loaded="loaded" alt="千万不要错过的漫改丧尸片《请叫我英雄》【电影解说】"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/69853/"
+															target="_blank" class="title"
+															title="千万不要错过的漫改丧尸片《请叫我英雄》【电影解说】">千万不要错过的漫改丧尸片《请叫我英雄》【电影解说】</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">一年前剪的视频了，视频里我讲到的一些有“时效性”的语句就不要在意啦~
+															~ ~喜欢的话关注一下哦</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>14349</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="剑舞秋歌">剑舞秋歌</a><span
+																class="v-date" title="日期">2018-08-22 16:38:28</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/68297/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_1712456451.png"
+															loaded="loaded" alt="【盘点】那些电影中的盛世美颜（美丽到令人心痛的小姐姐）——第一期，馒夫"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/68297/"
+															target="_blank" class="title"
+															title="【盘点】那些电影中的盛世美颜（美丽到令人心痛的小姐姐）——第一期，馒夫">【盘点】那些电影中的盛世美颜（美丽到令人心痛的小姐姐）——第一期，馒夫</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">这些故事，和那些盛世美颜，将永远的封存在这光影里，留在那些最美好的时候。</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>10778</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="馒夫子">馒夫子</a><span class="v-date"
+																title="日期">2018-07-20 15:03:19</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/68284/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_0951467061.png"
+															loaded="loaded" alt="富江与奇葩表演" style="opacity: 1;">
+														</a><a href="http://www.dilidili.wang/huiyuan/68284/"
+															target="_blank" class="title" title="富江与奇葩表演">富江与奇葩表演</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">富江与奇葩表演</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>7288</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="JokiJoki">JokiJoki</a><span
+																class="v-date" title="日期">2018-07-20 09:36:17</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/67893/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_1426571171.png"
+															loaded="loaded" alt="【猿长说】这是一部烂到没有下限的真人版拳皇"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/67893/"
+															target="_blank" class="title"
+															title="【猿长说】这是一部烂到没有下限的真人版拳皇">【猿长说】这是一部烂到没有下限的真人版拳皇</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">【猿长说】这是一部烂到没有下限的真人版拳皇</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>6087</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="猿长">猿长</a><span class="v-date"
+																title="日期">2018-07-13 14:23:38</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/73258/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1458104681.jpg"
+															loaded="loaded" alt="真实还原《黎明杀机》电锯屠夫原型"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/73258/"
+															target="_blank" class="title" title="真实还原《黎明杀机》电锯屠夫原型">真实还原《黎明杀机》电锯屠夫原型</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">简介被吃掉了￣ω￣</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>5423</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="森的金白菜">森的金白菜</a><span
+																class="v-date" title="日期">2018-10-12 14:51:17</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/76068/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/296_1858445191.jpg"
+															loaded="loaded" alt="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/76068/"
+															target="_blank" class="title"
+															title="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural">非自然死亡
+															Lemon カタルシス 治愈二合一混剪 Unnatural</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">治愈系</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>3714</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="落雪sama">落雪sama</a><span
+																class="v-date" title="日期">2018-12-04 18:50:15</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/69247/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_1019568271.jpg"
+															loaded="loaded" alt="【包子】爱情公寓真的只值2.7分？"
+															style="opacity: 1;"> </a><a
+															href="http://www.dilidili.wang/huiyuan/69247/"
+															target="_blank" class="title" title="【包子】爱情公寓真的只值2.7分？">【包子】爱情公寓真的只值2.7分？</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">由于自己专业和影视还有点关系，看到现在网上讨论很多，忍不住想发表自己的看法，还请务必不要引战
+															视频里面出于剪辑需要用了部分枪版电影内容，请大家支持正版</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>3008</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="小馒头叫包子">小馒头叫包子</a><span
+																class="v-date" title="日期">2018-08-15 10:14:05</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/68823/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_1034009781.jpg"
+															loaded="loaded" alt="打上花火X非自然死亡" style="opacity: 1;">
+														</a><a href="http://www.dilidili.wang/huiyuan/68823/"
+															target="_blank" class="title" title="打上花火X非自然死亡">打上花火X非自然死亡</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">打上花火X非自然死亡</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>2843</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="傀儡丶">傀儡丶</a><span class="v-date"
+																title="日期">2018-08-02 10:31:14</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="l-item">
+													<div class="l-l">
+														<a href="http://www.dilidili.wang/huiyuan/70541/"
+															target="_blank" class="preview cover-preview"><img
+															data-img="" src="/img/290_1636509921.jpg"
+															loaded="loaded" alt="《厨霸江湖》9月12日爆笑上映" style="opacity: 1;">
+														</a><a href="http://www.dilidili.wang/huiyuan/70541/"
+															target="_blank" class="title" title="《厨霸江湖》9月12日爆笑上映">《厨霸江湖》9月12日爆笑上映</a>
+													</div>
+													<div class="l-r">
+														<div class="v-desc">功夫食神闯江湖</div>
+														<div class="v-info">
+															<span class="v-info-i gk"><i
+																class="b-icon b-icon-v-play" title="观看"></i><span>2153</span></span>
+														</div>
+														<div class="up-info">
+															<a class="v-author" href="javascript:void(0);"
+																target="_blank" title="最后的黎明kuk">最后的黎明kuk</a><span
+																class="v-date" title="日期">2018-09-03 16:33:55</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</div>
+									</div>
+
+									<!--分页-->
+									<ul class="pagelistbox">
+										<li><a>首页</a></li>
+										<li class="thisclass"><a>1</a></li>
+										<li><a href="http://www.dilidili.wang/movies/2.html">2</a></li>
+										<li><a href="http://www.dilidili.wang/movies/3.html">3</a></li>
+										<li><a href="http://www.dilidili.wang/movies/2.html">下一页</a></li>
+										<li><a href="http://www.dilidili.wang/movies/8.html">末页</a></li>
+										<li><select name="sldd" style="width: 36px"
+											onchange="location.href=this.options[this.selectedIndex].value;">
+												<option value="1.html" selected="">1</option>
+												<option value="2.html">2</option>
+												<option value="3.html">3</option>
+												<option value="4.html">4</option>
+												<option value="5.html">5</option>
+												<option value="6.html">6</option>
+												<option value="7.html">7</option>
+												<option value="8.html">8</option>
+										</select></li>
+
+									</ul>
+
+
+
+								</ul>
+							</div>
+							<!--<div class="pagelistbox">
+                                    <a class="p active">1</a>
+                                    <a class="p" page="2">2</a>
+                                    <a class="p" page="3">3</a>
+                                    <a class="p" page="4">4</a>
+                                    <a class="p" page="5">5</a>
+                                    <a class="p" page="6">6</a>
+                                    <a class="p" page="7">7</a>
+                                    <strong>...</strong>
+                                    <a class="p endPage" page="4546">4546</a>
+                                    <a class="p nextPage" page="2">下一页</a>
+                                    <div class="custom-right"><span class="result custom-right-inner">共 4546 页/ 90920 个 ，跳至</span><input class="b-input custompage custom-right-inner" type="text"><span class="custom-right-inner">页</span></div>
+                                </div>-->
+
+						</div>
+					</div>
+					<!--左-->
+
+					<!--右-->
+					<div class="b-page-small b-f-right">
+						<div class="b-head">
+							<span class="b-head-t">本月热门</span>
+						</div>
+						<div class="rlist-wrp">
+							<ul class="rlist loaded">
+
+								<li class="on"><i class="number n1">1</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/75287/"
+											title="暴走小男孩六周年回馈公演宣传pv" target="_blank"><img data-img=""
+											src="/img/296_1509097761.jpg" loaded="loaded"
+											alt="暴走小男孩六周年回馈公演宣传pv" style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/75287/"
+									title="暴走小男孩六周年回馈公演宣传pv" target="_blank">
+										<div class="title t">暴走小男孩六周年回馈公演宣传pv</div>
+										<div class="i">
+											<b class="pts" title="暴走小男孩六周年回馈公演宣传pv">点击数：<em>71272</em></b>
+										</div>
+								</a></li>
+								<li class="on"><i class="number n1">2</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/76068/"
+											title="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural" target="_blank"><img
+											data-img="" src="/img/296_1858445191.jpg"
+											loaded="loaded" alt="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural"
+											style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/76068/"
+									title="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural" target="_blank">
+										<div class="title t">非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural</div>
+										<div class="i">
+											<b class="pts" title="非自然死亡 Lemon カタルシス 治愈二合一混剪 Unnatural">点击数：<em>3714</em></b>
+										</div>
+								</a></li>
+								<li class="on"><i class="number n1">3</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/75322/"
+											title="【Gin酱】斯坦李去世，回首他从0到1打造漫威帝国「启程」《漫威传》" target="_blank"><img
+											data-img="" src="/img/296_1015336821.jpg"
+											loaded="loaded" alt="【Gin酱】斯坦李去世，回首他从0到1打造漫威帝国「启程」《漫威传》"
+											style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/75322/"
+									title="【Gin酱】斯坦李去世，回首他从0到1打造漫威帝国「启程」《漫威传》" target="_blank">
+										<div class="title t">【Gin酱】斯坦李去世，回首他从0到1打造漫威帝国「启程」《漫威传》</div>
+										<div class="i">
+											<b class="pts" title="【Gin酱】斯坦李去世，回首他从0到1打造漫威帝国「启程」《漫威传》">点击数：<em>1477</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">4</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/76179/"
+											title="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评" target="_blank"><img
+											data-img="" src="/img/296_1700333381.jpg"
+											loaded="loaded" alt="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评"
+											style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/76179/"
+									title="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评" target="_blank">
+										<div class="title t">【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评</div>
+										<div class="i">
+											<b class="pts" title="【时光笔记】特摄篇#01 拿瓦剧场版——铠甲勇士雅塔莱斯简评">点击数：<em>1326</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">5</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/75659/"
+											title="贱翔陪你看电影——《低压槽—欲望之城》" target="_blank"><img
+											data-img="" src="/img/296_1506127331.jpg"
+											loaded="loaded" alt="贱翔陪你看电影——《低压槽—欲望之城》" style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/75659/"
+									title="贱翔陪你看电影——《低压槽—欲望之城》" target="_blank">
+										<div class="title t">贱翔陪你看电影——《低压槽—欲望之城》</div>
+										<div class="i">
+											<b class="pts" title="贱翔陪你看电影——《低压槽—欲望之城》">点击数：<em>489</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">6</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/76333/"
+											title="我是大哥大彩蛋" target="_blank"><img data-img=""
+											src="/img/296_1354171461.jpg" loaded="loaded"
+											alt="我是大哥大彩蛋" style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/76333/" title="我是大哥大彩蛋"
+									target="_blank">
+										<div class="title t">我是大哥大彩蛋</div>
+										<div class="i">
+											<b class="pts" title="我是大哥大彩蛋">点击数：<em>439</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">7</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/75564/"
+											title="【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》" target="_blank"><img
+											data-img="" src="/img/296_0946205721.jpg"
+											loaded="loaded" alt="【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》"
+											style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/75564/"
+									title="【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》" target="_blank">
+										<div class="title t">【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》</div>
+										<div class="i">
+											<b class="pts" title="【Gin酱】回顾斯坦李当年如何击穿用户心智、构建社群「启蒙」《漫威传》">点击数：<em>419</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">8</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/76167/"
+											title="《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球" target="_blank"><img
+											data-img="" src="/img/296_1433441631.jpg"
+											loaded="loaded" alt="《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球"
+											style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/76167/"
+									title="《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球" target="_blank">
+										<div class="title t">《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球</div>
+										<div class="i">
+											<b class="pts" title="《赤裸特工》删除片段，Maggie_Q也因这段而火爆全球">点击数：<em>380</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">9</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/75468/"
+											title="【废纸板拳击手】" target="_blank"><img data-img=""
+											src="/img/296_1011235571.jpg" loaded="loaded"
+											alt="【废纸板拳击手】" style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/75468/" title="【废纸板拳击手】"
+									target="_blank">
+										<div class="title t">【废纸板拳击手】</div>
+										<div class="i">
+											<b class="pts" title="【废纸板拳击手】">点击数：<em>355</em></b>
+										</div>
+								</a></li>
+								<li><i class="number">10</i>
+									<div class="preview">
+										<a href="http://www.dilidili.wang/huiyuan/75478/"
+											title="尘封的历史！九九年圣战！！！" target="_blank"><img data-img=""
+											src="/img/296_1703159331.jpg" loaded="loaded"
+											alt="尘封的历史！九九年圣战！！！" style="opacity: 1;"></a>
+									</div> <a class="rl-info"
+									href="http://www.dilidili.wang/huiyuan/75478/"
+									title="尘封的历史！九九年圣战！！！" target="_blank">
+										<div class="title t">尘封的历史！九九年圣战！！！</div>
+										<div class="i">
+											<b class="pts" title="尘封的历史！九九年圣战！！！">点击数：<em>312</em></b>
+										</div>
+								</a></li>
+
+								<script>
+    $('.rlist li:lt(3)').addClass('on');$('.rlist li:lt(3) .number').addClass('n1');
+    for(var i = 0; i < $('.rlist li').length; i++)
+    {
+	var number = i+1;
+	$('.rlist li').eq(i).find('.number').text(number);
+    }
+</script>
+							</ul>
+						</div>
+					</div>
+					<!--右-->
+				</div>
+			</div>
+			<div class="contact">
+				<p>视频卡顿可拖动进度条或使用Ctrl+F5强制刷新，若发现稿件存在无法播放、内容违规或疑似抄袭等异常情况，可进入D站反馈群（首页下方）进行反馈，感谢大家的支持！</p>
+			</div>
+		</div>
+
+		<script src="about:blank" type="text/javascript"></script>
+		<script type="text/javascript" src="about:blank"></script>
+	</div>
+
+	<div class="index-nav sub" id="index_nav" style="opacity: 0;">
+		<div class="border"></div>
+		<div class="nav-list">
+			<div class="pointer-block"></div>
+		</div>
+		<div class="n-i gotop sub">
+			<div class="s-line"></div>
+			<div class="btn_gotop" title="返回顶部"></div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+
+		<script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?ac109a7147396152534f7b6b2bbc507e";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+	</div>
+	<div style="display: none;">
+		<script src="/img/z_stat.php" language="JavaScript"></script>
+		<script src="/img/core.php" charset="utf-8"
+			type="text/javascript"></script>
+		<a href="http://www.cnzz.com/stat/website.php?web_id=1274395733"
+			target="_blank" title="站长统计">站长统计</a>
+	</div>
+
+</body>
+</html>

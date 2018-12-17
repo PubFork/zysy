@@ -1,0 +1,202 @@
+﻿// JavaScript Document
+
+//baidu-20171120
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a4af3d965fe98b6552d4e2ceecde35a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+
+//统计代码开始
+/*var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?ac109a7147396152534f7b6b2bbc507e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();*/
+
+document.writeln("<div style=\"display:none;\">");
+document.writeln("<script src=\"http://s95.cnzz.com/stat.php?id=1255455330&web_id=1255455330\" language=\"JavaScript\"></script>");
+document.writeln("<script src=\"http://s11.cnzz.com/stat.php?id=1254760299&web_id=1254760299\" language=\"JavaScript\"></script>");
+document.writeln("<script src=\"http://s11.cnzz.com/stat.php?id=1259276514&web_id=1259276514\" language=\"JavaScript\"></script>");
+document.writeln("</div>");
+//统计代码结束
+
+var _czc = _czc || [];
+_czc.push(["_setAccount", "1255455330"]);
+
+
+//百度增强收录开始
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+//百度增强收录结束
+
+
+
+var nonoSquare = "http://static.jfrft.com/images/nono/nono-square-" + ~~(Math.random() / 0.5 + 1)+ ".png";
+var nonoWide = "http://static.jfrft.com/images/nono/nono-wide-" + ~~(Math.random() / 0.5)+ ".jpg";
+
+var jw3date = new Date / 86400000 - 17273;
+self.console && console.log(jw3date);
+jw3date = Math.floor(jw3date);
+
+<!-- 广告位：D站信息页-右侧方-B2-1-->
+function WRITE_xinxi_ad(){
+    $B2$1_1();
+	
+}
+
+<!-- 广告位：D站信息页横幅B1-1 -->
+function WRITE_xinxi_ad0(){
+    $B1$1();
+	
+}
+<!-- 广告位：D站信息页B1-2 -->
+function WRITE_xinxi_ad1(){
+   $B1$2();
+	
+}
+
+<!-- 广告位：D站信息页-右侧方-B2-1-->
+function WRITE_xinxi_ad2(){
+     $B2$1();
+
+
+
+}
+
+<!-- 广告位：D站信息页-B2-2 -->
+function WRITE_tongyong_ad1(){
+	$B2$2();
+	
+
+}
+
+<!-- 广告位：D站信息页-B2-3 -->
+function WRITE_xinxi_ad3(){
+    $B2$3();
+
+	
+}
+
+//kdzy specific ad
+if(location.pathname.substring(0,12) == '/anime/kdzy/')
+{
+     $('.time_pic').after('<a href="http://www.xcmh.cc/c/KuangDuZhiYuan/" rel="nofollow"><img src="http://www.dilidili.wang/uploads/allimg/170814/6_1017328369.png"></a>');
+}
+
+//下载地址nofollow
+$('.list_xz a').attr('rel','nofollow')
+
+
+function WRITE_xinxi_adhjj0(){
+	document.writeln('<a href="http://www.playyx.com/p/blr/201609235872/10303215.html" target="_blank" style=" margin:0 auto;"><img style="display:block !important;" src="http://static.jfrft.com/images/list_20161219/hjh_a1_20161220.jpg" width="100%" /></a>');
+}
+function WRITE_xinxi_adhjj1(){
+}
+function WRITE_xinxi_adhjj2(){
+}
+function WRITE_tongyong_ad2(){
+	document.writeln('<a href="http://www.playyx.com/p/blr/201609235872/10305145.html" target="_blank" style=" margin:0 auto;"><img style="display:block !important;" src="http://static.jfrft.com/images/list_20161219/hjh_a2_20161220.jpg" width="100%" /></a>');
+}
+function WRITE_xinxi_adhjj3(){
+}
+function WRITE_xinxi_adhjj4(){
+	document.writeln('<a href="http://www.playyx.com/p/blr/201609235872/10305145.html" target="_blank" style=" margin:0 auto;"><img style="display:block !important;" src="http://static.jfrft.com/images/list_20161219/hjh_a2_20161220.jpg" width="100%" /></a>');
+}
+
+//tooltipster配置
+var oScript = document.createElement('script');
+oScript.src="/tooltipster/tooltipster.bundle.js";
+document.getElementsByTagName('head')[0].appendChild(oScript);
+var oLink = document.createElement('link');
+oLink.rel="stylesheet";
+oLink.href="/tooltipster/tooltipster-sideTip-shadow.min.css";
+document.getElementsByTagName('head')[0].appendChild(oLink);
+var oLink1 = document.createElement('link');
+oLink1.rel="stylesheet";
+oLink1.href="/tooltipster/tooltipster.bundle.css";
+document.getElementsByTagName('head')[0].appendChild(oLink1);
+
+//search-toggle
+searchToggle2 = function()
+{
+	if($('.box3').parent().attr('title') == '切换至360搜索')
+	{
+		$('.box3').css('background','rgb(255, 255, 255) url("http://www.dilidili.wang/newimages/search_baidu_pink.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+		$('.search_box2').hide();
+		$('#so360').show();
+		$('.box3').parent().attr('title','切换至百度搜索');
+	}
+	else
+	{
+		$('.box3').css('background','rgb(255, 255, 255) url("http://www.dilidili.wang/newimages/search_360_pink.png") no-repeat scroll 50% 50% / auto padding-box border-box');
+		$('#so360').hide();
+		$('.search_box2').show();
+		$('.box3').parent().attr('title','切换至360搜索');
+	}
+}
+
+
+$(document).ready(function() {
+$.ajax({
+    url: "/tooltipster/tooltipster.bundle.js",
+    dataType: "script",
+    }).done(function(){   
+        $(document).ready(function() {
+            $('.tooltip').tooltipster({
+		theme: 'tooltipster-shadow',
+		side: 'right',
+		maxWidth: 152,
+		maxHeight: 215,
+		interactive: true,
+		contentAsHTML: true,
+		distance: -5,
+    		});
+        });
+    });
+
+
+
+
+//360so
+$('.search_box2').after('<div id="so360" class="fr"><form action="http://www.so.com/s" target="_blank" id="so360form"><input type="text" autocomplete="off" name="q" id="so360_keyword" placeholder="搜索感兴趣的动漫"><input type="submit" id="so360_submit" value=""><input type="hidden" name="ie" value="utf8"><input type="hidden" name="src" value="zz_www.dilidili.wang"><input type="hidden" name="site" value="www.dilidili.wang"><input type="hidden" name="rg" value="1"></form></div>');
+$('.w1410 #so360').after('<a onclick="searchToggle2()" title="切换至360搜索" class="fr"><i class="box3"></i></a>');
+
+});
+
+
+
+$(window).load(function(){
+
+//log&register
+var refurl = 'refurl=' + encodeURIComponent(location);
+var logUrl = 'http://usr.005.tv?' + refurl;
+var registerUrl = 'http://usr.005.tv/User/register.html?' + refurl;
+
+$('.w1410 #login_1_1').prev().attr('href',registerUrl);
+$('.w1410 #login_1_1').attr('href',logUrl);
+$('.comment-send a').attr('href',logUrl);
+
+//swiper-no-swiping
+$('.swiper-slide').addClass('swiper-no-swiping');
+$('.swiper-container').addClass('swiper-no-swiping');
+
+});
+
+//js广告文件引入
+document.writeln('<script src="http://a.005.tv/s/setcores.js' + location.search + '"><\/script>');

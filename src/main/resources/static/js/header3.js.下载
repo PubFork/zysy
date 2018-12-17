@@ -1,0 +1,9 @@
+// JavaScript Document
+/*header登陆核心*/
+function WRITE_header(){
+	document.writeln('<script language="javascript" src="http://usr.005.tv/Common/header3.html"></script>');
+}
+
+function WRITE_header99(){
+	document.writeln('<script language="javascript" src="http://usr.005.tv/Common/header99.html" defer></script>');
+}

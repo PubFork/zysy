@@ -6,7 +6,7 @@ function calcDays(date){
 //D站首页第一通栏A5-1------
 function $A5$1() {
 	//return;
-	document.writeln('<a href="http://qfgn.dilidili.wang/" onclick="_czc.push(["_trackEvent", "横幅", "点击", "A5-1"]);" target="_blank"><img src="http://a.005.tv/s/181130/A5-1.jpg" style="width: 50%"></a><a href="http://www.dilidili.wang/app_download/" onclick="_czc.push(["_trackEvent", "横幅", "点击", "A5-1-2"]);" target="_blank"><img src="http://a.005.tv/s/181126APP2/A5-1-2.png" style="width: 50%"></a>');
+	document.writeln('<a href="http://activity.gaonengshe.com/detail/e71Q4oGo8y" onclick="_czc.push(["_trackEvent", "横幅", "点击", "A5-1"]);" target="_blank"><img src="http://a.005.tv/s/181206/A5-1.jpg" style="width: 50%"></a><a href="http://www.dilidili.wang/app_download/" onclick="_czc.push(["_trackEvent", "横幅", "点击", "A5-1-2"]);" target="_blank"><img src="http://a.005.tv/s/181213/A5-1-2.jpg" style="width: 50%"></a>');
 }
 
 //D站首页通栏A5-2--------
@@ -56,6 +56,12 @@ function $A4$2() {
 // 	// 	closeAd.parentNode.setAttribute('style','display:none');
 // 	// }
 // }
+
+//D站首页底部横栏
+function $A6() {
+	//return;
+	document.writeln('<a href="javascript:void(0);");" target="_blank"><img src="http://a.005.tv/s/181212/A6.jpg"></a>');
+}
 
 //首页新增的中心弹窗
 function WRITE_tanchuang() {//未找到
@@ -122,8 +128,8 @@ function $B2$1(){
 	//return;
 	//var link ='';
 	///var img ='';
-	var link = "http://qfgn.dilidili.wang/";
-	var img = "http://a.005.tv/s/181130/B2-1.jpg";
+	var link = "http://activity.gaonengshe.com/detail/e71Q4oGo8y";
+	var img = "http://a.005.tv/s/181206/B2-1.jpg";
 	if(!img){
 		var pool = [
 			"48954b3b-174a-4dc7-a425-36aa9bb78db5", "20700c04-b3e7-4b66-8a1d-7f2303cc2344",
@@ -186,13 +192,13 @@ function $D1$D2(){
 	return document.writeln("<div style=\"position:fixed; top:110px; left:0; z-index:99;\" class=\"dlleft\">" +
 		"<div style=\"position:absolute; top:-20px; left:0;\"><a onclick=\"leftclose(this)\">关闭广告</a></div>" +
 		//"<div id=\"qrleft\" style=\"position:absolute; left:160px; display: none\"><img width=\"160\" src=\"http://jdzc2.haofangame.com/images/pop/code.png\"></div>" +
-		"<a href=\"http://play.11h5.com/game/?gameid=170&chid=615&trial=1\" onclick=\"_czc.push(['_trackEvent', '播放页左侧', '点击', 'D1']);\" target=\"_blank\">" +
-		"<img src=\"//a.005.tv/s/181130/D1-1.jpg\" onmouseenter=\"qrleft.style.display=''\" onmouseleave=\"qrleft.style.display='none'\"></a></div>" +
+		"<a href=\"http://www.dilidili.wang/app_download/\" onclick=\"_czc.push(['_trackEvent', '播放页左侧', '点击', 'D1']);\" target=\"_blank\">" +
+		"<img src=\"//a.005.tv/s/181213/D1.jpg\" onmouseenter=\"qrleft.style.display=''\" onmouseleave=\"qrleft.style.display='none'\"></a></div>" +
 		"<div style=\"position:fixed; top:110px; right:0; z-index:99;\" class=\"dlright\">" +
 		"<div style=\"position:absolute; top:-20px; right:0;\"><a onclick=\"rightclose(this)\">关闭广告</a></div>" +
 		//"<div id=\"qrright\" style=\"position:absolute; right:160px; display: none\"><img width=\"160\" src=\"//a.005.tv/s/180912/ewm.jpg\"></div>" +
-		"<a href=\"http://play.11h5.com/game/?gameid=170&chid=615&trial=1\" onclick=\"_czc.push(['_trackEvent', '播放页右侧', '点击', 'D2']);\" target=\"_blank\">" +
-		"<img src=\"//a.005.tv/s/181130/D2-1.jpg\" onmouseenter=\"qrright.style.display=''\" onmouseleave=\"qrright.style.display='none'\"></a></div>");
+		"<a href=\"http://www.dilidili.wang/app_download/\" onclick=\"_czc.push(['_trackEvent', '播放页右侧', '点击', 'D2']);\" target=\"_blank\">" +
+		"<img src=\"//a.005.tv/s/181213/D2.jpg\" onmouseenter=\"qrright.style.display=''\" onmouseleave=\"qrright.style.display='none'\"></a></div>");
 }
 
 //function WRITE_video_adtop(){}
@@ -202,7 +208,7 @@ function $D1$D2(){
 //D站视频通栏C4-1 C4-2
 function $C4$1$C4$2(){
 	//return;
-	return document.writeln('<div class="tooltip" data-tooltip-content="#ewmlyzzr"><a href="http://qfgn.dilidili.wang/" onclick="_czc.push(["_trackEvent","播放页横栏", "点击", "C4"]);" target="_blank"><img src="http://a.005.tv/s/181130/C4.png"></a></div>');
+	return document.writeln('<div class="tooltip" data-tooltip-content="#ewmlyzzr"><a href="http://www.dilidili.wang/app_download/" onclick="_czc.push(["_trackEvent","播放页横栏", "点击", "C4"]);" target="_blank"><img src="http://a.005.tv/s/181213/C4.jpg"></a></div>');
 	//$('.num').before('<div class="tooltip" data-tooltip-content="#ewmlyzzr"><a href="/lyzzr" target="_blank"><img src="/s/180827/B1_1.jpg"></a></div>');
 	// $('.num').before('<div class="tooltip" data-tooltip-content="#ewmlyzzr"><a href="/lyzzr" target="_blank"><img src="/s/180827/B1_1.jpg"></a></div><div class="tooltip_templates" style="display:none"><span id="ewmlyzzr"><img src="/uploads/allimg/171227/ewmlyzzr.png" width="135" /></span></div>');
 	//$('.num').before('<div class="tooltip" data-tooltip-content="#ewmlyzzr"><a href="https://gacha.hy233.tv/?c=5b19e729005d465b05a6ca39" target="_blank"><img src="http://a.005.tv/s/180621/C4.jpg"></a></div>');
@@ -226,7 +232,7 @@ function $M1(){
 	//var link = "http://tasty.funtoygame.com/dilidili/LandingPage22/";
 	//var img = "/as/180607/M1.jpg";
 	var link = "http://www.dilidili.wang/app_download/";
-	var img = "http://a.005.tv/s/181126APP2/M1.png";
+	var img = "http://a.005.tv/s/181210APP/M1.jpg";
 	if(!img){
 		var pool = [
 		"6901dd05-3333-4da5-bb10-51975d0cc54e", "c03a2c75-ea9e-4611-8b6a-cddb40f7f80c",
@@ -248,30 +254,32 @@ function $M1(){
 	}
 }
 
+//D站首页横栏
 function $M4(){
-	return document.writeln("<a onclick=\"_czc.push(['_trackEvent', 'm端首页', '点击','M4']);\" target=\"_blank\" href=\"http://www.dilidili.wang/app_download/\"><img src=\"http://a.005.tv/s/app_down.jpg?v=12301\" style=\"width:100%;\"></a>");
+	return document.writeln("<a onclick=\"_czc.push(['_trackEvent', 'm端首页', '点击','M4']);\" target=\"_blank\" href=\"http://www.dilidili.wang/app_download/\"><img src=\"http://a.005.tv/s/181213/M4.jpg?v=12301\" style=\"width:100%;\"></a>");
 }
 
 function $M2(){
 	//return;
 	if (new Date().getTime() > 1542352701 && new Date().getTime() < 1542470340000){
 		return document.writeln('<script>var xsu_uid=734843; var xsu_tid=29;var os=1;</script><script charset="utf-8" src="http://svip.shwxtw.com/js/mob/mgd.js"></script>');
-	//return document.writeln('<a target="_blank" href="http://qfgn.dilidili.wang" onclick="_czc.push(["_trackEvent", "m端信息页", "点击","M2"]);" ><img src="http://a.005.tv/s/181022/qfgn/M2.png?v=12301" style="width:100%;"/></a>');
+	//return document.writeln('<a target="_blank" href="http://activity.gaonengshe.com/detail/e71Q4oGo8y" onclick="_czc.push(["_trackEvent", "m端信息页", "点击","M2"]);" ><img src="http://a.005.tv/s/181022/qfgn/M2.png?v=12301" style="width:100%;"/></a>');
 	//return document.writeln('<a target="_blank" href="//www.dilidili.wang/jd/" ><img src="//www.dilidili.wang/jd/M2.png" style="width:100%;"/></a>');
 	//document.writeln('<a target="_blank" href="http://ch615.wx.11h5.com/?chid=615&gameid=375&trial=1" ><img src="/as/180619/M2.jpg" style=" width:100%;"/></a>');
 	}
 	else{
-		return document.writeln("<a onclick=\"_czc.push(['_trackEvent', 'm端信息页', '点击','M2']);\" target=\"_blank\" href=\"http://qfgn.dilidili.wang/\"><img src=\"http://a.005.tv/s/181022/qfgn/M2.png?v=12301\" style=\"width:100%;\"></a>");
+		return document.writeln("<a onclick=\"_czc.push(['_trackEvent', 'm端信息页', '点击','M2']);\" target=\"_blank\" href=\"http://activity.gaonengshe.com/detail/e71Q4oGo8y\"><img src=\"http://a.005.tv/s/181206/M2.png?v=12301\" style=\"width:100%;\"></a>");
 	}
 }
 
 function $M3(){
 	//return;
-	if(new Date().getTime() > 1542469800000 && new Date().getTime() < 1542556740000){
-		return document.writeln('<script>var xsu_uid=734843; var xsu_tid=29;var os=1;</script><script charset="utf-8" src="http://svip.shwxtw.com/js/mob/mgd.js"></script>');
+	if(new Date().getTime() > 1542469800000 && new Date().getTime() < 1547481600000){
+		//return document.writeln('<script>var xsu_uid=734843; var xsu_tid=29;var os=1;</script><script charset="utf-8" src="http://svip.shwxtw.com/js/mob/mgd.js"></script>');
+		return document.writeln("<a href=\"http://ch615.wx.11h5.com/?chid=615&gameid=170&trial=1\" onclick=\"_czc.push(['_trackEvent', 'm端信息页', '点击','M3']);\" ><img src=\"http://a.005.tv/s/181210/M3.jpg\" style=\"width:100%;\"></a>");
 	}
 	else{
-		return document.writeln("<a href=\"http://qfgn.dilidili.wang/\" onclick=\"_czc.push(['_trackEvent', 'm端信息页', '点击','M3']);\" ><img src=\"http://a.005.tv/s/181130/M3.jpg\" style=\"width:100%;\"></a>");
+		return document.writeln("<a href=\"http://activity.gaonengshe.com/detail/e71Q4oGo8y\" onclick=\"_czc.push(['_trackEvent', 'm端信息页', '点击','M3']);\" ><img src=\"http://a.005.tv/s/181206/M2.png\" style=\"width:100%;\"></a>");
 	}
 	
 

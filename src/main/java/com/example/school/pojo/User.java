@@ -35,7 +35,7 @@ public class User {
    
    private String address;
    private String marry;
-   
+   private String gold;
    
 		
 }

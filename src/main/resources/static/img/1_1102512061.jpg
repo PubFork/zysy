@@ -1,0 +1,2289 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta name="baidu-site-verification" content="F3ovelaTf1" />
+    <meta name="shenma-site-verification" content="3a38816c78577d733ab4f8f31c1cb00b_1531731693"/>
+    <meta name="baidu_union_verify" content="557e9718fae3b7c2509f9cf7b43dd582">
+    <meta name="360-site-verification" content="da7d943c667b857d38289cae4e05e120" />
+    <meta name="sogou_site_verification" content="sfRVxXE3Kr" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嘀哩嘀哩，这里是兴趣使然的无名小站（D站）_dilidili</title>
+    <meta name="keywords" content="dilidili,嘀哩嘀哩,d站,d站官网,dili,动漫" />
+    <meta name="description" content="嘀哩嘀哩，故被网友称为d站以及dilidili，无论您喜欢那种类型，嘀哩嘀哩都会筛选经典作品并将新作经典轮番推荐，相信嘀哩嘀哩都能为您一网打尽，为您带来一场美妙的动漫盛宴，这里是兴趣使然的嘀哩嘀哩。" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0.1">
+    <!--[if lt IE 9]><link href="/css/ie8.css" rel="stylesheet"><![endif]-->
+    <!--[if lt IE 8]><link href="/css/ie7.css" rel="stylesheet"><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script>document.writeln('<script src="/tempBackup/js/main_dilidili.js' + location.search + '"><\/script>');</script>
+    <script>
+        var _czc = _czc || [];
+        _czc.push(["_setAccount", "1255455330"]);
+
+    </script>
+    <!-- <style>
+         #lgg {position:fixed;top:600px; left:50px; z-index:90;display:none;}
+         #gg {position:fixed;bottom:0;left:0;z-index:99;}
+     </style>  -->
+</head>
+
+<body>
+
+<header>
+    <div>
+        <div id="logo"><a href="http://www.dilidili.wang">dilidili嘀哩嘀哩</a></div>
+        <nav class="top_menu">
+            <button class="toggle"><span></span><span></span><span></span></button>
+            <ul class="menu">
+                <li><a href="http://www.dilidili.wang" class="current">首页</a></li>
+                <li><a href="/anime/201810/">十月新番</a></li>
+                <li>
+                    <a href="/tvdh">分类</a>
+                    <ul class="sub">
+                        <li><a href="/rexue" target="_blank">热血</a></li>
+                        <li><a href="/qingchun" target="_blank">青春</a></li>
+                        <li><a href="/jcdh" target="_blank">剧场</a></li>
+                    </ul>
+                </li>
+                <li><a href="/old/all.html" target="_blank">推荐</a></li>
+                <li><a href="http://www.005.tv/" target="_blank">情报</a></li>
+                <li><a href="http://moe.005.tv/" target="_blank">美图</a></li>
+                <li><a href="http://www.kan300.com/DCommunity/" target="_blank" rel="nofollow">EOS</a></li>
+                <li><a href="http://bbs.005.tv/" target="_blank">论坛</a></li>
+                <li>
+                    <a href="/ugc">投稿区</a>
+                    <ul class="sub">
+                        <li><a href="/music" target="_blank">音乐</a></li>
+                        <li><a href="/movies" target="_blank">影视</a></li>
+                        <li><a href="/cartoon" target="_blank">动漫</a></li>
+                        <li><a href="/life" target="_blank">生活</a></li>
+                        <li><a href="/entertainment" target="_blank">娱乐</a></li>
+                        <li><a href="/sports" target="_blank">运动</a></li>
+                        <li><a href="/ga" target="_blank">鬼畜</a></li>
+                        <li><a href="/dance" target="_blank">舞蹈</a></li>
+                        <li><a href="/game" target="_blank">游戏</a></li>
+                        <li><a href="/Culture" target="_blank">科教</a></li>
+                        <li><a href="http://110.80.136.9:2000/upload.html" target="_blank" style=" background-color: #79bef9;">投稿</a></li>
+                    </ul>
+                </li>
+                <li class="playHistory">播放记录
+                    <ul class="sub" id="playHistoryList">
+                        <li>您的观看历史为空</li>
+                    </ul>
+                    <script>PlayHistoryObj.viewPlayHistory('playHistoryList')</script>
+                </li>
+                <li id="div0">
+                    <a href="http://usr.005.tv/" target="_blank">个人中心</a>
+                    <ul class="sub">
+                        <li><a href="http://usr.005.tv/User/register.html?refurl=http%3A%2F%2Fwww.dilidili.wang%2F">注册</a></li>
+                        <li><a href="http://usr.005.tv?refurl=http%3A%2F%2Fwww.dilidili.wang%2F">登录</a></li>
+                    </ul>
+                </li>
+                <li style="display:none;">
+                    <a href="http://usr.005.tv" id="div1"></a>
+                    <ul class="sub">
+                        <li><a href="http://usr.005.tv/User/loginout.html?refurl=http%3A%2F%2Fwww.dilidili.wang%2F">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <script async="async" src="http://usr.005.tv/Common/header99.html"></script>
+        <div id="search">
+            <!-- <input value="搜索漫画" onfocus="if (value =='搜索漫画'){value =''}" onblur="if (value ==''){value='搜索漫画'}" />
+        <input type="submit" value="搜索" /> -->
+            <form action="/search/index.html" target="_blank" class="search-box">
+            <input type="hidden" name="kwtype" value="0" class="s_inp" />
+            <input name="q" type="text" placeholder="百度搜索" style=" cursor: text;">
+            <input type="hidden" name="stp" value="1">
+            <!-- <i class="box2" onclick="$('.search-box').submit()"></i> -->
+            <input type="hidden" name="ie" value="utf8">
+            <input type="hidden" name="src" value="zz">
+            <input type="hidden" name="site" value="www.dilidili.wang">
+            <input type="hidden" name="rg" value="1">
+            <input type="submit" value="搜索" />
+            </form>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+    <div style=" background: rgba(112, 155, 206, 1); color: white; font-size: 1.5em; text-align: center; padding: 0.2em 0; margin: 0 auto;width: 1155px; margin-left: 35px; height: 40px; line-height: 40px;"><span>D站登陆已恢复。登陆及其他问题请加反馈三群 【925893620】联系管理员。</span></div>
+    <div id="slider_1">
+        <div class="A4"  style=" padding-top:5px;">
+            <!-- <script>
+                 WRITE_index_A4();
+             </script>-->
+            <a href="http://www.dilidili.wang/app_download/" onclick="_czc.push(['_trackEvent', '首页', '点击', 'A4']);" target="_blank"><img src="http://www.dilidili.wang/uploads/allimg/181211/299_1802344171.jpg"></a>
+        </div>
+        <!-- 首页左侧固定 -->
+        <div id="lgg" class="A2" style="position:fixed;top:600px; left:50px; z-index:90;"><a href="http://www.dilidili.wang/app_download" onclick="_czc.push(['_trackEvent', '首页左侧固定', '点击', 'A2']);" target="_blank\"><img src="http://a.005.tv/s/181211/A2.jpg"></a></div>
+        <!--  <div id="gg" ><a href="http://www.dilidili.wang/app_download" target="_blank\"><img src="http://a.005.tv/s/181126APP2/PC_footer.png"></a></div>
+        <script>
+            $(function() {
+                setTimeout(function(){
+                    $('#gg').css({'display':'none'});
+                    $('#lgg').css({'display':'block'})
+                }, 5000);
+            })
+        </script> -->
+        <div id="slider">
+            <div class="sldr">
+                <ul class="wrp animate">
+                    <!-- 第一行幻灯开始 图片大小274X290 -->
+                    <li class="elmnt-one">
+                        <div id="tuijian" class="shade">
+                            <a href="http://activity.gaonengshe.com/detail/e71Q4oGo8y" onclick="_czc.push(['_trackEvent', '推荐-1', '点击', 'A1','','tuijian']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181206/298_1855428381.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <!--<p>
+                                        <b>关于我转生变成史莱姆这档事 第10话 猪头帝</b>
+                                    </p>-->
+                            </a>
+
+                            <a href="http://www.dilidili.wang/watch3/76288/" onclick="_czc.push(['_trackEvent', '推荐-2', '点击', '','','tuijian']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/299_1338424241.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <p>
+                                        <b>东京搜查官：re 第二季 第10话</b>
+                                    </p>
+                            </a>
+
+                            <a href="http://gej.dilidili.wang/" onclick="_czc.push(['_trackEvent', '推荐-3', '点击', '','','tuijian']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181130/296_1653426271.jpg) no-repeat 50% 30%; background-size: cover;">
+
+                            </a>
+                        </div>
+                        <!-- shade end -->
+                    </li>
+                    <!-- 第一行幻灯结束 -->
+                    <!-- 第二行幻灯开始 -->
+                    <li class="elmnt-two">
+                        <div id="renqi" class="shade">
+                            <a href="http://play.11h5.com/game/?gameid=416&chid=615&trial=1" onclick="_czc.push(['_trackEvent', '人气-1', '点击', '','','renqi']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/299_1344396311.gif) no-repeat 50% 30%; background-size: cover;">
+
+                            </a>
+  <a href="http://ch615.wx.11h5.com/?chid=615&gameid=375&trial=1" onclick="_czc.push(['_trackEvent', '人气-2', '点击', '','','renqi']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181204/296_1023372271.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <!--<p>
+                                        <b></b>
+                                    </p>-->
+                            </a>
+
+                            <a href="http://www.dilidili.wang/watch3/76204/" onclick="_czc.push(['_trackEvent', '人气-3', '点击', '','','renqi']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/299_1622212041.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <p>
+                                    <b>电光超人古立特 第10话</b>
+                                </p>
+                            </a>
+
+                        </div>
+                        <!-- shade end -->
+                    </li>
+                    <!-- 第二行幻灯结束 -->
+                    <!-- 第三行幻灯开始 -->
+                    <li class="elmnt-three">
+                        <div id="xinfan" class="shade">
+                            <a href="http://www.dilidili.wang/watch3/76157/" onclick="_czc.push(['_trackEvent', '新番-1', '点击', '','','xinfan']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/299_1616172081.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <p>
+                                    <b>战栗杀机 第22话</b>
+                                </p>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/watch3/76201/" onclick="_czc.push(['_trackEvent', '新番-2', '点击', '','','xinfan']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/299_1619049671.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <p>
+                                    <b>哥布林杀手 第10话</b>
+                                </p>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/watch3/76190/" onclick="_czc.push(['_trackEvent', '新番-3', '点击', '','','xinfan']);" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/299_1621099631.jpg) no-repeat 50% 30%; background-size: cover;">
+                                <p>
+                                    <b>我让最想被拥抱的男人给威胁了 第10话</b>
+                                </p>
+                            </a>
+
+                            <!-- shade end -->
+                    </li>
+                    <!-- 第三行幻灯结束 -->
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <ul class="selectors">
+                <li class="focalPoint"><a href="">推荐</a></li>
+                <li><a href="">人气</a></li>
+                <li><a href="">新番</a></li>
+            </ul>
+            <!--
+            <button class="sldr-prv sldr-nav prev"><</button>
+            <button class="sldr-nxt sldr-nav next">></button>
+    -->
+        </div>
+    </div>
+
+    <!-- slider end -->
+
+    <div class="side">
+        <div class="change">
+            <!-- <a href="" class="button">新番时间表</a> -->
+            <div class="sldr">
+                <ul class="wrp animate">
+                    <!-- 星期一开始 -->
+                    <li class="elmnt-one">
+                        <div class="book small">
+                            <a href="http://www.dilidili.wang/anime/baki/" class=" tooltip"  title="<h2>新刃牙</h2><p>电视动画《刃牙》改编自板垣惠介创作的同名系列漫画中的第二部，于2018年1月宣布了动画化的消息 。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180625/290_0022514881.jpg" alt="新刃牙">
+                                    <figcaption>
+                                        <p>新刃牙</p>
+                                        <p>第25话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/anime/kyojin3/" class=" tooltip"  title="<h2>进击的巨人第三季</h2><p>一位命运如天秤般摇摆不定的少女的故事~</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180625/290_0026105421.jpg" alt="进击的巨人第三季">
+                                    <figcaption>
+                                        <p>进击的巨人第三季</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="/anime/puzzledragons/"  class="hot
+ tooltip"  title="<h2>智龙迷城</h2><p>做世界第一玩家！</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_2007164591.jpg" alt="智龙迷城">
+                                    <figcaption>
+                                        <p>智龙迷城</p>
+                                        <p>第37话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+
+                            <a href="/anime/jwjxydej/" class=" tooltip"  title="<h2>叫我僵小鱼 第二季</h2><p>呆萌小僵尸的冒险~~~~~</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_1928492502.jpg" alt="叫我僵小鱼 第二季">
+                                    <figcaption>
+                                        <p>叫我僵小鱼 第二季</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                            <!--7月新番周一--->
+                            <a href="http://www.dilidili.wang/anime/gintama5/" class=" tooltip"  title="<h2>银魂. 银之魂篇 第二季</h2><p>羁绊，热血，笑点，吐槽点并存的完美收尾！银之魂篇再开！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180622/290_1556067981.jpg" alt="银魂. 银之魂篇 第二季">
+                                    <figcaption>
+                                        <p>银魂. 银之魂篇 第二季</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/anime/ThunderboltFantasy/" class="hot
+ tooltip"  title="<h2>Thunderbolt Fantasy 东离剑游纪2</h2><p>昔日一场魔界大军与人界的战争中，人类锻造出诸多足以发挥无匹力量的兵器——“神诲魔械”。战争过后，这批为数众多的神诲魔械被交由护印师长久看守，其中由“丹衡”、“丹翡”这对护印师兄妹所守护的，乃是神诲魔械中的最强兵器“天刑剑”······</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0309521641.jpg" alt="Thunderbolt Fantasy 东离剑游纪2">
+                                    <figcaption>
+                                        <p>Thunderbolt Fantasy 东离剑游纪2</p>
+                                        <p>第日配11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/kamuy2/" class="hot
+ tooltip"  title="<h2>黄金神威第二季</h2><p>在日俄战争中存活并创下不少功勋的士兵「杉元佐一」，拥有着「不死身杉元」称号。战后他为了某个目的需要大笔金钱，前往了当时号称能一夕致富的北海道展开寻宝冒险。在当地他邂逅了阿依努的少女「阿席莉帕」，并一同踏上寻找宝藏之旅……</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0259412581.jpg" alt="黄金神威第二季">
+                                    <figcaption>
+                                        <p>黄金神威第二季</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/tsurune/" class=" tooltip"  title="<h2>弦音-风舞高中弓道部</h2><p>弦音是弓箭射出时弓弦发出的声音。对于射手而言发出美丽的弦音是一种喜悦，美妙的弦音能够抓住人们的心脏而不离去。即便是同一个选手使用同一张弓，也会发出不同的弦音，正如同一生只有一次的缘分。一次射击就如同一生一次的“相遇”和“离别”。对于鸣宫凑而言，弦音是所有“相遇”的开始……。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0453491161.jpg" alt="弦音-风舞高中弓道部">
+                                    <figcaption>
+                                        <p>弦音-风舞高中弓道部</p>
+                                        <p>第8话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/AnimaYell/" class=" tooltip"  title="<h2>Anima Yell!</h2><p>在初中三年级毕业之前，鸠谷小羽看到了啦啦队为棒球比赛应援的场景，为她开启了一扇新世界的大门，让她开始对啦啦队感兴趣，升入高中后马上就要加入学校的啦啦队。但是她所在的高中根本就没啦啦队这样的社团，但她遇到了曾经有过参与啦啦队经验的有马日诘，小羽觉得这是命运般的邂逅，认为这是天降大任于自己……</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0437019321.jpg" alt="Anima Yell!">
+                                    <figcaption>
+                                        <p>Anima Yell!</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/gaikotsu-honda/" class=" tooltip"  title="<h2>书店里的骷髅店员本田</h2><p>你认为书店是什么样的地方？在这里，骷髅店员「本田」每日挺身战斗着！与工作、与绝版、与爱着漫画的人们，每日与各种你所想不到的事情奋斗，更让人发现原来书店的漫画区竟是个如此爆笑的地方！？《书店里的骷髅店员本田》带你进入不一样的书店世界！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0258102291.jpg" alt="书店里的骷髅店员本田">
+                                    <figcaption>
+                                        <p>书店里的骷髅店员本田</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/HimoteHouse/" class="hot
+ tooltip"  title="<h2>不受欢迎之家</h2><p>《HIMOTE HOUSE》动画的主角是纽手家的三姐妹ときよ、きなみ、こころ，こころ的同学由上坂堇和洲崎绫配音，西明日香为猫配音，这部动画的主题是女生日常喜剧，个性不同的角色聚在一起每天讨论如何才能受欢迎~</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181014/298_1615081001.jpg" alt="不受欢迎之家">
+                                    <figcaption>
+                                        <p>不受欢迎之家</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/regenesis2/" class="hot
+ tooltip"  title="<h2>苍天之拳REGENESIS 第2期</h2><p>讲述了在北斗1800年历史中被称为最强的第62代北斗神拳传人霞拳志郎的故事。《苍天之拳REGENESIS》的新系列在月刊漫画研讨会（德间书店）上连载中，TV动画第1期于4月开始播放。第二期的主视觉图是伴随着“拳志郎，苍天已死”的文字，描绘了拳志郎的背影。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0246176681.jpg" alt="苍天之拳REGENESIS 第2期">
+                                    <figcaption>
+                                        <p>苍天之拳REGENESIS 第2期</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/lxaiyl/" class="hot
+ tooltip"  title="<h2>麟&犀AI韵律2</h2><p>刚刚诞生的人工智能（AI）、Kilin（麟）和Xi（犀）。神秘的制片人将她们设计成了人工智能偶像，两人肩负着搭建中日桥梁的重任。Kilin：“该做什么好呢！偶像是什么呢？”Xi：“语言不通！人类本身又是什么呢？”疑问重重!!!两人最终会成为中日的桥梁么!?</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0145394611.jpg" alt="麟&犀AI韵律2">
+                                    <figcaption>
+                                        <p>麟&犀AI韵律2</p>
+                                        <p>第10（中文版）话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 星期一结束 -->
+                    <!-- 星期二开始 -->
+                    <li class="elmnt-two">
+                        <div class="book small">
+
+                            <a href="/anime/tomodachi/" class="hot
+ tooltip"  title="<h2>足球小将翼</h2><p>童年回忆归来~~</p>" >
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_2033341694.jpg" alt="足球小将翼">
+                                    <figcaption>
+                                        <p>足球小将翼</p>
+                                        <p>第37话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+
+                            <a href="/anime/blackclover/" class="hot
+ tooltip"  title="<h2>黑色五叶草</h2><p>我是要成为魔法帝的男人！</p>" >
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_2040197844.jpg" alt="黑色五叶草">
+                                    <figcaption>
+                                        <p>黑色五叶草</p>
+                                        <p>第62话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+
+                            <a href="/anime/cattleylayton" class=" tooltip"  title="<h2>雷顿神秘侦探社</h2><p>不论何种谜团都全部解明，这就是我雷顿侦探社的宗旨。</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_2139237691.jpg" alt="雷顿神秘侦探社">
+                                    <figcaption>
+                                        <p>雷顿神秘侦探社</p>
+                                        <p>第34话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <!--10月新番周二--->
+                            <a href="http://www.dilidili.wang/anime/ten-sura/" class="hot
+ tooltip"  title="<h2>关于我转生变成史莱姆这档事</h2><p>史莱姆生活，开始了。上班族的三上悟在道路上被歹徒给刺杀身亡后，回过神来发现自己转生到了异世界。不过，自己居然是“史莱姆”！他在得到利姆露这个名字后开始了自己的史莱姆人生，随着与各个种族相处交流的过程中，他定下了一个目标——那就是“建立一个任何种族都能愉快地一起生活的国家”！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181010/296_1805008651.jpg" alt="关于我转生变成史莱姆这档事">
+                                    <figcaption>
+                                        <p>关于我转生变成史莱姆这档事</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/tokyoghoulre2/" class="hot
+ tooltip"  title="<h2>东京搜查官：re 第二季</h2><p>在东京街头，一群成谜的吃人怪人“喰种”正悄悄在人类世界扩张他们的势力──平凡的大学生金木研因为遭到喰种猎食而性命垂危。医生为他进行了器官移植手术，然而器官提供者其实是喰种…。在病床上醒来的金木很快就感觉到身体不对劲，原本记忆中美味的食物全都走味到难以下咽…</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0206335531.jpg" alt="东京搜查官：re 第二季">
+                                    <figcaption>
+                                        <p>东京搜查官：re 第二季</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/tiramisu2/" class="hot
+ tooltip"  title="<h2>宇宙战舰提拉米斯II</h2><p>在人类将生活领域及欲望扩大至宇宙的时代，追求自由的人们前往宇宙中居住，他们的睿智孕育出文明，不知何时演变成了威胁地球的存在。宇宙历0156年，地球联邦政府从祖母星格兰玛斯接受史上第4次接触(4th note)的那一年，与【梅图斯之民】的抗争也进入正式化。永无止境的战争，以及不断增加的牺牲……。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0155258741.jpg" alt="宇宙战舰提拉米斯II">
+                                    <figcaption>
+                                        <p>宇宙战舰提拉米斯II</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/sidem-wakemini/" class="hot
+ tooltip"  title="<h2>偶像大师 Side M mini</h2><p>《偶像大师 SideM》（日语：アイドルマスター SideM）是以『THE IDOLM@STER』的世界观为主题的手机平台的社交游戏。由NBGI与altplus共同制作，基于MOBAGE平台的一款手机社交游戏。与偶像大师 million live、偶像大师灰姑娘女孩和 偶像大师 shiny colo</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0217356011.jpg" alt="偶像大师 Side M mini">
+                                    <figcaption>
+                                        <p>偶像大师 Side M mini</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/hashiyoka/" class=" tooltip"  title="<h2>能继续奔跑下去真是太好了。</h2><p>日本历史最悠久的动漫学校「代代木动画学院（代々木アニメーション学院）」，长久以来培养出不少知名动画师、导演和声优等，在创校40周年这值得庆祝的一年中，代代木动画学院决定将推出以声优科为背景的原创动画《走り続けてよかったって。（暂译：永不止步真好）》，预计今年10月正式开播！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0234361231.jpg" alt="能继续奔跑下去真是太好了。">
+                                    <figcaption>
+                                        <p>能继续奔跑下去真是太好了。</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/xuanyuansword/" class="hot
+ tooltip"  title="<h2>轩辕剑·苍之曜</h2><p>古十大神器“太一轮”，因在其刻上了“太白克太辰”，使得历史产生了巨大的变化。太白帝国由于量产“机关兽”，并用其强大的武力掌握了神州大地。但野心无垠，太白帝国为了追求比神州大地更辽阔的版图，意图取得天下。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0225134831.jpg" alt="轩辕剑·苍之曜">
+                                    <figcaption>
+                                        <p>轩辕剑·苍之曜</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/BARHUNTER/" class="hot
+ tooltip"  title="<h2>爆钓BARHUNTER</h2><p>电视动画《爆钓 Bar Hunter》中，非常喜欢钓鱼的主人公立津手トッタ由广桥凉配音，主人公的搭档ポテペン由内山夕实配音，主人公的竞争对手鲛岛キバ由斋贺光希配音，从碳酸饮料的条形码中出现的条形码之魂シュワ次郎由根本幸多配音。此外，电视动画的系列监督濑藤健嗣担当，系列构成由加藤阳一负责，角色设计由横</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0221155651.jpg" alt="爆钓BARHUNTER">
+                                    <figcaption>
+                                        <p>爆钓BARHUNTER</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/drdfjd/" class="hot
+ tooltip"  title="<h2>大人的防具店</h2><p>故事讲述了在有着这样野心的防具店店主·纳登手下工作的，对女性和魔力耐性极低的店员卡伍兹充满眼福(?)的每一天。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181015/298_1003225771.jpg" alt="大人的防具店">
+                                    <figcaption>
+                                        <p>大人的防具店</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 星期二结束 -->
+
+                    <!-- 星期三开始 -->
+                    <li class="elmnt-three">
+                        <div class="book small">
+
+                            <a href="http://www.dilidili.wang/anime/zjglylgc/" class="hot
+ tooltip"  title="<h2>中间管理录利根川</h2><p>感觉漫画里就像是整个帝爱集团就利根川一个中层干部，道尽了广大上班族的心酸——</p>" >
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180622/290_1822213941.jpg" alt="中间管理录利根川">
+                                    <figcaption>
+                                        <p>中间管理录利根川</p>
+                                        <p>第23话</p>
+                                            </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+
+                            <!--7月新番周三--->
+
+                            <a href="http://www.dilidili.wang/anime/wxhdsmmdbsmm/" class=" tooltip"  title="<h2>我喜欢的是小说里的你</h2><p>成绩优秀，还担任学生会长的完美优等生，初中三年级的妹妹永见凉花获得了轻小说大赏。而且小说的内容是“溺爱哥哥的妹妹的甜蜜恋爱物语”。明明作为哥哥的我一直都很严厉，但受到对轻小说和萌完全不懂的凉花的拜托，我代替她作为轻小说作家出道。仅仅如此已经麻烦不已了，被出版的小说还空前热销！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0312214761.jpg" alt="我喜欢的是小说里的你">
+                                    <figcaption>
+                                        <p>我喜欢的是小说里的你</p>
+                                        <p>第8话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/qiangfengchuifu/" class="hot
+ tooltip"  title="<h2>强风吹拂</h2><p>长跑的目标不是更快，而是更强。“明明这么痛苦，这么难过，为什么就是不能放弃跑步？因为全身细胞都在蠢蠢欲动，想要感受强风迎面吹拂的滋味。”宽政大学宿舍“竹青庄”的十名舍友凑成杂牌长跑队，在队长清濑灰二的魔鬼训练下，从零开始向日本历史最悠久的长跑接力赛“箱根驿传”挺进 。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0504352721.jpg" alt="强风吹拂">
+                                    <figcaption>
+                                        <p>强风吹拂</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/conception-anime/" class="hot
+ tooltip"  title="<h2>为我而生</h2><p>一个被召唤到魔法世界「グランバニア」的主人公玩家弓削イツキ，成为唯一能够净化『污秽』的救世主。为了对抗侵袭各地的污秽，他将一边邂逅12星座的巫女们、和每个巫女相爱结合且生下混血儿「星の子」，然后带着这群「星の子」们一起浩浩荡荡去消灭污秽，拯救这个濒临崩坏的魔法世界。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0502557171.jpg" alt="为我而生">
+                                    <figcaption>
+                                        <p>为我而生</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/ingress/" class=" tooltip"  title="<h2>ingress</h2><p>在2013年，瑞士的原子核研究机构「CERN」，发现了希格斯玻色子而秘密展开「Niantic计画」，进行研究可干涉人类精神的未知物质「Exotic Matter」，简称「XM」，这种物质自古以来便能感应人类的精神与能力，对人类的历史有重大的影响。消息传出后，世界各国机关纷纷组织研究团队，即将掀起强国</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0248591641.jpg" alt="ingress">
+                                    <figcaption>
+                                        <p>ingress</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/rerided/" class=" tooltip"  title="<h2>RErideD-穿越时空的德理达</h2><p>2050年、由于在父亲创立的制造公司Rebuild中对「自律机械DZ」的开发做出了贡献，因而年纪轻轻就赢得了名声的技术人员「德里达·伊万」。在某天意外注意到了「DZ」的重大缺陷，但上司却完全不听从忠告，对此感到生气的他在知道危险的情况下仍然拖延应对，并前去参加内桑的爱女「玛吉」的生日派对。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0252414371.jpg" alt="RErideD-穿越时空的德理达">
+                                    <figcaption>
+                                        <p>RErideD-穿越时空的德理达</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/jingaisan/" class=" tooltip"  title="<h2>嫁给非人类</h2><p>讲述了16 岁的普通高中男生日之轮泊，被生物、性别都完全不明的人外生物カネノギ指定为老婆（没错，老婆，虽然是男的），从此与其一同生活，朝夕相处，逐渐适应的神奇故事。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180926/296_1619534151.jpg" alt="嫁给非人类">
+                                    <figcaption>
+                                        <p>嫁给非人类</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/wkjedl/" class=" tooltip"  title="<h2>喂，看见耳朵啦</h2><p>单身青年大树与一只萌宠猫咪——阿淼的生活趣事。自幼在孤儿院长大的大树是一位名不经传的漫画家，过着不温不火的孤独生活。对于“温暖”“幸福”只存在字面上的意思。自从神秘的“耳朵族”猫咪——阿淼的到来，与萌宠的共同生活，使大树的生活发生了翻天覆地的变化，尽管手忙脚乱，麻烦不断，但也给大树带来了“真正”的生</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0237592721.jpg" alt="喂，看见耳朵啦">
+                                    <figcaption>
+                                        <p>喂，看见耳朵啦</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 星期三结束 -->
+                    <!-- 星期四开始 -->
+                    <li class="elmnt-four">
+                        <div class="book small">
+
+                            <a href="/anime/aikatsu6/" class=" tooltip"  title="<h2>偶像活动Friends</h2><p>与朋友一起进行偶像活动！</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180420/290_1533294011.jpg" alt="偶像活动Friends">
+                                    <figcaption>
+                                        <p>偶像活动Friends</p>
+                                        <p>第35话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="/anime/wgjjtdf/" class=" tooltip"  title="<h2>卫宫家今天的饭</h2><p>看fate学做菜系列~~~</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/6_1914191084.jpg" alt="卫宫家今天的饭">
+                                    <figcaption>
+                                        <p>卫宫家今天的饭</p>
+                                        <p>第12话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                            <a href="/anime/vrains/" class=" tooltip"  title="<h2>游戏王VRAINS</h2><p>游戏王VRAINS」是「游戏王」系列的第6部作品。</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/6_1914195195.jpg" alt="游戏王VRAINS">
+                                    <figcaption>
+                                        <p>游戏王VRAINS</p>
+                                        <p>第80话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/anime/BanGDreamGirlsBandPartyPICO" class=" tooltip"  title="<h2>BanG Dream! Girls Band Party!☆PICO</h2><p>我家彩世界第一卡哇伊</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180622/290_1927344091.jpg" alt="BanG Dream! Girls Band Party!☆PICO">
+                                    <figcaption>
+                                        <p>BanG Dream! Girls Band Party!☆PICO</p>
+                                        <p>第23话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <!--7月新番周四--->
+
+                            <a href="http://www.dilidili.wang/anime/kuileimaxituan/" class=" tooltip"  title="<h2>魔偶马戏团</h2><p>才贺是日本大财团，以高科技产品闻名，才贺集团的各式各样机械技术之所以处于领导地位，是因为才贺家的男性由他们的祖先到现在都很喜欢机动木偶， 所以对于机械设计颇有心得。才贺集团主席才贺贞义和情妇生下一个小孩子，名叫 胜 。胜还是一个小学生，在才贺贞义因为交通意外身亡后，继承了所有遗产。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0311075831.jpg" alt="魔偶马戏团">
+                                    <figcaption>
+                                        <p>魔偶马戏团</p>
+                                        <p>第9话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/qingchunqizhutou/" class=" tooltip"  title="<h2>青春猪头少年不会梦到兔女郎学姐</h2><p>就读县立峰原高中（峰ヶ原高等学校）二年级的梓川咲太在某天帮妹妹在图书馆借书时，偶然遇见野生的兔女郎，而那个兔女郎的真实身分是家喻户晓的、已引退两年的艺人、就读咲太学校三年级的樱岛麻衣，她因为思春期症候群的症状而逐渐被人遗忘，而咲太为了帮她而逐渐亲近在学校被当成空气的麻衣。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0308252941.jpg" alt="青春猪头少年不会梦到兔女郎学姐">
+                                    <figcaption>
+                                        <p>青春猪头少年不会梦到兔女郎学姐</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/pannixingbaiwan/" class=" tooltip"  title="<h2>叛逆性百万亚瑟王</h2><p>在《叛逆性百万亚瑟王》中登场的六位亚瑟主角，他们是百万名亚瑟中的一份子，却又和其他亚瑟不同，身负特殊使命。他们是“特工亚瑟”，曾在某处经过特殊训练，以正义的信念集结于此。可以肯定的是，他们的背后是不列颠的神秘势力，指挥六位亚瑟执行秘密任务，其意图不得而知。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0305439511.jpg" alt="叛逆性百万亚瑟王">
+                                    <figcaption>
+                                        <p>叛逆性百万亚瑟王</p>
+                                        <p>第7话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/beelmama/" class=" tooltip"  title="<h2>只要贝尔哲布布大小姐喜欢就好</h2><p>从天界堕落，成为恶魔的前天使们工作的地方，魔界·万魔殿之主·别西卜阁下。身为别西卜的近侍，侍奉她左右的新人职员·穆林。别西卜知性而又凛然……本以为如此，实际上她是最喜欢软绵绵的轻盈少女！即使对理想与现实的落差感到困惑，穆林仍然每天都在缩短与别西卜之间的距离。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180926/296_1624175971.jpg" alt="只要贝尔哲布布大小姐喜欢就好">
+                                    <figcaption>
+                                        <p>只要贝尔哲布布大小姐喜欢就好</p>
+                                        <p>第9话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/mercstoria/" class=" tooltip"  title="<h2>梅露可物语 : 无精打采的少年与瓶中少女</h2><p>《梅露可物语》的舞台是一个人类和魔宠共存的世界，虽然魔宠有时候会和人类发生冲突，但是有一种人类拥有治愈并引导魔宠的能力，他们被称作“愈术士”。故事从平凡的主人公醒来开始，而叫醒他的竟然是个瓶装少女！为了帮助自己的好友“梅露可”取回失去的记忆，见习愈术士少年决定踏上旅途。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0203499581.jpg" alt="梅露可物语 : 无精打采的少年与瓶中少女">
+                                    <figcaption>
+                                        <p>梅露可物语 : 无精打采的少年与瓶中少女</p>
+                                        <p>第9话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/ssxz/" class=" tooltip"  title="<h2>松松小镇</h2><p>讲述了小松鼠松松、乐乐与小伙伴小猴芒克、飞鼠飞飞、小兔贝贝、仓鼠卡卡和鹦鹉利奥一同在松松小镇生活的有趣日常。故事中的他们都有自己的性格特点，在相互陪伴和玩耍中一同学到知识、体验生活，一起成长进步。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181119/296_1654229321.jpg" alt="松松小镇">
+                                    <figcaption>
+                                        <p>松松小镇</p>
+                                        <p>第15话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 星期四结束 -->
+
+                    <!-- 星期五开始 -->
+                    <li class="elmnt-five">
+                        <div class="book small">
+
+                            <a href="http://www.dilidili.wang/anime/snts/" class=" tooltip"  title="<h2>杀戮天使</h2><p>两人最终是否能够坚守约定，并且安全地逃出这栋大楼呢？</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180624/290_2221166311.jpg" alt="杀戮天使">
+                                    <figcaption>
+                                        <p>杀戮天使</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <!--7月新番周五--->
+
+                            <a href="http://www.dilidili.wang/anime/zlsj/" class=" tooltip"  title="<h2>战栗杀机</h2><p>纽约。拥有端正得非同寻常的容貌，以及卓越战斗力的少年·亚修。统率着街头黑帮的他，从被手下杀死的男人那里听到了对方临死时说出的“BANANA FISH”这一神秘话语。与此同时，他与身为摄影师的助手前来取材的日本人少年·奥村英二相遇了。两人开始一同追寻“BANANA FISH”之谜——</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180622/290_1957088191.jpg" alt="战栗杀机">
+                                    <figcaption>
+                                        <p>战栗杀机</p>
+                                        <p>第22话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/kitsune/" class=" tooltip"  title="<h2>狐狸之声</h2><p>热爱音乐却遭遇不幸毁容的少年，生活所困只能偷偷为五音不全的偶像派明星做代唱，然而他代唱的事实被一个神秘人物发现，故事就此展开……</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0230476851.jpg" alt="狐狸之声">
+                                    <figcaption>
+                                        <p>狐狸之声</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/CastlevaniaSeason2/" class=" tooltip"  title="<h2>恶魔城 第二季</h2><p>Netflix根据《恶魔城3：德古拉的诅咒》改编，由Warren Ellis（《死亡空间》）担任编剧，于2017年推出的动画版《恶魔城》，虽然只有短短四集，但凭借着不俗的表现收获了大量玩家好评。就在日前，Warren Ellis在其推特上表示《恶魔城》动画版第二季将在今年10月26日开播。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0236288471.jpg" alt="恶魔城 第二季">
+                                    <figcaption>
+                                        <p>恶魔城 第二季</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/BAKUMATSU/" class=" tooltip"  title="<h2>BAKUMATSU 恋爱幕末男友</h2><p>电视动画《BAKUMATSU 恋爱幕末男友》改编自Furyu发行的女性向恋爱模拟游戏《恋爱幕末男友～在时空的彼方盛开之恋～（恋爱幕末カレシ～时の彼方で花咲く恋～）》。讲述了玩家们从现代穿越到幕末时代，并将与12位英俊帅气的幕末志士展开一场甜蜜的恋爱物语。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0241035731.jpg" alt="BAKUMATSU 恋爱幕末男友">
+                                    <figcaption>
+                                        <p>BAKUMATSU 恋爱幕末男友</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/shanluanshengle2/" class=" tooltip"  title="<h2>闪乱神乐第二季 SHINOVI MASTER -东京妖魔篇-</h2><p>一个现在还存在着忍者的世界中，现代忍者的雇主，是政治家、大企业的干部们。持有强大权力的人当中，有著一些将忍者当作满足自己欲望的道具的人存在。为了对抗这些在黑暗中的“恶忍”，政府开始执行了某个计划―“善忍”―也就是养成属於国家的忍者的秘密计划。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0148459351.png" alt="闪乱神乐第二季 SHINOVI MASTER -东京妖魔篇-">
+                                    <figcaption>
+                                        <p>闪乱神乐第二季 SHINOVI MASTER -东京妖魔篇-</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/hinomaru-zumou/" class=" tooltip"  title="<h2>火之丸相扑</h2><p>斗志昂昂！怀揣梦想的大汉们开始了激烈的斗争——弱小的大太刀高中相扑部出现的新生、“体型小”的・少年潮火之丸！这个在“身高”“体重”上均不适合比赛的体格的新入部员，实际上有着可怕的过去！？火之丸和弱小相扑部达到顶峰的道路——―白热化的高中相扑，开幕！！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0201596761.jpg" alt="火之丸相扑">
+                                    <figcaption>
+                                        <p>火之丸相扑</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/yagakimi/" class=" tooltip"  title="<h2>终将成为你</h2><p>因不明白与人恋爱的心情而感到烦恼的小糸侑，在初中毕业时被要好的男生告白但却无法给予回应。侑在此时邂逅了学生会成员七海灯子，灯子不论被谁告白都无法喜欢上对方。与灯子有所共鸣的侑向灯子诉说了自己的烦恼，却反而从灯子那里听到了意想不到的话语——“我好像会喜欢上你。”</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180926/296_1626472701.jpg" alt="终将成为你">
+                                    <figcaption>
+                                        <p>终将成为你</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/gurazeni2/" class=" tooltip"  title="<h2>钱进球场第二季</h2><p>《钱进球场》以「凡田夏之介」的角度观看日本职棒，他是一名高中毕业就加入职棒，年薪1800万日圆的选手，靠着左侧投这项独特的武器，即使混得不上不下仍有口饭吃。在夏之介眼中年薪就代表着职棒选手的地位，因为选手其实背负了许多外人不曾想过的风险，而薪水正是面对这些风险时的最佳保障。透过这独特的观点，职棒不为</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0435305511.jpg" alt="钱进球场第二季">
+                                    <figcaption>
+                                        <p>钱进球场第二季</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/uzamaid/" class=" tooltip"  title="<h2>我家女仆有够烦！</h2><p>因为母亲早逝、一直以来都是和父亲两人生活的可爱小学生「弥纱」，一直无法接受父亲请来帮忙家务的帮佣们，总是到处恶作剧逼她们自己离开。但在某天、一位日本自卫官退伍的女仆「燕」替补前一位帮佣来到了弥纱家中，面对不怕任何恶作剧、还特别喜欢幼女的燕， 弥纱究竟要面临到什么样的生活呢！？</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181106/296_1444097751.jpg" alt="我家女仆有够烦！">
+                                    <figcaption>
+                                        <p>我家女仆有够烦！</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/kyuketsukisan/" class=" tooltip"  title="<h2>邻家索菲</h2><p>喜欢人偶的女高中生天野灯被一名女吸血鬼所救，并且被她酷似人偶的容貌所吸引，于是，小灯就这样擅自搬进吸血鬼的家里。如果和夜行性的吸血鬼一起生活，熬夜根本是家常便饭!?面对以笔记型电脑在网路上购物的市井小民派吸血鬼，又会发生什么事？人类与吸血鬼的诡异同居生活就此揭开序幕！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0452284481.jpg" alt="邻家索菲">
+                                    <figcaption>
+                                        <p>邻家索菲</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/dakaretai/" class=" tooltip"  title="<h2>我让最想被拥抱的男人给威胁了</h2><p>连续5年获得“最想被他拥抱的男人排行榜第1位”的资深演员・西条高人、以及夺走了这个宝座的新人演员・东谷准太。以演艺界为背景舞台展开的两位“最想被他拥抱的男人”之间的禁断丑闻。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0456581141.jpg" alt="我让最想被拥抱的男人给威胁了">
+                                    <figcaption>
+                                        <p>我让最想被拥抱的男人给威胁了</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/project-index3/" class=" tooltip"  title="<h2>魔法禁书目录第三季</h2><p>电视动画《魔法禁书目录Ⅲ》改编自日本轻小说家镰池和马原作的轻小说《魔法禁书目录》，是电视动画《魔法禁书目录》系列的第3期。2017年10月1日，在“电击文库 秋之祭典2017”活动当中正式宣布了《魔法禁书目录Ⅲ》的制作决定!将于2018年10月播出</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0316285511.jpg" alt="魔法禁书目录第三季">
+                                    <figcaption>
+                                        <p>魔法禁书目录第三季</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/mflsws/" class=" tooltip"  title="<h2>魔法律事务所</h2><p>发生在本来世界上不应该存在的死灵横行伤人的事件的现代日本。所谓魔法律协会，是根据魔法律裁决幽灵犯罪而新设置的机构。六冰魔法律事务所是主要的舞台，以魔法律运用自如的天才少年六冰与平庸助手郎次两人的活跃作为主轴，故事就此展开——</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0507371031.jpg" alt="魔法律事务所">
+                                    <figcaption>
+                                        <p>魔法律事务所</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/devidol/" class=" tooltip"  title="<h2>Devidol！</h2><p>2018年秋アニメ「でびどる！」公式アカウントです。 「コチンPa!」第３期としての今回はなんと15秒→15分へと約60倍の大進化をしちゃいます!! 放送はTOKYO MX / dアニメストア他にて毎週木曜25:05、 初回放送は10/4(木)となります。ハッシュタグは #でびどる もしくは #de</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0227029471.jpg" alt="Devidol！">
+                                    <figcaption>
+                                        <p>Devidol！</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 星期五结束 -->
+
+                    <!-- 星期六开始 -->
+                    <li class="elmnt-six">
+                        <div class="book small">
+
+                            <a href="http://www.dilidili.wang/anime/Robu" class=" tooltip"  title="<h2>罗布奥特曼</h2><p> 在罗布奥特曼中，讲述的是和之前的奥特曼完全不一样的剧情。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180707/290_1055595281.jpg" alt="罗布奥特曼">
+                                    <figcaption>
+                                        <p>罗布奥特曼</p>
+                                        <p>第23话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <!--7月新番周六--->
+
+                            <a href="http://www.dilidili.wang/anime/tyzdyntx/" class=" tooltip"  title="<h2>汤摇庄的幽奈同学</h2><p>肉体派灵能力者·冬空凩。被恶灵附身，背负了巨额欠款的他，为了寻找房租便宜的房间，而住进了有着种种传闻的温泉旅馆·汤摇庄。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180624/290_2322042391.jpg" alt="汤摇庄的幽奈同学">
+                                    <figcaption>
+                                        <p>汤摇庄的幽奈同学</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/anime/yamato2202/" class=" tooltip"  title="<h2>宇宙战舰大和号2202 爱的战士们</h2><p>影片《宇宙战舰大和号2202 爱的战士们》是一部由羽原信义执导的影片，该片于2016年后日本上映。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181012/296_1748197661.jpg" alt="宇宙战舰大和号2202 爱的战士们">
+                                    <figcaption>
+                                        <p>宇宙战舰大和号2202 爱的战士们</p>
+                                        <p>第第七章特报话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/zoidswild/" class=" tooltip"  title="<h2>ZOIDS WILD</h2><p>ZOIDS——拥有金属的肉体、动物的本能以及斗争心，立于生态系统顶点的最强生命体。ZOIDS与人类结下究极的羁绊之时，其隐藏的力量将会觉醒！其名为……WILD BLAST！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180917/295_1859006771.jpg" alt="ZOIDS WILD">
+                                    <figcaption>
+                                        <p>ZOIDS WILD</p>
+                                        <p>第23话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/huanyingguanglin/" class=" tooltip"  title="<h2>欢迎光临千岁酱</h2><p>住在京都的小企鹅，名叫千岁酱。毛绒绒的惹人怜爱的小企鹅千岁酱，最喜欢好吃的东西和开心的事情了。与人接触，吃（被喂食）好吃的食物——遵从自己的好奇心，在京都的街头转悠。清水寺·银阁寺·祇园……令人怀念又不时感到温暖，似乎能让心情一下子舒畅起来，治愈的企鹅短篇。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0307068331.jpg" alt="欢迎光临千岁酱">
+                                    <figcaption>
+                                        <p>欢迎光临千岁酱</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/nzcp2/" class=" tooltip"  title="<h2>逆转裁判第二季</h2><p>在2016年改编为动画版《逆转裁判〜对这个「真相」，有异议！〜》相隔两年之后，官方宣布了动画Season 2的好消息，又可以见到成歩堂龙一、绫里真宵他们在电视动画​​上活跃的模样。动画Season 2主要制作团队和声优卡司将承袭之前的阵容，时间预定为2018年秋天播映。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0302371461.jpg" alt="逆转裁判第二季">
+                                    <figcaption>
+                                        <p>逆转裁判第二季</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/juliet/" class=" tooltip"  title="<h2>寄宿学校的朱丽叶</h2><p>寄宿学校，达利亚学园。伫立在孤岛的这个名门学校中，聚集了敌对的两个国家的学生，每天，他们都在持续着互相的斗争……就在这种状况下，东和国专用公寓的一年级生领袖——犬冢露壬雄，与威斯特公国专用公寓的一年级生领袖——朱丽叶·贝尔西亚，其实是对秘密的情侣！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180926/296_1628489451.jpg" alt="寄宿学校的朱丽叶">
+                                    <figcaption>
+                                        <p>寄宿学校的朱丽叶</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/jojo-animation5/" class=" tooltip"  title="<h2>JOJO的奇妙冒险 黄金之风</h2><p>《JOJO的奇妙冒险：黄金之风》为荒木飞吕彦所著的漫画《JoJo的奇妙冒险》的第五部，收录于单行本47集至63集之中。故事的背景为意大利，公元2001年，意大利那不勒斯的少年乔鲁诺‧乔巴拿（DIO的儿子），为了成为一名黑道巨星，而加入了黑手党组织“热情”，并成为布加拉提小队的成员。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0454568571.jpg" alt="JOJO的奇妙冒险 黄金之风">
+                                    <figcaption>
+                                        <p>JOJO的奇妙冒险 黄金之风</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/Radiant/" class=" tooltip"  title="<h2>Radiant</h2><p>憧憬成为帅气的大魔法使的赛特，为了打倒来自天空的怪物涅墨西斯，每天都在努力的进行魔法特训，但赛特的训练一直不顺利，总是引起纠纷给村子里的人添麻烦。某一日，巨型涅墨西斯袭击了村子，为了拯救世界彻底消除涅墨西斯，赛特下定决心去寻找传说中涅墨西斯巢穴地，在旅途中赛特不断的遇到新的伙伴与新的强敌不断的成长。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0448096921.jpg" alt="Radiant">
+                                    <figcaption>
+                                        <p>Radiant</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/laiziduocaishijiedemingtian/" class=" tooltip"  title="<h2>来自多彩世界的明天</h2><p>《来自多彩世界的明天》是动画公司P.A.WORKS制作的原创动画作品，于2018年3月16日宣布了制作决定，动画预计于2018年10月起播出。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181013/299_1548098741.jpg" alt="来自多彩世界的明天">
+                                    <figcaption>
+                                        <p>来自多彩世界的明天</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/nashidta/" class=" tooltip"  title="<h2>那时的她。</h2><p>泡面番</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180926/296_1538095531.jpg" alt="那时的她。">
+                                    <figcaption>
+                                        <p>那时的她。</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- 星期六结束 -->
+                    <!-- 星期日开始 -->
+
+                    <li class="elmnt-seven">
+                        <div class="book small">
+
+                            <a href="/anime/pokemontyyl?1" class="hot
+ tooltip"  title="<h2>宠物小精灵 太阳/月亮</h2><p>新的精灵宝可梦，新的伙伴，以及新的经历……新的冒险旅程终于拉开了帷幕！去吧！全力！大冒险！</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_2018239571.jpg" alt="宠物小精灵日月">
+                                    <figcaption>
+                                        <p>宠物小精灵日月</p>
+                                        <p>第100话</p>
+
+                                    </figcaption>
+                                    <span class="hot">NEW</span>
+
+                                </figure>
+                            </a>
+                            <a href="/anime/prichan" class=" tooltip"  title="<h2>闪亮美妙☆频道</h2><p>闪亮美妙☆频道是一个无论谁都能简单地开始，谁都能成为偶像的梦想频道。</p>">
+                                <figure>
+                                    <img src="/uploads/allimg/180419/290_2146007291.jpg" alt="闪亮美妙☆频道">
+                                    <figcaption>
+                                        <p>闪亮美妙☆频道</p>
+                                        <p>第36话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+
+                            <a href="http://www.dilidili.wang/anime/onepiece/" class=" tooltip"  title="<h2>海贼王</h2><p>拥有整个世界财富，名声，势力的海贼王哥尔·罗杰把所有财宝都放在“伟大的航路”里，于是所有的男子汉都航向那里追逐梦想，世界开始迎接大海贼时代的来临。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/181017/296_1118593481.jpg" alt="海贼王">
+                                    <figcaption>
+                                        <p>海贼王</p>
+                                        <p>第864话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/RiderZI/" class=" tooltip"  title="<h2>假面骑士时王</h2><p>《假面骑士Zi-O》（日语：仮面ライダージオウ）是2018年播出的日本特摄电视剧，也是“平成假面骑士”系列最后一部第20部作品。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180917/296_1844037201.jpg" alt="假面骑士时王">
+                                    <figcaption>
+                                        <p>假面骑士时王</p>
+                                        <p>第14话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/GoblinSlayer/" class=" tooltip"  title="<h2>哥布林杀手</h2><p>凭借疯狂杀戮哥布林的哥布林杀手在公会排位第三还获得了「哥布林杀手」的称号，而女主角（之一）叫做女神官在首次外出组队挑战哥布林时队伍几乎遭到了全灭，幸好哥布林杀手及时出现救了女神官一命，后来女神官就和哥布林杀手组队一起冒险，除此之外还有妖精弓手、牧牛少女、柜台小姐等女性对哥布林杀手很有好感——</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0313371401.jpg" alt="哥布林杀手">
+                                    <figcaption>
+                                        <p>哥布林杀手</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/SSSS.GRIDMAN/" class=" tooltip"  title="<h2>电光超人古立特</h2><p>《SSSS.GRIDMAN》是根据1993年圆谷推出的特摄作品《电光超人古立特》所创作，TRIGGER制作的原创电视动画。于2018年秋播出。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0207515111.jpg" alt="电光超人古立特">
+                                    <figcaption>
+                                        <p>电光超人古立特</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/sao-Alicization/" class=" tooltip"  title="<h2>刀剑神域 Alicization</h2><p>“这里……是哪儿……？”如果注意到桐人、不知为什么陷入了庞大的空想虚拟世界。登陆前的记忆模糊不清，只得在周围徘徊寻找线索。之后，桐人到达了漆黑的大树“基加斯西达”并与一名少年相遇了。“我的名字是尤吉欧。请多关照，桐人君”少年是在虚拟世界的居民――即“NPC”，但是却如同人类一样“感情丰富”。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0314577901.jpg" alt="刀剑神域 Alicization">
+                                    <figcaption>
+                                        <p>刀剑神域 Alicization</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/dabudeka/" class=" tooltip"  title="<h2>DOUBLE DECKER! 道格&西里尔</h2><p>原创动画《TIGER&BUNNY》于2018年1月宣布将开启新动画企划，该企划宣布将制作新作原创动画《DOUBLE DECKER! 达格与齐利尔》，并公布了动画的视觉图、制作阵容和声优阵容等情报，预定于2018年内播出。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0501299601.jpg" alt="DOUBLE DECKER! 道格&西里尔">
+                                    <figcaption>
+                                        <p>DOUBLE DECKER! 道格&西里尔</p>
+                                        <p>第11话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/gtl6/" class=" tooltip"  title="<h2>鬼太郎 第6期</h2><p>作为幽灵族最后幸存者的少年鬼太郎，施展妖术，和干尽各种坏事的妖怪们作战。鬼太郎是日本有妖怪博士之称的漫画家水木茂所创造，该漫画于1965年开始连载，这位穿黄黑横纹背心，传统日式木屐的小男孩，以头发，背心和木屐当武器，和一群住在神秘森林里的妖怪朋友们，一起解决妖怪与人类两个世界的许多问题。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180917/295_1821493461.jpg" alt="鬼太郎 第6期">
+                                    <figcaption>
+                                        <p>鬼太郎 第6期</p>
+                                        <p>第35话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/fairytail4/" class=" tooltip"  title="<h2>妖精的尾巴 最终章</h2><p>妖精的尾巴第三季终于来临！纳兹等人最后的故事即将开始！</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0158206691.jpg" alt="妖精的尾巴 最终章">
+                                    <figcaption>
+                                        <p>妖精的尾巴 最终章</p>
+                                        <p>第287话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/ulysses/" class=" tooltip"  title="<h2>尤利西斯：贞德与炼金的骑士</h2><p>身为贵族的儿子却埋头于研究魔术和炼金术的少年蒙莫朗西，在巴黎的王立骑士养成学校，身边聚集着布列塔尼公爵的妹妹里什蒙等众多的骑士、姬骑士候补，过着慌乱而又充实的每一天。但，随着阿赞库尔之战的大败，法兰西与他们的命运彻底改变。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180930/296_1701189871.jpg" alt="尤利西斯：贞德与炼金的骑士">
+                                    <figcaption>
+                                        <p>尤利西斯：贞德与炼金的骑士</p>
+                                        <p>第9话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/shucap/" class=" tooltip"  title="<h2>末班电车后在胶囊旅馆给上司微热的夜晚</h2><p>末班车后，胶囊旅馆，为上司传递微热的夜晚动画全集接档《天降女子！》。讲述了水火不相容的上司羽田野和部下实里从在胶囊酒店同住一晚开始，二人的异性意识开始互相吸引的爱情故事。其中也加入了男性模特的慧等登场人物，描绘了女主与两个不同类型的男性之间的三角关系，以及各种情况下互相紧贴的场景。</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180922/302_0244408361.jpg" alt="末班电车后在胶囊旅馆给上司微热的夜晚">
+                                    <figcaption>
+                                        <p>末班电车后在胶囊旅馆给上司微热的夜晚</p>
+                                        
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/boruto/" class=" tooltip"  title="<h2>博人传</h2><p>七代目火影漩涡鸣人治理的木叶村。那是经历了战争的历史之后人们讴歌和平的时代。但是鸣人与其儿子漩涡博人的关系却并不和平…</p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180419/290_2051098131.jpg" alt="博人传">
+                                    <figcaption>
+                                        <p>博人传</p>
+                                        <p>第85话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a><a href="http://www.dilidili.wang/anime/awgs/" class=" tooltip"  title="<h2>爱玩怪兽</h2><p></p>">
+                                <figure>
+                                    <img src="http://www.dilidili.wang/uploads/allimg/180927/296_1441364501.jpg" alt="爱玩怪兽">
+                                    <figcaption>
+                                        <p>爱玩怪兽</p>
+                                        <p>第10话</p>
+
+                                    </figcaption>
+                                    
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- seven end -->
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <ul class="selectors">
+                <li class="focalPoint"><a href="">周一</a></li>
+                <li><a href="">周二</a></li>
+                <li><a href="">周三</a></li>
+                <li><a href="">周四</a></li>
+                <li><a href="">周五</a></li>
+                <li><a href="">周六</a></li>
+                <li><a href="">周日</a></li>
+            </ul>
+            <!--
+                <button class="sldr-prv sldr-nav prev"><</button>
+                <button class="sldr-nxt sldr-nav next">></button>
+        -->
+        </div>
+        <!-- change end -->
+        <!-- change end -->
+
+        <div class="change">
+            <div class="sldr">
+                <ul class="wrp animate">
+                    <li class="elmnt-one">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/gintama5/">银魂第五季：银之魂篇</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/regenesis2/">苍天之拳REGENESIS 第2期</a> <a href="http://www.dilidili.wang/watch3/76242/" style="color:#e95f5c;">第11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/HimoteHouse/">不受欢迎之家</a> <a href="http://www.dilidili.wang/watch3/76257/" style="color:#e95f5c;">第10话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/gaikotsu-honda/">书店里的骷髅店员本田</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/AnimaYell/">Anima Yell!</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/tsurune/">弦音-风舞高中弓道部</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/kamuy2/">黄金神威第二季</a> <a href="http://www.dilidili.wang/watch3/76239/" style="color:#e95f5c;">第10话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/ThunderboltFantasy/">Thunderbolt Fantasy 东离剑游纪2</a> <a href="http://www.dilidili.wang/watch3/76286/" style="color:#e95f5c;">第日配11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/baki/">新刃牙-死囚篇</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/puzzledragons/">智龙迷城</a> <a href="http://www.dilidili.wang/watch3/76245/" style="color:#e95f5c;">第37话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/kyojin3/">进击的巨人第三季</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/jwjxydej/">叫我僵小鱼 第二季</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/lxaiyl/">麟&犀AI韵律2</a> <a href="http://www.dilidili.wang/watch3/76270/" style="color:#e95f5c;">第10（中文版）话</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- one end -->
+
+                    <li class="elmnt-two">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/blackclover/">黑色五叶草</a> <a href="http://www.dilidili.wang/watch3/76282/" style="color:#e95f5c;">第62话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/BARHUNTER/">爆钓BARHUNTER</a> <a href="http://www.dilidili.wang/watch3/76283/" style="color:#e95f5c;">第11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/xuanyuansword/">轩辕剑·苍之曜</a> <a href="http://www.dilidili.wang/watch3/76285/" style="color:#e95f5c;">第11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/hashiyoka/">能继续奔跑下去真是太好了。</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/sidem-wakemini/">偶像大师 Side M mini</a> <a href="http://www.dilidili.wang/watch3/76287/" style="color:#e95f5c;">第10话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/tiramisu2/">宇宙战舰提拉米斯II</a> <a href="http://www.dilidili.wang/watch3/76243/" style="color:#e95f5c;">第11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/tokyoghoulre2/">东京搜查官：re 第二季</a> <a href="http://www.dilidili.wang/watch3/76288/" style="color:#e95f5c;">第10话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/ten-sura/">关于我转生变成史莱姆这档事</a> <a href="http://www.dilidili.wang/watch3/76240/" style="color:#e95f5c;">第11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/tomodachi/">足球小将翼</a> <a href="http://www.dilidili.wang/watch3/76244/" style="color:#e95f5c;">第37话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/cattleylayton/">雷顿神秘侦探社～卡特莉的解谜事件簿～</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/drdfjd/">大人的防具店</a> <a href="http://www.dilidili.wang/watch3/76300/" style="color:#e95f5c;">第10话</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- two end -->
+
+                    <li class="elmnt-three">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/zjglylgc/">中间管理录利根川</a> <a href="http://www.dilidili.wang/watch3/76291/" style="color:#e95f5c;">第23话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/wxhdsmmdbsmm/">我喜欢的是小说里的你</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/qiangfengchuifu/">强风吹拂</a> <a href="http://www.dilidili.wang/watch3/76290/" style="color:#e95f5c;">第11话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/conception-anime/">为我而生</a> <a href="http://www.dilidili.wang/watch3/76289/" style="color:#e95f5c;">第10话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/ingress/">ingress</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/rerided/">RErideD-穿越时空的德理达</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/jingaisan/">嫁给非人类</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/wkjedl/">喂，看见耳朵啦</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- three end -->
+
+                    <li class="elmnt-four">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/qingchunqizhutou/">青春猪头少年不会梦到兔女郎学姐</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/mercstoria/">梅露可物语 : 无精打采的少年与瓶中少女</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/aikatsu6/">偶像活动Friends</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/BanGDreamGirlsBandPartyPICO/">BanG Dream! Girls Band Party!☆PICO</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/kuileimaxituan/">魔偶马戏团</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/beelmama/">只要贝尔哲布布大小姐喜欢就好</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/pannixingbaiwan/">叛逆性百万亚瑟王</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/vrains/">游戏王VRAINS</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/wgjjtdf/">卫宫家今天的饭</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/ssxz/">松松小镇</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- four end -->
+
+                    <li class="elmnt-five">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/zlsj/">战栗杀机</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/kitsune/">狐狸之声</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/CastlevaniaSeason2/">恶魔城 第二季</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/BAKUMATSU/">BAKUMATSU 恋爱幕末男友</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/shanluanshengle2/">闪乱神乐第二季 SHINOVI MASTER -东京妖魔篇-</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/hinomaru-zumou/">火之丸相扑</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/yagakimi/">终将成为你</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/gurazeni2/">钱进球场第二季</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/uzamaid/">我家女仆有够烦！</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/kyuketsukisan/">邻家索菲</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/dakaretai/">我让最想被拥抱的男人给威胁了</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/project-index3/">魔法禁书目录第三季</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/mflsws/">魔法律事务所</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/snts/">杀戮天使</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/devidol/">Devidol！</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- five end -->
+
+
+
+                    <li class="elmnt-six">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/yamato2202/">宇宙战舰大和号2202 爱的战士们</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/laiziduocaishijiedemingtian/">来自多彩世界的明天</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/Radiant/">Radiant</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/jojo-animation5/">JOJO的奇妙冒险 黄金之风</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/juliet/">寄宿学校的朱丽叶</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/nzcp2/">逆转裁判第二季</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/huanyingguanglin/">欢迎光临千岁酱</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/Robu/">罗布奥特曼</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/zoidswild/">ZOIDS WILD</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/nashidta/">那时的她。</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/tyzdyntx/">汤摇庄的幽奈同学</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- six end -->
+
+                    <li class="elmnt-seven">
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.dilidili.wang/anime/onepiece/">海贼王</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/RiderZI/">假面骑士时王</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/GoblinSlayer/">哥布林杀手</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/pokemontyyl/">宠物小精灵 太阳/月亮</a> <a href="http://www.dilidili.wang/watch3/76284/" style="color:#e95f5c;">第100话</a>
+
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/sao-Alicization/">刀剑神域 Alicization</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/SSSS.GRIDMAN/">电光超人古立特</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/shucap/">末班电车后在胶囊旅馆给上司微热的夜晚</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/ulysses/">尤利西斯：贞德与炼金的骑士</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/fairytail4/">妖精的尾巴 最终章</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/dabudeka/">DOUBLE DECKER! 道格&西里尔</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/gtl6/">鬼太郎 第6期</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/prichan/">闪亮美妙☆频道</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/boruto/">博人传</a> 
+                            </li><li>
+                                <a href="http://www.dilidili.wang/anime/awgs/">爱玩怪兽</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- seven end -->
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <ul class="selectors">
+                <li class="focalPoint"><a href="">一</a></li>
+                <li><a href="">二</a></li>
+                <li><a href="">三</a></li>
+                <li><a href="">四</a></li>
+                <li><a href="">五</a></li>
+                <li><a href="">六</a></li>
+                <li><a href="">日</a></li>
+            </ul>
+            <!-- <a href="" class="btn">新番时间表</a> -->
+
+        </div>
+        <!-- change end -->
+
+    </div>
+
+    <div>
+        <script>
+            WRITE_center_ad1();
+        </script>
+        <!--<a href="http://www.dilidili.wang/watch3/63716/" target="_blank"><img src="/as/180511/A5-11.jpg" style="width:575px;"></a>
+       <a href="http://www.dilidili.wang/watch3/63716/" target="_blank"><img src="/as/180511/A5-11.jpg" style="width:575px;"></a>-->
+    </div>
+    <!-- ad end -->
+
+    </br>
+    <div class="title">
+        <a href="javascript:void(0)" style="cursor: default;">番剧更新<sup>New</sup></a>
+        <a href="/zxgx">更多</a>
+    </div>
+
+    <div class="book article">
+        <!--如果添加了新的番剧类顶级栏目，请将栏目ID添加到typeid内，如果添加的栏目不是顶级栏目，则不需要添加在这里 -->
+        <a href="http://www.dilidili.wang/watch3/76300/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/299_1116271421.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>大人的防具店</p>
+                    <p>第10话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76292/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/299_0924404141.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>新干线变形机器人</p>
+                    <p>第47话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76291/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181205/302_0428049431.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>中间管理录利根川</p>
+                    <p>第23话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76290/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181128/301_0101155111.png); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>强风吹拂</p>
+                    <p>第11话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76289/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181128/300_0100337571.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>为我而生</p>
+                    <p>第10话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76288/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/300_2202236201.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>东京搜查官：re 第二季</p>
+                    <p>第10话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76287/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181127/301_2104391061.png); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>偶像大师 Side M mini</p>
+                    <p>第10话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76286/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/300_2034547941.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>Thunderbolt Fantasy 东离剑游纪</p>
+                    <p>第日配11话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76285/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/300_2028264201.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>轩辕剑·苍之曜</p>
+                    <p>第11话</p>
+                </figcaption>
+            </figure>
+        </a>
+<a href="http://www.dilidili.wang/watch3/76284/" class="tooltip">
+            <figure>
+                <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/300_1946571511.jpg); background-size: cover;background-position: bottom;"></div>
+                <figcaption>
+                    <p>宠物小精灵 太阳/月亮</p>
+                    <p>第100话</p>
+                </figcaption>
+            </figure>
+        </a>
+
+    </div>
+    </br>
+    <hr/>
+    </br>
+    <div class="title">
+        <a href="javascript:void(0)" style="cursor: default;">最新投稿<sup>New</sup></a>
+        <a href="/ugc">点我进入里世界￣ω￣</a>
+    </div>
+
+    <div class="book article">
+        <!--如果添加了新的顶级UGC栏目，请将栏目ID添加到typeid内，如果添加的栏目不是顶级栏目，则不需要添加在这里 s-->
+        <a href="http://www.dilidili.wang/huiyuan/76304/" class="tooltip" title="<h2>【剧场资讯】剧场版动画《在地下城寻求邂逅是否搞错了什么 -猎户座之箭-》释出最新主视觉图＆宣传影像！</h2><p>UP：Ota宅屋</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_1402191351.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【剧场资讯】剧场版动画《在地下城寻求邂逅是否搞错了什么</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76303/" class="tooltip" title="<h2>【剧场资讯】真人电影版《学园孤岛》确定上映日期为1月25日，特典主视觉图释出！</h2><p>UP：Ota宅屋</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_1358597701.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【剧场资讯】真人电影版《学园孤岛》确定上映日期为1月2</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76302/" class="tooltip" title="<h2>【新番资讯】 真人影集《星际牛仔 COWBOY BEBOP》宣布将在Netflix播出第一季10集！</h2><p>UP：Ota宅屋</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_1353566151.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【新番资讯】 真人影集《星际牛仔 COWBOY BEBOP》宣布将在Net</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76301/" class="tooltip" title="<h2>【新番资讯】孙权「堀江由衣 → 大桥彩香」声优换人、OVA《一骑当千 Western Wolves》宣布2019227发售全3话！</h2><p>UP：Ota宅屋</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_1350413521.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【新番资讯】孙权「堀江由衣 → 大桥彩香」声优换人、OVA《</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76298/" class="tooltip" title="<h2>地图名：CS地下研究室(DE_Prodigy for Left 4 Dead 2)
+我受不了了！这么短流程的地图却这么令人蛋疼</h2><p>UP：我叫城北徐公</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_1404365181.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【徐公娱乐组】求生之路2非官方地图-《CS地下研究室》</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76296/" class="tooltip" title="<h2>手机超专业清灰音波【请把手机音量调到最大】 UP主用AU合成的音波里面带次声波和超声波，人耳是听不见的，但是可以给手机清灰！请把手</h2><p>UP：SOLOHAM</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_0951544491.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>手机超专业清灰音波【请把手机音量调到最大】</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76297/" class="tooltip" title="<h2>简介被吃了￣ω￣</h2><p>UP：守夜大大</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_0948548441.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【最强2019】最具有霸权资格的五部番一分钟带你了解！</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76295/" class="tooltip" title="<h2>一边学一边做的练习作。。。轻喷</h2><p>UP：安徒生くん</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_0943421711.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【MAD/AMV/燃】东京喰种 金木研 为了守护重要的人 我将成为独</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76294/" class="tooltip" title="<h2>欢迎大家关注我的B站账号：乔豆o麻袋（中间是小写的欧） UID:8027283，可以收看最新更新和动态</h2><p>UP：乔豆o麻袋</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_0935456271.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>最无耻的外挂番</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76293/" class="tooltip" title="<h2>第一次做MAD，做自己喜欢的视频。 BGM:KOE 剪辑：blank 主演：带土·卡卡西</h2><p>UP：blank</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181212/296_0931253871.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【高燃】带土·这地狱般的世界</p>
+            </figcaption>
+        </figure>
+        </a>
+
+    </div>
+
+    <div class="title">
+        <a href="javascript:void(0)" style="cursor: default;">推荐投稿<sup>New</sup></a>
+        <a href="/UGCbztj.html">本周推荐>></a>
+    </div>
+
+    <div class="book article">
+        <a href="http://www.dilidili.wang/huiyuan/76221/" class="tooltip" title="<h2>蓝染大人的个人剪辑，希望死神迷们喜欢</h2><p>UP：涙の人偶</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181210/296_1551112891.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>最强反派【帅气的蓝大】</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76252/" class="tooltip" title="<h2>简介被吃了￣ω￣</h2><p>UP：小馒头叫包子</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/296_1004164401.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>11岁孩子发现自己竟然一直是怪物的牲畜，一月霸权候选《约</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76281/" class="tooltip" title="<h2>相关游戏：雪人兄弟 新浪微博：没错我是GM 哔哩哔哩：凑不出字符的GM</h2><p>UP：凑不出字符的GM</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/296_1804551091.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>【GM】雪人兄弟的都市传说，隐藏关卡才能救到真公主。公司</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76278/" class="tooltip" title="<h2>简介被吃了￣ω￣</h2><p>UP：军团荣耀</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/296_1745526091.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>Master,学妹来喊你氪金了</p>
+            </figcaption>
+        </figure>
+        </a>
+<a href="http://www.dilidili.wang/huiyuan/76277/" class="tooltip" title="<h2>盘点+吐槽近些年来得一些比较奇葩的异世界番，我本身也比较喜欢异世界类型的番剧，所以就先拿他们下手，第一次投稿，希望大家多多支</h2><p>UP：乔豆o麻袋</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/181211/296_1741443911.jpg); background-size: cover;background-position: bottom;"></div>
+            <figcaption>
+                <p>那些奇形怪状的异世界番剧</p>
+            </figcaption>
+        </figure>
+        </a>
+
+    </div>
+</div>
+
+<!-- 分类查询开始 -->
+<section class="cross" id="one">
+    <div class="type" style="margin:0.5rem auto;">
+        <div>
+            <i>按年份</i>
+            <a href="/anime/201807/">18年7月</a>
+            <a href="/anime/201804/">18年4月</a>
+            <a href="/anime/201801/">18年1月</a>
+            <a href="/anime/2018/">2018</a>
+            <a href="/anime/2017/">2017</a>
+            <a href="/anime/2016/">2016</a>
+            <a href="/anime/2015/">2015</a>
+            <a href="/anime/2014/">2014</a>
+            <a href="/anime/2013/">2013</a>
+            <a href="/anime/2012/">2012</a>
+            <a href="/anime/2011/">2011</a>
+            <a href="/anime/2010/">2010</a>
+            <a href="/anime/2010xq/">00年代</a>
+            <a href="/anime/2000xqq/">更早</a>
+        </div>
+    </div>
+    <div class="type" style="margin:0.5rem auto;">
+        <div>
+            <i>按播放方式</i>
+            <a href="/tvdh/">TV版</a>
+            <a href="/jcdh/">剧场版</a>
+            <a href="/independentfilm/">独立电影</a>
+            <i>按地区</i>
+            <a href="/riyu/">日本</a>
+
+
+
+
+
+            <a href="/guoyu/">中国</a>
+        </div>
+    </div>
+    <div class="type" style="margin:0.5rem auto;">
+        <div>
+            <i>按类型</i>
+            <a href="/gaoxiao/">搞笑</a>
+            <a href="/kehuan/">科幻</a>
+            <a href="/yundong/">运动</a>
+            <a href="/danmei/">耽美</a>
+            <a href="/zhiyuxi/">治愈系</a>
+            <a href="/luoli/">萝莉</a>
+            <a href="/zhuangbi/">装逼</a>
+            <a href="/youxi/">游戏</a>
+            <a href="/youxi/">推理</a>
+            <a href="/qingchun/">青春</a>
+            <a href="/kongbu/">恐怖</a>
+            <a href="/jizhan/">机战</a>
+            <a href="/rexue/">热血</a>
+            <a href="/qingxiaoshuo/">轻小说</a>
+            <a href="/maoxian/">冒险</a>
+            <a href="/hougong/">后宫</a>
+            <a href="/qihuan/">奇幻</a>
+            <a href="/tongnian/">童年</a>
+            <a href="/lianai/">恋爱</a>
+            <a href="/meishaonv/">美少女</a>
+            <a href="/lizhi/">励志</a>
+            <a href="/baihe/">百合</a>
+            <a href="/paomianfan/">泡面番</a>
+            <a href="/yinv/">乙女</a>
+            <a href="/dongzuo/">动作</a>
+        </div>
+    </div>
+    <div class="type" style="margin:0.5rem auto;">
+        <div>
+            <i>按字母</i>
+            <a href="/a/">A</a>
+            <a href="/b/">B</a>
+            <a href="/c/">C</a>
+            <a href="/d/">D</a>
+            <a href="/e/">E</a>
+            <a href="/f/">F</a>
+            <a href="/g/">G</a>
+            <a href="/h/">H</a>
+            <a href="/i/">I</a>
+            <a href="/j/">J</a>
+            <a href="/k/">K</a>
+            <a href="/l/">L</a>
+            <a href="/m/">M</a>
+            <a href="/n/">N</a>
+            <a href="/o/">O</a>
+            <a href="/p/">P</a>
+            <a href="/q/">Q</a>
+            <a href="/r/">R</a>
+            <a href="/s/">S</a>
+            <a href="/t/">T</a>
+            <a href="/u/">U</a>
+            <a href="/v/">V</a>
+            <a href="/w/">W</a>
+            <a href="/x/">X</a>
+            <a href="/y/">Y</a>
+            <a href="/z/">Z</a>
+        </div>
+    </div>
+</section>
+<!-- 分类查询结束 -->
+
+<div class="main">
+
+    <div class="title">
+        <a href="javascript:void(0)" style="cursor: default;">回响吧！悠扬的上低音号</a>
+        <a>金色的音符是天堂的阶梯</a>
+        <a href="/zttj.html">更多推荐</a>
+    </div>
+
+    <div class="book">
+        <a href="http://www.dilidili.wang/anime/euphonium/" class="tooltip" title="<h2>吹响！上低音号</h2><p>北宇治高中吹奏部直到5年前还是关西大会的常客，并且过去还是全国大会出场过的强校代表，然而自从顾问换了之后，该吹奏部就再...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/images/cover/12935.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>吹响！上低音号</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/corda3/" class="tooltip" title="<h2>金色琴弦 Blue♪Sky</h2><p>本作以《金色的琴弦》8年后为舞台，主人公小日向奏转入名校星奏学院，和她的同学们，将要和来自全国的许多强校对抗，挑战决不...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/images/cover/9020.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>金色琴弦 Blue♪Sky</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/kimiuso/" class="tooltip" title="<h2>四月是你的谎言</h2><p>11岁的秋天，有马的母亲过世，从此他再也听不见自己弹奏的钢琴声，只能放弃弹琴。14岁那年，有马认识了小提琴手宫园薰，并被薰...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/180225/290_1400232741.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>四月是你的谎言</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/taritari/" class="tooltip" title="<h2>TARI TARI</h2><p>故事的舞台设定在神奈川县的江之岛，讲述进入了高中音乐系的坂井和奏却在半途因为母亲突然去世在自责的情况下放弃了音乐的道...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/images/cover/7654.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>TARI TARI</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/kotenbu/" class="tooltip" title="<h2>冰菓</h2><p>以节能为座右铭的高中生折木奉太郎，为一个小小的原因而加入了濒临废社的「古典部」。古典部的社员，包括他在社里认识的好奇...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/images/cover/5400.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>冰菓</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/classicaloid/" class="tooltip" title="<h2>Classica Loid</h2><p>自称为“Classicaloid”的可疑二人组所演奏的音乐“Musik”中有着奇妙的力量……。星辰降落、巨大机器人出现，每天都引发骚动！之...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/160822/1_2227446081.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>Classica Loid</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/jxqrm/" class="tooltip" title="<h2>交响情人梦</h2><p>这是一个关于两个音乐天才的爱情故事。名钢琴家之子，音乐学院风云人物“千秋王子”千秋真一（关智一 配音），因为少年时期的...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/180419/290_1844307401.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>交响情人梦</p>
+    </figcaption>
+    </figure>
+    </a><a href="http://www.dilidili.wang/anime/piano/" class="tooltip" title="<h2>琴之森</h2><p>刚转学到乡下的雨宫修平，是一个励志成为钢琴家的小学5年级学生。刚进新班级就被班上同学捉弄了，同学一之濑海挺身而出替他解...</p>">
+        <figure>
+            <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/180314/290_1441529781.jpg); background-size: cover;"></div>
+    <figcaption>
+        <p>琴之森</p>
+    </figcaption>
+    </figure>
+    </a>
+</div>
+
+
+<div class="title">
+    <a href="javascript:void(0)" style="cursor: default;">那时的心情，传达到了吗？</a>
+    <a>终将成为时代的眼泪</a>
+    <a href="/zttj.html">更多推荐</a>
+</div>
+
+<div class="book">
+    <a href="http://www.dilidili.wang/anime/air/" class="tooltip" title="<h2>AIR</h2><p>一位懂“法术”的、以表演人偶为生的青年国崎往人，一天来到一个海边小镇，遇上了主角的神尾观铃而展开的故事。国崎往人和他...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/201509/1-15091G505130-L.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>AIR</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/lucky-ch/" class="tooltip" title="<h2>幸运星</h2><p>故事讲述的是玉县糟日部市樱陵学园里的一群喜爱动画、漫画的高中女生们的日常生活。其中主角泉此方更是为了喜欢的东西会不惜...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/161021/1_1539089901.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>幸运星</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/hagaren/" class="tooltip" title="<h2>钢之炼金术师第一季</h2><p>故事发生在一个炼金术相当发达的世界，在这个世界的“炼金术”，是以理解物质的内在的法则：理解，分解，再构造成立，进行炼...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/201509/1-150925144P20-L.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>钢之炼金术师第一季</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/Inuyasha/" class="tooltip" title="<h2>犬夜叉</h2><p>正在读初中三年级的女生——日暮戈薇是一名家住在神社的普通女孩子。15岁生日那天，被妖怪──百足妖妇拖入神社的枯井中，来...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/201510/1-1510211134210-L.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>犬夜叉</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/clannad/" class="tooltip" title="<h2>CLANNAD</h2><p>在某个小镇，主角冈崎朋也因为家庭的因素成为不良少年，一直与春原阳平为伍，在光坂高校过着潦倒的生活，但冀望终有一天能够...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/180504/290_2055071301.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>CLANNAD</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/Suzumiya/" class="tooltip" title="<h2>凉宫春日的忧郁 旧版</h2><p>“我对普通的人类没有兴趣。你们之中要是有外星人、未来人、异世界来的人、超能力者，就尽管来找我吧！以上。”这位就是在开...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/201508/1-150R61H133914.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>凉宫春日的忧郁 旧版</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/evangelion/" class="tooltip" title="<h2>新世纪福音战士EVA</h2><p>故事剧情描述的是一个有关“第二次冲击”的记事，公元2000年有颗巨大的陨石坠落在南极冰山附近，高温造成部分冰块溶化，连带使...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/180615/290_0536469411.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>新世纪福音战士EVA</p>
+</figcaption>
+</figure>
+</a><a href="http://www.dilidili.wang/anime/cap_tsuba2001/" class="tooltip" title="<h2>足球小将 goal！</h2><p>大空翼为中心的一群年轻有为的足球小将们的成长的故事，以及他们最终在世界赛场上崭露头角的过程。故事叙述了大空翼、小次郎...</p>">
+    <figure>
+        <div class="coverImg" style="background: url(http://www.dilidili.wang/uploads/allimg/160516/1_2331269001.jpg); background-size: cover;"></div>
+<figcaption>
+    <p>足球小将 goal！</p>
+</figcaption>
+</figure>
+</a>
+</div>
+<div id="hy-player"></div>
+<script id='huanyin' src="https://net.huanmusic.com/www/dilidili/iframe.js?name=hy-player&data-big=false&data-after=true&height=254px&data-class=book"></script>
+</div>
+
+<!-- main end -->
+<!-- 羁绊网开始 -->
+<section class="cross" id="two">
+     <div class="recom">
+        <div>
+            <a href="http://www.005.tv/2018/73444.html" target="_blank">
+                <figure>
+                    <img src="http://www.005.tv/uploads/allimg/181102/49-1Q1021PSD54.jpg" alt="2019年一月新番动画总览" title="2019年一月新番动画总览">
+                    <figcaption>2019年一月新番动画总览</figcaption>
+                </figure>
+            </a>
+            <a href="http://www.005.tv/2018/73444.html" target="_blank">
+                <figure>
+                    <figcaption><span>十月新番如火如荼，其中大家期待的续作占居多，但也不乏优秀的原创作品。新番动画大多在制作当中。一月放送新番的官方放出新消息，小编随时最新相关资讯...</span></figcaption>
+                </figure>
+            </a>
+        </div>
+        <div>
+            <a href="http://www.005.tv/2018/75327.html" target="_blank">
+                <figure>
+                    <img src="http://www.005.tv/uploads/allimg/181207/49-1Q20GKTU24.jpg" alt="女仆装宝多六花福利，《SSSS.GRIDMAN》总作监大搞六花创作投票的玩心理攻战" title="女仆装宝多六花福利，《SSSS.GRIDMAN》总作监大搞六花创作投票的玩心理攻战">
+                    <figcaption>女仆装宝多六花福利，《SSSS.GRIDMAN》总作监大搞六花创作投票的玩心理攻战</figcaption>
+                </figure>
+            </a>
+            <a href="http://www.005.tv/2018/75327.html" target="_blank">
+                <figure>近期，《SSSS·古利特》的齐藤健吾在推特发起了一个投票活动，让网友决定他之后要绘制的宝多六花款式，选项有四个“私服六花”“女仆六花”...
+                    </figure>
+            </a>
+        </div>
+        <div>
+            <a href="http://www.005.tv/2018/75423.html" target="_blank">
+                <figure>
+                    <img src="http://www.005.tv/uploads/allimg/181211/49-1Q211191T1H7.jpg" alt="C95狂欢，170名绘师献福利，平成时代最后的大规模合同志「平成同人物语」C95登场" title="C95狂欢，170名绘师献福利，平成时代最后的大规模合同志「平成同人物语」C95登场">
+                    <figcaption><span>C95狂欢，170名绘师献福利，平成时代最后的大规模合同志「平成同人物语」C95登场</span></figcaption>
+                </figure>
+            </a>
+            <a href="http://www.005.tv/2018/75366.html" target="_blank">
+                <figure>
+                    <figcaption><span>今年C95是平成年代的最后一届CM。为纪念平成结束，由朝凪、大枪苇人等四位绘师主催的大规模合同志「平成同人物语」将在C95发布...</span></figcaption>
+                </figure>
+            </a>
+        </div> 	
+        <div>
+            <a href="http://www.005.tv/2018/75454.html" target="_blank">
+                <img src="http://www.005.tv/uploads/allimg/181211/49-1Q211191P5T3.jpg" alt="黑雪姬母亲登场？《刀剑神域》出现疑似《加速世界》黑雪姬母亲角色  动漫资讯" title="黑雪姬母亲登场？《刀剑神域》出现疑似《加速世界》黑雪姬母亲角色  动漫资讯">
+                <figure>
+                    <figcaption> 黑雪姬母亲登场？《刀剑神域》出现疑似《加速世界》黑雪姬母亲角色  动漫资讯</figcaption>
+                </figure>
+            </a>
+            <a href="http://www.005.tv/2018/75454.html" target="_blank">
+                <figure>
+                    <figcaption><span> 岳母登场《刀剑神域》第21卷，新角色转学生神邑樒登场。神邑也是《加速世界》中黑雪姬母亲的旧姓,难道这就是黑雪姬的母亲本尊...</span></figcaption>
+                </figure>
+            </a>
+        </div>
+
+    </div>
+    <!-- recom end -->
+</section>
+<!-- 羁绊网结束 -->
+
+  <!-- 萌娘开始 -->
+
+        <div class="main">
+
+            <div class="title">
+                <a href="http://moe.005.tv">萌娘资源</a>
+            </div>
+
+            <div class="shade">
+                <a href="http://moe.005.tv/75443.html" style="background: url(http://www.005.tv/uploads/allimg/181211/48-1Q2111R220107.jpg) no-repeat 50% 30%; background-size: cover;">
+                    <p>
+                        <b>Fate/Grand Order 玉藻前 二次元萌图</b>
+                    </p>
+                </a>
+                <a href="http://moe.005.tv/75468.html" style="background: url(http://www.005.tv/uploads/allimg/181211/48-1Q2111RI95Y.jpg) no-repeat 50% 30%; background-size: cover;">
+                    <p>
+                        <b>【动漫图片】坐在咖啡厅里桌前的你在思考什么呢</b>
+                    </p>
+                </a>
+                <a href="http://moe.005.tv/75442.html" style="background: url(http://www.005.tv/uploads/allimg/181211/48-1Q2111S113205.jpg) no-repeat 50% 30%; background-size: cover;">
+                    <p>
+                        <b>P站画师推荐 あやみ 二次元萌图</b>
+                    </p>
+                </a>
+            </div>
+
+            <div>
+                <ul class="list">
+                    <li>
+                        <a href="hhttp://moe.005.tv/75362.html">【手办资讯】【NO GAME NO LIFE 游戏人生】Phat!模型「初濑伊纲」介绍公开</a>
+				    </li>
+                    <li>
+                        <a href="http://moe.005.tv/75359.html">青春猪头少年不会梦到兔女郎学姐 樱岛麻衣 手机主题</a>
+                    </li>
+                    <li>
+                        <a href="http://moe.005.tv/75360.html">佐贺偶像是传奇 源樱 输入法皮肤</a>
+                    </li>
+                    <li>
+                        <a href="http://moe.005.tv/75397.html">Fate/Extra fate 玉藻前 cosplay</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!-- 萌娘结束-->
+<footer>
+    <div class="friend">
+        <h2>群居地</h2>
+        <a href="http://weibo.com/u/3390288124" target="_blank">站长微博<!--<sup>土豪抽奖</sup>--></a>
+        <a href="http://weibo.com/u/6132370267" target="_blank">D站官方微博</a>
+        <a href="https://jq.qq.com/?_wv=1027&k=50jNaOI" target="_blank">Dilidili问题反馈贰群</a>
+        <a href="//shang.qq.com/wpa/qunwpa?idkey=afc2fa41e85a1b535c3ce8317718edfd80878624723ce111470b269321489ddf" target="_blank">无名小站官方1群</a>
+        <a href="//shang.qq.com/wpa/qunwpa?idkey=053f62ce7da7d9587cd1ebadfccaee168c69f0350b9a070b84d3e332b3dcb4a5" target="_blank">D站大本部交流群</a>
+
+    </div>
+    <hr/>
+    <div class="friend">
+        <h2>友情链接</h2>
+        <a href="http://moe.005.tv/" target="_blank"><span>萌娘资源站</span></a>
+        <a href="http://www.xz7.com/" target="_blank"><span>极光软件站</span></a>
+        <a href="https://www.dajiaochongmanhua.com/" target="_blank"><span>大角虫漫画</span></a>
+        <a href="http://www.xiaohei.com/" target="_blank"><span>美女小游戏</span></a>
+        <a href="http://www.ktkkt.com/" target="_blank"><span>TVB卡通站</span></a>
+        <a href="http://www.zybus.com/" target="_blank"><span>综艺巴士</span></a>
+        <a href="http://geci.9ku.com/" target="_blank"><span>歌词</span></a>
+        <a href="http://www.kan300.com/" target="_blank"><span>看撒动漫</span></a>
+        <a href="http://bbs.houdao.com/" target="_blank"><span>猴岛游戏论坛</span></a>
+        <a href="http://www.pc841.com/" target="_blank"><span>电脑百事网</span></a>
+        <a href="http://www.shenmanhua.com/" target="_blank"><span>神印王座漫画</span></a>
+        <a href="http://www.kanman.com/" target="_blank"><span>斗罗大陆漫画</span></a>
+        <a href="http://www.d1xz.net/" target="_blank"><span>星座</span></a>
+        <a href="http://www.jijidown.com/" target="_blank"><span>哔哩哔哩唧唧</span></a>
+        <a href="http://www.kuman.com/" target="_blank"><span>漫画大全</span></a>
+        <a href="http://www.moe123.net/" target="_blank"><span>萌导航</span></a>
+        <a href="http://www.kuaikanmanhua.com/" target="_blank"><span>快看漫画</span></a>
+        <a href="http://www.3h3.com/" target="_blank"><span>当游网</span></a>
+        <a href="http://www.87g.com/" target="_blank"><span>87G手游网</span></a>
+        <a href="http://www.dilidili.wang/InfoUs/companyInfo.html#tab3" target="_blank"><span>交换友情链接...</span></a>
+    </div>
+    <hr/>
+    <div class="button">
+        <a href="http://www.dilidili.wang/InfoUs/companyInfo.html#joinUs">加入我们</a>
+        <a href="http://www.dilidili.wang/InfoUs/companyInfo.html#taboutUs">关于我们</a>
+        <a href="http://www.dilidili.wang/InfoUs/companyInfo.html#connectUs">联系我们</a>
+        <a href="https://v.yunaq.com/certificate?domain=www.dilidili.wang&from=label&code=90030"><img src="https://aqyzmedia.yunaq.com/labels/label_sm_90030.png"></a>
+
+    </div>
+    <hr/>
+    <div id="copyright">
+        <p>2018 嘀哩嘀哩 本站不提供任何视听上传服务，所有内容均来自视频分享站点所提供的公开引用资源</p>
+        <p>闽ICP备16023815号-2 | 网络文化经营许可证：闽网文[2017]3497-045号</p>
+    </div>
+</footer>
+
+
+<script src="/js/all.js"></script>
+<script src="/js/jquery.goup.js"></script>
+
+<script src="/js/jquery.sldr.js"></script>
+<script>
+    $(window).load(function() {
+        $('#slider .sldr').each(function() {
+            var th = $(this);
+            th.sldr({
+                focalClass: 'focalPoint',
+                offset: th.width() / 2,
+                sldrWidth: 'responsive',
+                nextSlide: th.nextAll('.sldr-nav.next:first'),
+                previousSlide: th.nextAll('.sldr-nav.prev:first'),
+                selectors: th.nextAll('.selectors:first').find('li'),
+                toggle: th.nextAll('.captions:first').find('div'),
+                // sldrInit: sliderInit,
+                // sldrComplete: slideComplete,
+                // sldrLoaded: sliderLoaded,
+                sldrAuto: true,
+                sldrTime: 7000,
+                hasChange: true
+            });
+        });
+
+    });
+
+    /**
+     * Sldr Callbacks
+     */
+
+    /**
+     * When the sldr is initiated, before the DOM is manipulated
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function sliderInit(args) {
+
+    }
+
+    /**
+     * When individual slides are loaded
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function slideLoaded(args) {
+
+    }
+
+</script>
+
+<script>
+    $(window).load(function() {
+        $('.change:eq(0) .sldr').each(function() {
+            var th = $(this);
+            th.sldr({
+                focalClass: 'focalPoint',
+                offset: th.width() / 2,
+                sldrWidth: 'responsive',
+                nextSlide: th.nextAll('.sldr-nav.next:first'),
+                previousSlide: th.nextAll('.sldr-nav.prev:first'),
+                selectors: th.nextAll('.selectors:first').find('li'),
+                toggle: th.nextAll('.captions:first').find('div'),
+                //sldrInit: sliderInit,
+                //sldrComplete: slideComplete,
+                sldrLoaded: sliderLoaded2_1,
+                sldrAuto: false,
+                sldrTime: 5000,
+                hasChange: true
+            });
+        });
+
+    });
+
+    $(window).load(function() {
+        $('.side .change:eq(1) .sldr').each(function() {
+            var th = $(this);
+            th.sldr({
+                focalClass: 'focalPoint',
+                offset: th.width() / 2,
+                sldrWidth: 'responsive',
+                nextSlide: th.nextAll('.sldr-nav.next:first'),
+                previousSlide: th.nextAll('.sldr-nav.prev:first'),
+                selectors: th.nextAll('.selectors:first').find('li'),
+                toggle: th.nextAll('.captions:first').find('div'),
+                // sldrInit: sliderInit,
+                //sldrComplete: slideComplete,
+                sldrLoaded: sliderLoaded2_2,
+                sldrAuto: false,
+                sldrTime: 5000,
+                hasChange: true
+            });
+        });
+
+    });
+
+    /**
+     * Sldr Callbacks
+     */
+
+    /**
+     * When the sldr is initiated, before the DOM is manipulated
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function sliderInit(args) {
+
+    }
+
+    /**
+     * When individual slides are loaded
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function slideLoaded(args) {
+
+    }
+
+    /**
+     * When the full slider is loaded, after the DOM is manipulated
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function sliderLoaded2_1(args) {
+        let oneWidth1 = $(".side .change:eq(0) .sldr ul li ").width();
+        let currentDate = new Date().getDay();
+        let moveWidth1 = oneWidth1 * currentDate;
+        let DateMinus = currentDate - 1;
+        if (currentDate === 0) {
+            DateMinus = 6;
+        }
+        $(".side .change:eq(0) .sldr ul.wrp").css("transform", "translate3d(-" + moveWidth1 + "px, 0px, 0px)");
+        $(".side .change:eq(0) ul.selectors li:eq(" + DateMinus + ")").addClass("focalPoint").siblings().removeClass("focalPoint");
+        $(".side .change:eq(0) .sldr ul.wrp li").removeClass("focalPoint");
+    }
+
+    function sliderLoaded2_2(args) {
+        let oneWidth2 = $(".side .change:eq(1) .sldr ul li ").width();
+        let currentDate = new Date().getDay();
+        let moveWidth2 = oneWidth2 * currentDate;
+        let DateMinus = currentDate - 1;
+        if (currentDate === 0) {
+            DateMinus = 6;
+        }
+        $(".side .change:eq(1) .sldr ul.wrp").css("transform", "translate3d(-" + moveWidth2 + "px, 0px, 0px)");
+        $(".side .change:eq(1) ul.selectors li:eq(" + DateMinus + ")").addClass("focalPoint").siblings().removeClass("focalPoint");
+        $(".side .change:eq(1) .sldr ul.wrp li").removeClass("focalPoint");
+    }
+
+    /**
+
+     * Before the slides change focal points
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function slideStart(args) {
+
+    }
+
+    /**
+     * After the slides are done changing focal points
+     * @param {object} args the slides, callback, and config of the slider
+     * @return null
+     */
+    function slideComplete(args) {
+
+    }
+
+</script>
+
+<div style="display:none;">
+    <script src="http://s95.cnzz.com/stat.php?id=1255455330&web_id=1255455330" language="JavaScript"></script>
+    <script src="http://s11.cnzz.com/stat.php?id=1254760299&web_id=1254760299" language="JavaScript"></script>
+    <script src="http://s11.cnzz.com/stat.php?id=1259276514&web_id=1259276514" language="JavaScript"></script>
+</div>
+<script src="/tempBackup/js/w234.js"></script>
+
+<script src="/newjs/tooltipster.bundle.js"></script>
+<link rel="stylesheet" href="/newcss/tooltipster-sideTip-shadow.min.css">
+<link rel="stylesheet" href="/newcss/tooltipster.bundle.css">
+<script>
+    $('.tooltip').tooltipster({
+        theme: 'tooltipster-shadow',
+        side: 'right',
+        /*position: 'right',*/
+        maxWidth: 150,
+        maxHeight: 192,
+        interactive: true,
+        contentAsHTML: true,
+        distance: -12,
+        contentCloning: true,
+    });
+</script>
+
+</body>
+
+</html>

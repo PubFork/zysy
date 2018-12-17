@@ -1,0 +1,37 @@
+.dmus{width:268px;overflow:hidden;margin-top:14px}
+.dmus li{float:left;line-height:18px}
+.dmus li.gbook{width:74px}
+.dmus li.hotv{width:90px}
+.dmus li.history{width:100px;height:36px}
+.dmus li i{background:url(icon.gif) no-repeat;display:block;float:left;width:18px;height:18px;margin-right:8px}
+.dmus li i.gb{background-position:0 -26px}
+.dmus li i.his{background-position:0 -52px}
+.dmus a,.dmus a:hover{color:#666;text-decoration:none}
+
+.movie_his{margin-right:20%;}
+
+.historys{
+	z-index:999;
+	border: #fff 1px solid;
+	position: absolute;
+	background: #fff;
+	width:390px;
+	top: 42px;
+	right: 0px;
+	font-size: 8px;
+}
+.historys .vlist{
+	line-height:14px;
+	overflow:hidden;
+	padding-top:10px
+}
+.historys .vlist .item{padding:0 10px;overflow:hidden;}
+.historys .vlist .item li{overflow:hidden; height:20px; line-height:20px; padding:5px; margin-bottom:10px; background:#F2F2F2; color:#000; font-size:12px;}
+.historys .vlist .item .name{padding-left:15px; background:url(more.png) no-repeat 0 48%; float:left; color:#000; width:230px; overflow:hidden;}
+.historys .vlist .item .now{float:right; color:#e12160!important;}
+.historys .vinfo{line-height:25px;height:25px;border-top:#ccc 1px solid}
+.historys .vinfo span.count{padding-left:10px;float:left;height:25px;color:#666}
+.historys .vinfo span.count a{color:#666}
+.historys .vinfo span.count a:hover{color:#FFF;}
+.historys .vinfo span.close{padding-right:10px;float:right;height:25px}
+.historys .vinfo span.close a{color:#0079b9}
