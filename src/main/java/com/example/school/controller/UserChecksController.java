@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.school.service.UserChecksService;
 import com.example.school.util.Result;
 
-@RestController
-@RequestMapping("/UserChecks")
+//@RestController
+//@RequestMapping("/UserChecks")
 public class UserChecksController {
 	
 	private Map<String, Object> map=new HashMap<String, Object>();	

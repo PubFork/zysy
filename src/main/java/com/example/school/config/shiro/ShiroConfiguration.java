@@ -57,24 +57,24 @@ public class ShiroConfiguration {
 		//defaultFilterMap.put("/logout", "logout");
 		// 放行静态资源
 
-		defaultFilterMap.put("/css/**", "anon");
-		defaultFilterMap.put("/img/**", "anon");
-		defaultFilterMap.put("/images/**", "anon");
-		defaultFilterMap.put("/fonts/**", "anon");
-		defaultFilterMap.put("/lib/**", "anon");
-		defaultFilterMap.put("/js/**", "anon");
-		defaultFilterMap.put("/admin/login", "anon");
-		defaultFilterMap.put("/", "anon");
-		defaultFilterMap.put("/index", "anon");
-		defaultFilterMap.put("/register", "anon");
+//		defaultFilterMap.put("/css/**", "anon");
+//		defaultFilterMap.put("/img/**", "anon");
+//		defaultFilterMap.put("/images/**", "anon");
+//		defaultFilterMap.put("/fonts/**", "anon");
+//		defaultFilterMap.put("/lib/**", "anon");
+//		defaultFilterMap.put("/js/**", "anon");
+//		defaultFilterMap.put("/admin/login", "anon");
+//		defaultFilterMap.put("/", "anon");
+//		defaultFilterMap.put("/index", "anon");
+//		defaultFilterMap.put("/register", "anon");
+//
+//		defaultFilterMap.put("/user/login_do", "anon");
+//		defaultFilterMap.put("/user/register_do", "anon");
+//		defaultFilterMap.put("/admin/adminLogin", "anon");
+//		shiroFilterFactoryBean.setLoginUrl("/user/login");
+//		shiroFilterFactoryBean.setUnauthorizedUrl("/user/login");
 
-		defaultFilterMap.put("/user/login_do", "anon");
-		defaultFilterMap.put("/user/register_do", "anon");
-		defaultFilterMap.put("/admin/adminLogin", "anon");
-		shiroFilterFactoryBean.setLoginUrl("/user/login");
-		shiroFilterFactoryBean.setUnauthorizedUrl("/user/login");
-
-        defaultFilterMap.put("/**","authc");
+        defaultFilterMap.put("/**","anon");
 
 		shiroFilterFactoryBean.setFilterChainDefinitionMap(defaultFilterMap);
 		return shiroFilterFactoryBean;

@@ -1,0 +1,765 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+
+<head th:fragment="common_header">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>2018最新电影，电视剧，手机在线观看的网站 _ NiKiShare(BanliDy)</title>
+    <meta name="keywords" content="NiKiShare，新番，剧情片吧，电影票房吧，电影吧，2018最新电影">
+    <meta name="description" content="2018最新电影，韩国电视剧、香港TVB电视剧、日本动漫、日剧、美剧、综艺的在线观看，每天第一时间更新，放送好看的迅雷电影，百度网盘下载。">
+    <link rel="canonical" href="http://www.banlidy.com/">
+    <meta name="mobile-agent" content="format=html5;url=https://m.banlidy.com/">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="applicable-device" content="pc,mobile">
+    <link th:href=" ${application.CDN} + 'www/css/bootstrap.min.css' " rel="stylesheet" type="text/css">
+    <link th:href=" ${application.CDN} + 'www/css/swiper.min.css' " rel="stylesheet" type="text/css">
+    <link th:href=" ${application.CDN} + 'www/css/style.css' " rel="stylesheet" type="text/css">
+    <link th:href=" ${application.CDN} + 'www/css/white.css' " rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" th:href=" ${application.CDN} + 'www/css/showfloatdiv.css' ">
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/system.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/jquery-3.3.1.min.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/main.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/hm.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/c.js'"></script>
+    <script type="text/javascript" charset="utf-8" th:src="${application.CDN} + 'www/js/ability.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/openBox.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/bootstrap.min.js'"></script>
+    <script type="text/javascript" th:src="${application.CDN} + 'www/js/xbdb.js'"></script>
+
+
+</head>
+
+<!--头部开始-->
+<nav class="navbar navbar-inverse" role="navigation" th:fragment="common_navigation">
+    <div class="container">
+        <div class="row">
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li id="nav-index" class="active"><a th:href="@{ ${application.CDN} }">首页</a></li>
+                    <li id="nav-dianshiju" class=""><a href="http://www.banlidy.com/list1/">分类</a></li>
+                    <li id="nav-dianshiju" class=""><a href="http://www.banlidy.com/list2/">新番</a></li>
+                    <li id="nav-dianshiju" class=""><a href="http://www.banlidy.com/list3/">投稿</a></li>
+                </ul>
+                <div class="nav-search  visible-md visible-lg">
+                    <form class="zanpian_search" data-limit="10" name="formsearch" id="formsearch"
+                          action="http://www.banlidy.com/search/" method="post" autocomplete="off"><input
+                            class="form-control zanpian_wd" placeholder="输入关键词..." name="wd" id="wd" required=""
+                            type="text" autocomplete="off">
+                        <button type="submit" class="btn btn-search"><i class="icon iconfont"></i></button>
+                    </form>
+                </div>
+                <div class="user_login hidden-xs" id="user_login" title="点击登录"><i class="icon iconfont"></i></div>
+                <div class="user_playlog hidden-xs" id="user_playlog" title="播放记录"><i class="icon iconfont"></i>
+                    <div id="playlog_list" class="playlog_list">
+                        <div class="playlog-tool"><a class="playlog-clear" rel="nofollow" href="javascript:;"
+                                                     id="playlog-clear" target="_self">清空全部播放记录</a><a
+                                class="playlog-close" rel="nofollow" href="javascript:;" id="playlog-close"
+                                target="_self">关闭</a></div>
+                        <ul>
+                            <strong>暂无观看历史记录列表</strong>
+                        </ul>
+                        <div class="playlog-todo text-muted" id="playlog-todo"><a rel="nofollow" id="login"
+                                                                                  class="text-color"
+                                                                                  href="javascript:;">登录</a>后将能永久保存播放记录<em>|</em><a
+                                rel="nofollow" id="register" class="text-color" href="javascript:;">免费注册</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--最近更新结束-->
+<div class="layout-box clearfix" th:fragment="common_movie">
+    <div class="box-title">
+        <h3 class="m-0"><i class="icon iconfont text-color"></i>动漫</h3>
+        <div class="more pull-right"><a href="http://www.banlidy.com/list1/" class="text-muted" title="更多">更多 <i
+                class="icon iconfont"></i></a></div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 p-0">
+        <div class="clearfix">
+            <div class="col-xs-12">
+
+            </div>
+        </div>
+
+        <!--小分类模块开始-->
+        <div class="box-index-mcid active clearfix">
+            <ul class="clearfix">
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_6____.html"
+                       target="_blank">惊悚</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_1____.html"
+                       target="_blank">悬疑</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_13____.html"
+                       target="_blank">魔幻</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_10____.html"
+                       target="_blank">言情</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_2____.html"
+                       target="_blank">罪案</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_9____.html"
+                       target="_blank">冒险</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_14____.html"
+                       target="_blank">灾难</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_15____.html"
+                       target="_blank">古装</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_5____.html"
+                       target="_blank">青春</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_16____.html"
+                       target="_blank">歌舞</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_12____.html"
+                       target="_blank">励志</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/1_3____.html"
+                       target="_blank">文艺</a></li>
+            </ul>
+        </div>
+        <!--小分类模块结束-->
+        <div class="hidden-sm hidden-xs clearfix">
+            <div class="box-title" style=" padding-bottom:5px; padding-top:5px;">
+                <h3 class="m-0"><i class="icon iconfont text-color"></i>排行榜</h3>
+                <div class="more pull-right"><a href="http://www.banlidy.com/list1/" class="text-muted"
+                                                title="更多">更多 <i class="icon iconfont"></i></a></div>
+            </div>
+            <div class="box-video-text-list p-0">
+
+                <ul class="clearfix" style="margin-bottom:0px; margin-top:0px;">
+                    <li class="list p-0 "><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11855.html" title="海王"><em
+                            class="num active">1</em>海王</a></li>
+                    <li class="list p-0 "><span class="pull-right text-color">9.1</span><a
+                            href="http://www.banlidy.com/vod/11749.html" title="毒液：致命守护者"><em
+                            class="num active">2</em>毒液：致命守护者</a></li>
+                    <li class="list p-0 "><span class="pull-right text-color">10.0</span><a
+                            href="http://www.banlidy.com/vod/11889.html" title="特种兵归来系列"><em class="num ">3</em>特种兵归来系列</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/11607.html" title="网络谜踪"><em class="num ">4</em>网络谜踪</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="col-md-8 col-sm-12 col-xs-12 p-0 clearfix">
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538593487.jpg"
+               href="http://www.banlidy.com/vod/11900.html" title="愤怒的黄牛"
+               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538593487.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.3</span>
+                <span class="note text-bg-r">超清</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11900.html"
+                                                            title="愤怒的黄牛">愤怒的黄牛</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">马东锡,宋智孝,金圣武,金敏载,朴智焕</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2527369948.jpg"
+               href="http://www.banlidy.com/vod/11899.html" title="保镖"
+               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2527369948.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">10.0</span>
+                <span class="note text-bg-r">超清</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11899.html"
+                                                            title="保镖">保镖</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">尚格·云顿,Dimitri,Thivaios,凯文·让森斯,Sam,Louwyck
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://img1.doubanio.com/view/photo/s_ratio_poster/public/p2536762001.jpg"
+               href="http://www.banlidy.com/vod/11898.html" title="千次伤我心"
+               style="background-image: url(&quot;http://img1.doubanio.com/view/photo/s_ratio_poster/public/p2536762001.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">6.3</span>
+                <span class="note text-bg-r">超清</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11898.html"
+                                                            title="千次伤我心">千次伤我心</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                贝拉·索恩,理查德·哈蒙,德蒙特·莫罗尼,艾米·普赖斯-弗朗西斯,肖恩·本森,路易斯·赫特哈姆,托马斯·埃尔姆斯,萨拉·汤普森
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541540687.jpg"
+               href="http://www.banlidy.com/vod/11878.html" title="国家宝藏 第二季"
+               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541540687.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">10.0</span>
+                <span class="note text-bg-r">更新至02集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11878.html"
+                                                            title="国家宝藏 第二季">国家宝藏 第二季</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">张国立,蓝天野,黎明,蒋雯丽,宋佳,岳云鹏,翟天临</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://wx4.sinaimg.cn/mw690/006r0ILSgy1fy9313kia6j306r08jt9a.jpg"
+               href="http://www.banlidy.com/vod/11897.html" title="必由之路"
+               style="background-image: url(&quot;http://wx4.sinaimg.cn/mw690/006r0ILSgy1fy9313kia6j306r08jt9a.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">10.0</span>
+                <span class="note text-bg-r">更新至06集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11897.html"
+                                                            title="必由之路">必由之路</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">央视</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537243896.jpg"
+               href="http://www.banlidy.com/vod/11895.html" title="此房是我造"
+               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537243896.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">8.3</span>
+                <span class="note text-bg-r">超清</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11895.html"
+                                                            title="此房是我造">此房是我造</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                马特·狄龙,布鲁诺·甘茨,乌玛·瑟曼,希芳·法隆,苏菲·格拉宝,丽莉·克亚芙,杰瑞米·戴维斯,爱德华·斯皮伊尔斯,大卫·拜利,刘智泰,克里斯蒂安·阿诺德,CohenDay,RoccoDay,杰克尔·法尔斯特伦,奥赛·伊克希尔,MarijanaJankovic,AliceNordmark,LisaSjöholm,CarinaSkenhede,RobertG.Slade
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
+            <a class="video-pic loading"
+               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540362936.jpg"
+               href="http://www.banlidy.com/vod/11894.html" title="所有邪佞之人"
+               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540362936.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">7.3</span>
+                <span class="note text-bg-r">超清</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11894.html"
+                                                            title="所有邪佞之人">所有邪佞之人</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                威廉·菲德内尔,米洛·吉布森,西尔维娅·侯克斯,艾略特·科万,格本加·阿金纳格贝,约瑟夫·米尔森,雅沃尔·巴哈罗夫,明格斯·约翰斯顿,里纳特·希什马塔林,本·洛伊德·霍尔姆斯,SaifAl-Warith,PerryFitzpatrick,StevenBartle,MartinMednikarov,RayBullockJnr
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
+            <a class="video-pic loading"
+               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2536656057.jpg"
+               href="http://www.banlidy.com/vod/11893.html" title="阴阳眼之瞳灵公馆"
+               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2536656057.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">2.0</span>
+                <span class="note text-bg-r">超清</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11893.html"
+                                                            title="阴阳眼之瞳灵公馆">阴阳眼之瞳灵公馆</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">苑琼丹,景岗山,文熙,胡蓉蓉,王海祥,徐冬梅,荆民强,柳禹安,叶子清,王大磊
+            </div>
+        </li>
+    </ul>
+    <div class="box-video-footer visible-xs clearfix"><a href="http://www.banlidy.com/list1/" class="text-more"
+                                                         title="查看更多">查看更多 <i
+            class="icon iconfont icon-right pull-right"></i></a></div>
+</div>
+
+<div class="layout-box clearfix" th:fragment="common_files">
+    <div class="box-title">
+        <h3 class="m-0"><i class="icon iconfont text-color"></i>新番</h3>
+        <div class="more pull-right"><a href="http://www.banlidy.com/list2/" class="text-muted" title="更多">更多 <i
+                class="icon iconfont"></i></a></div>
+
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 p-0" style="clear:both">
+        <div class="clearfix">
+        </div>
+
+        <!--小分类模块开始-->
+        <div class="box-index-mcid  clearfix">
+            <ul class="clearfix">
+                <li><a class="text-overflow" target="_blank"
+                       href="http://www.banlidy.com/list/2_59____.html">都市</a></li>
+                <li><a class="text-overflow" target="_blank"
+                       href="http://www.banlidy.com/list/2_60____.html">家庭</a></li>
+                <li><a class="text-overflow" target="_blank" href="http://www.banlidy.com/list/2_103____.html">时装</a>
+                </li>
+                <li><a class="text-overflow" target="_blank"
+                       href="http://www.banlidy.com/list/2_58____.html">生活</a></li>
+                <li><a class="text-overflow" target="_blank" href="http://www.banlidy.com/list/2_102____.html">农村</a>
+                </li>
+                <li><a class="text-overflow" target="_blank"
+                       href="http://www.banlidy.com/list/2_64____.html">喜剧</a></li>
+                <li><a class="text-overflow" target="_blank"
+                       href="http://www.banlidy.com/list/2_67____.html">偶像</a></li>
+                <li><a class="text-overflow" target="_blank"
+                       href="http://www.banlidy.com/list/2_65____.html">古装</a></li>
+            </ul>
+        </div>
+
+        <!--小分类模块结束-->
+
+        <div class="hidden-sm hidden-xs clearfix">
+            <div class="box-title" style=" padding-bottom:5px; padding-top:5px;">
+                <h3 class="m-0"><i class="icon iconfont text-color"></i>排行榜</h3>
+                <div class="more pull-right"><a href="http://www.banlidy.com/list1/" class="text-muted"
+                                                title="更多">更多 <i class="icon iconfont"></i></a></div>
+            </div>
+            <div class="box-video-text-list p-0">
+
+                <ul class="clearfix" style="margin-bottom:0px; margin-top:0px;">
+                    <li class="list p-0 "><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11855.html" title="海王"><em
+                            class="num active">1</em>海王</a></li>
+                    <li class="list p-0 "><span class="pull-right text-color">9.1</span><a
+                            href="http://www.banlidy.com/vod/11749.html" title="毒液：致命守护者"><em
+                            class="num active">2</em>毒液：致命守护者</a></li>
+                    <li class="list p-0 "><span class="pull-right text-color">10.0</span><a
+                            href="http://www.banlidy.com/vod/11889.html" title="特种兵归来系列"><em class="num ">3</em>特种兵归来系列</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/11607.html" title="网络谜踪"><em class="num ">4</em>网络谜踪</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <ul class="col-md-8 col-sm-12 col-xs-12 p-0 clearfix">
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://ww4.sinaimg.cn/large/006r0ILSgy1fxtvw1aj1tj307i09ujrx.jpg"
+               href="http://www.banlidy.com/vod/11827.html" title="大帅哥 粤语"
+               style="background-image: url(&quot;http://ww4.sinaimg.cn/large/006r0ILSgy1fxtvw1aj1tj307i09ujrx.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.9</span>
+                <span class="note text-bg-r">更新至11集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11827.html"
+                                                            title="大帅哥 粤语">大帅哥 粤语</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">张卫健,蔡思贝</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://ww1.sinaimg.cn/large/006r0ILSgy1fxtvmx69fvj307i09vjrv.jpg"
+               href="http://www.banlidy.com/vod/11743.html" title="兄弟 粤语"
+               style="background-image: url(&quot;http://ww1.sinaimg.cn/large/006r0ILSgy1fxtvmx69fvj307i09vjrv.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">10.0</span>
+                <span class="note text-bg-r">更新至25集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11743.html"
+                                                            title="兄弟 粤语">兄弟 粤语</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                王浩信,伍允龙,陈庭欣,杨明,朱晨丽,江嘉敏,刘颖镟,石修,林韦辰,许家杰,何君诚,秦煌,张武孝
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://wx3.sinaimg.cn/large/006r0ILSgy1fy6mbsbsbaj307i0b8q36.jpg"
+               href="http://www.banlidy.com/vod/11868.html" title="大江大河"
+               style="background-image: url(&quot;http://wx3.sinaimg.cn/large/006r0ILSgy1fy6mbsbsbaj307i0b8q36.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">10.0</span>
+                <span class="note text-bg-r">更新至16集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11868.html"
+                                                            title="大江大河">大江大河</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                王凯,杨烁,董子健,童瑶,周放,施诗,金晨,赵达,杨立新,赵阳,冯晖,赵君,田雷,练束梅,宋家腾,胡耘豪
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://ww1.sinaimg.cn/large/006r0ILSgy1fxtvx5ty6tj307i0apwf5.jpg"
+               href="http://www.banlidy.com/vod/11835.html" title="大帅哥 国语"
+               style="background-image: url(&quot;http://ww1.sinaimg.cn/large/006r0ILSgy1fxtvx5ty6tj307i0apwf5.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">8.3</span>
+                <span class="note text-bg-r">更新至11集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11835.html"
+                                                            title="大帅哥 国语">大帅哥 国语</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">张卫健,蔡思贝</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://wx4.sinaimg.cn/mw690/006r0ILSgy1fx6mbl16fjj30b40dwqbf.jpg"
+               href="http://www.banlidy.com/vod/11747.html" title="我是大哥大"
+               style="background-image: url(&quot;http://wx4.sinaimg.cn/mw690/006r0ILSgy1fx6mbl16fjj30b40dwqbf.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.9</span>
+                <span class="note text-bg-r">10集全/已完结</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11747.html"
+                                                            title="我是大哥大">我是大哥大</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">贺来贤人,伊藤健太郎,太贺,矢本悠马</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://ww3.sinaimg.cn/large/006r0ILSgy1fxtw3dylchj307i0aidg1.jpg"
+               href="http://www.banlidy.com/vod/11836.html" title="大约是爱"
+               style="background-image: url(&quot;http://ww3.sinaimg.cn/large/006r0ILSgy1fxtw3dylchj307i0aidg1.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">8.9</span>
+                <span class="note text-bg-r">更新至24集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11836.html"
+                                                            title="大约是爱">大约是爱</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">彦希,许晓诺,蔡乙嘉,杨欣颖,胡文喆,李心博,付乐莹</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
+            <a class="video-pic loading"
+               data-original="http://wx2.sinaimg.cn/large/006r0ILSgy1fxtvm75vm3j307i09vjrv.jpg"
+               href="http://www.banlidy.com/vod/11741.html" title="兄弟 国语"
+               style="background-image: url(&quot;http://wx2.sinaimg.cn/large/006r0ILSgy1fxtvm75vm3j307i09vjrv.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">7.0</span>
+                <span class="note text-bg-r">更新至25集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11741.html"
+                                                            title="兄弟 国语">兄弟 国语</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                王浩信,伍允龙,陈庭欣,杨明,朱晨丽,江嘉敏,刘颖镟,石修,林韦辰,许家杰,何君诚,秦煌,张武孝
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
+            <a class="video-pic loading"
+               data-original="http://wx1.sinaimg.cn/mw690/006r0ILSgy1fy8ulc3dj0j306408k768.jpg"
+               href="http://www.banlidy.com/vod/11896.html" title="我与你的光年距离2"
+               style="background-image: url(&quot;http://wx1.sinaimg.cn/mw690/006r0ILSgy1fy8ulc3dj0j306408k768.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">10.0</span>
+                <span class="note text-bg-r">更新至08集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11896.html"
+                                                            title="我与你的光年距离2">我与你的光年距离2</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">王以纶,许晓诺,完颜洛绒,张柏嘉,郑舒环,赵奂然,李俊锋</div>
+        </li>
+    </ul>
+    <div class="box-video-footer visible-xs clearfix"><a href="http://www.banlidy.com/list2/l" class="text-more"
+                                                         title="查看更多">查看更多 <i
+            class="icon iconfont icon-right pull-right"></i></a></div>
+</div>
+
+<div class="layout-box clearfix" th:fragment="common_image">
+
+
+    <div class="box-title">
+        <h3 class="m-0"><i class="icon iconfont text-color"></i>动漫吧</h3>
+        <div class="more pull-right"><a href="http://www.banlidy.com/list3/" class="text-muted" title="更多">更多 <i
+                class="icon iconfont"></i></a></div>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12 p-0">
+        <!--小分类模块开始-->
+        <div class="box-index-mcid active clearfix">
+            <ul class="clearfix">
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_129____.html" title="冒险动漫吧"
+                       target="_blank">冒险</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_127____.html" title="热血动漫吧"
+                       target="_blank">热血</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_130____.html" title="搞笑动漫吧"
+                       target="_blank">搞笑</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_125____.html" title="少女动漫吧"
+                       target="_blank">少女</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_148____.html" title="恋爱动漫吧"
+                       target="_blank">恋爱</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_126____.html" title="魔幻动漫吧"
+                       target="_blank">魔幻</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_128____.html" title="推理动漫吧"
+                       target="_blank">推理</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3_146____.html" title="神魔动漫吧"
+                       target="_blank">神魔</a></li>
+            </ul>
+            <ul class="clearfix">
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3__%E5%A4%A7%E9%99%86___.html"
+                       target="_blank">大陆</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3__%E9%A6%99%E6%B8%AF___.html"
+                       target="_blank">香港</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3__%E5%8F%B0%E6%B9%BE___.html"
+                       target="_blank">台湾</a></li>
+                <li><a class="text-overflow" href="http://www.banlidy.com/list/3__%E7%BE%8E%E5%9B%BD___.html"
+                       target="_blank">美国</a></li>
+            </ul>
+        </div>
+        <!--小分类模块结束-->
+        <div class="hidden-sm hidden-xs clearfix">
+            <div class="box-title" style="padding:0px 10px">
+                <h3 class="m-0"><i class="icon iconfont text-color"></i>排行榜</h3>
+                <div class="more pull-right"><a href="http://www.banlidy.com/list3/" class="text-muted"
+                                                title="更多">更多 <i class="icon iconfont"></i></a></div>
+            </div>
+            <div class="box-video-text-list clearfix m-0 p-0">
+                <ul class="clearfix">
+                    <li class="list p-0 "><span class="pull-right text-color">9.2</span><a
+                            href="http://www.banlidy.com/vod/8082.html" title="海贼王"><em
+                            class="num active">1</em>海贼王</a></li>
+                    <li class="list p-0 "><span class="pull-right text-color">9.2</span><a
+                            href="http://www.banlidy.com/vod/11054.html" title="魔道祖师"><em
+                            class="num active">2</em>魔道祖师</a></li>
+                    <li class="list p-0 "><span class="pull-right text-color">8.8</span><a
+                            href="http://www.banlidy.com/vod/8629.html" title="博人传 火影忍者新时代"><em
+                            class="num ">3</em>博人传 火影忍者新时代</a></li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
+                            href="http://www.banlidy.com/vod/9753.html" title="25岁的女高中生未删减版"><em
+                            class="num ">4</em>25岁的女高中生未删减版</a></li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
+                            href="http://www.banlidy.com/vod/9825.html" title="斗罗大陆"><em class="num ">5</em>斗罗大陆</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <ul class="col-md-8 col-sm-12 col-xs-12 p-0 clearfix">
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="https://wx1.sinaimg.cn/mw690/005yF2tCgy1fsuwr41cz9j30b40fkqag.jpg"
+               href="http://www.banlidy.com/vod/11020.html" title="刃牙 死囚篇"
+               style="background-image: url(&quot;https://wx1.sinaimg.cn/mw690/005yF2tCgy1fsuwr41cz9j30b40fkqag.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.4</span>
+                <span class="note text-bg-r">更新至26集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11020.html"
+                                                            title="刃牙 死囚篇">刃牙 死囚篇</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                岛崎信长,菅生隆之,岛田敏,小山力也,江口拓也,银河万丈,子安武人,津田健次郎,茶风林,二又一成,麦人,川原庆久,雨宫天,古谷彻
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading" data-original="/uploads/allimg/170908/a25134ef031e03e3.jpg"
+               href="http://www.banlidy.com/vod/8629.html" title="博人传 火影忍者新时代"
+               style="background-image: url(&quot;/uploads/allimg/170908/a25134ef031e03e3.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">8.8</span>
+                <span class="note text-bg-r">更新至86集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/8629.html"
+                                                            title="博人传 火影忍者新时代">博人传 火影忍者新时代</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">漩涡博人,宇智波佐良娜,漩涡鸣人,宇智波佐助,三月,山中井阵,</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://ww4.sinaimg.cn/large/006r0ILSgy1fwv3bsevjrj307i0b6q3o.jpg"
+               href="http://www.banlidy.com/vod/11638.html" title="哥布林杀手未删减版"
+               style="background-image: url(&quot;http://ww4.sinaimg.cn/large/006r0ILSgy1fwv3bsevjrj307i0b6q3o.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.5</span>
+                <span class="note text-bg-r">更新至10.5集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11638.html"
+                                                            title="哥布林杀手未删减版">哥布林杀手未删减版</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                梅原裕一郎,小仓唯,井口裕香,内田真礼,东山奈央,中村悠一,杉田智和,日笠阳子,松冈祯丞
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="https://wx1.sinaimg.cn/mw690/006scYDsgy1fe0iw4ec0pj309q0dbjul.jpg"
+               href="http://www.banlidy.com/vod/8082.html" title="海贼王"
+               style="background-image: url(&quot;https://wx1.sinaimg.cn/mw690/006scYDsgy1fe0iw4ec0pj309q0dbjul.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.2</span>
+                <span class="note text-bg-r">更新至865集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/8082.html"
+                                                            title="海贼王">海贼王</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">田中真弓,冈村明美,中井和哉,平田广明,山口胜平,山口由里子,大谷育江,土井美加,
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://ww1.sinaimg.cn/large/006r0ILSgy1fvbegqdi83j307i0ammxq.jpg"
+               href="http://www.banlidy.com/vod/11453.html" title="名侦探柯南"
+               style="background-image: url(&quot;http://ww1.sinaimg.cn/large/006r0ILSgy1fvbegqdi83j307i0ammxq.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.6</span>
+                <span class="note text-bg-r">更新至980集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11453.html"
+                                                            title="名侦探柯南">名侦探柯南</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">
+                高山南,山崎和佳奈,神谷明,小山力也,林原惠美,山口胜平,田中秀幸,岛本须美,绪方贤一,堀川亮,松井菜樱子,宫村优子,岩居由希子,大谷育江,高木涉,高岛雅罗,堀之纪,立木文彦,小山茉美,三石琴乃,置鲇龙太郎,日高法子,池田秀一,古谷彻
+            </div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 ">
+            <a class="video-pic loading"
+               data-original="http://wx1.sinaimg.cn/large/006r0ILSgy1fwv2o6eggvj307i0al74s.jpg"
+               href="http://www.banlidy.com/vod/11633.html" title="我让最想被拥抱的男人给威胁了"
+               style="background-image: url(&quot;http://wx1.sinaimg.cn/large/006r0ILSgy1fwv2o6eggvj307i0al74s.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.3</span>
+                <span class="note text-bg-r">更新至11集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11633.html"
+                                                            title="我让最想被拥抱的男人给威胁了">我让最想被拥抱的男人给威胁了</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">小野友树,高桥广树,佐藤拓也,内田雄马,鸟海浩辅,羽多野涉</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
+            <a class="video-pic loading"
+               data-original="http://wx1.sinaimg.cn/large/006r0ILSgy1fwv2ls0srbj307i0amdga.jpg"
+               href="http://www.banlidy.com/vod/11661.html" title="全职法师 第三季"
+               style="background-image: url(&quot;http://wx1.sinaimg.cn/large/006r0ILSgy1fwv2ls0srbj307i0amdga.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">9.0</span>
+                <span class="note text-bg-r">更新至11集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11661.html"
+                                                            title="全职法师 第三季">全职法师 第三季</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">黑石稔,冯骏骅</div>
+        </li>
+        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
+            <a class="video-pic loading"
+               data-original="//ww2.sinaimg.cn/large/006r0ILSgy1fy7cnr2dkfj307i0ahjrw.jpg"
+               href="http://www.banlidy.com/vod/11725.html" title="火之丸相扑"
+               style="background-image: url(&quot;//ww2.sinaimg.cn/large/006r0ILSgy1fy7cnr2dkfj307i0ahjrw.jpg&quot;);">
+                <span class="player"></span>
+                <span class="score">2.0</span>
+                <span class="note text-bg-r">更新至11集</span>
+            </a>
+            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11725.html"
+                                                            title="火之丸相扑">火之丸相扑</a></h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs">阿部敦,落合福嗣,熊谷健太郎,佐藤拓也</div>
+        </li>
+
+    </ul>
+    <div class="box-video-footer visible-xs clearfix"><a href="http://www.banlidy.com/list3/" class="text-more"
+                                                         title="查看更多">查看更多 <i
+            class="icon iconfont icon-right pull-right"></i></a></div>
+</div>
+
+<div class="layout-box clearfix" th:fragment="common_monster">
+    <div class="box-title">
+        <h3 class="m-0"><i class="icon iconfont text-color"></i>专题</h3>
+        <div class="more pull-right"><a href="http://www.banlidy.com/list45/" class="text-muted" title="更多">更多
+            <i class="icon iconfont"></i></a></div>
+    </div>
+    <div class="box-topic-list clearfix">
+        <ul class="item">
+
+            <li class="col-md-4 col-sm-4 col-xs-12 news-box"><a class="video-pic loading"
+                                                                href="http://www.banlidy.com/special/1.html"
+                                                                title="中元节美国鬼片套餐"
+                                                                data-original="//wx3.sinaimg.cn/large/006r0ILSgy1fwonyur754j30fa0a674i.jpg"
+                                                                style="padding-top: 50%; background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545669668&di=1b6c59e1bfb26e369ebaed47898998fe&imgtype=jpg&er=1&src=http%3A%2F%2Fvd1.bdstatic.com%2Fmda-hgqcmpq1yewn9k7n%2Fmda-hgqcmpq1yewn9k7n.jpg);">
+                <div class="details text-bg-c"><span class="text"> <i
+                        class="icon iconfont icon-house"></i> 专题</span><span class="name">中元节美国鬼片套餐</span><span
+                        class="count">—— 6个影片 ——</span></div>
+            </a></li>
+
+            <li class="col-md-4 col-sm-4 col-xs-12 news-box"><a class="video-pic loading"
+                                                                href="http://www.banlidy.com/special/2.html"
+                                                                title="中元节港产鬼片套餐"
+                                                                data-original="//wx1.sinaimg.cn/mw690/006r0ILSgy1fuiipxjg2yj30g408h746.jpg"
+                                                                style="padding-top: 50%; background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545669668&di=1b6c59e1bfb26e369ebaed47898998fe&imgtype=jpg&er=1&src=http%3A%2F%2Fvd1.bdstatic.com%2Fmda-hgqcmpq1yewn9k7n%2Fmda-hgqcmpq1yewn9k7n.jpg);">
+                <div class="details text-bg-c"><span class="text"> <i
+                        class="icon iconfont icon-house"></i> 专题</span><span class="name">中元节港产鬼片套餐</span><span
+                        class="count">—— 6个影片 ——</span></div>
+            </a></li>
+
+            <li class="col-md-4 col-sm-4 col-xs-12 news-box"><a class="video-pic loading"
+                                                                href="http://www.banlidy.com/special/3.html"
+                                                                title="中元节泰国鬼片套餐"
+                                                                data-original="http://wx3.sinaimg.cn/mw690/006r0ILSgy1fuijh0mviyj30k008gjub.jpg"
+                                                                style="padding-top: 50%; background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1545669668&di=1b6c59e1bfb26e369ebaed47898998fe&imgtype=jpg&er=1&src=http%3A%2F%2Fvd1.bdstatic.com%2Fmda-hgqcmpq1yewn9k7n%2Fmda-hgqcmpq1yewn9k7n.jpg);">
+                <div class="details text-bg-c"><span class="text"> <i
+                        class="icon iconfont icon-house"></i> 专题</span><span class="name">中元节泰国鬼片套餐</span><span
+                        class="count">—— 6个影片 ——</span></div>
+            </a></li>
+
+        </ul>
+        <div class="box-video-footer visible-xs clearfix"><a href="http://www.banlidy.com/list45/"
+                                                             class="text-more" title="查看更多">查看更多 <i
+                class="icon iconfont icon-right pull-right"></i></a></div>
+    </div>
+</div>
+
+<div class="row" th:fragment="common_footer">
+    ﻿
+    <div class="box-footer clearfix">
+        <div class="container">
+            <p class="m-0 text-muted"></p>
+            <p>本网站提供新影视资源均系收集各大网站，本网站只提供web页面浏览服务，并不提供影片资源存储，也不参与任何视频录制、上传<br>
+                若本站收集的节目无意侵犯了贵司版权，请给<a href="mailto:banlidyw@foxmail.com">banlidyw@foxmail.com</a>邮箱地址来信，我们将在第一时间删除相应资源
+            </p>
+            <p>Copyright © 2016-2018&nbsp;<b style=" font:Verdana, Arial, Helvetica, sans-serif"><a
+                    href="http://www.banlidy.com/"><font color="#CC0000">www.</font><font
+                    color="#F60">banlidy</font><font color="#CC0000">.Com</font></a></b>&nbsp;.All Rights Reserved .</p>
+            <br>
+            <p></p>
+            <p class="visible-xs"><a class="text-muted" href="http://www.banlidy.com/gb/" title="留言求片">留言求片</a></p>
+        </div>
+    </div>
+</div>
+
+</html>
