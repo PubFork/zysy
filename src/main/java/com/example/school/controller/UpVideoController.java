@@ -21,8 +21,8 @@ import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.model.BucketReferer;
 import com.example.school.pojo.User;
 
-@Controller
-@RequestMapping("/video")
+//@Controller
+//@RequestMapping("/video")
 public class UpVideoController {
 
     private static final String END_POINT = "oss-cn-beijing.aliyuncs.com";

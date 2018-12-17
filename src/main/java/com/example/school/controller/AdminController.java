@@ -25,7 +25,7 @@ public class AdminController {
 
         } catch (Exception e) {
             e.printStackTrace();
-            return "admin/login";
+            return "vo/login";
         }
 
     }

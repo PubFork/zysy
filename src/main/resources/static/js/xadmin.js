@@ -64,21 +64,21 @@ $(function () {
     $('.container .left_open i').click(function(event) {
         if($('.left-nav').css('left')=='0px'){
             $('.left-nav').animate({left: '-221px'}, 100);
-            $('.page-content').animate({left: '0px'}, 100);
-            $('.page-content-bg').hide();
+            $('.monitor-content').animate({left: '0px'}, 100);
+            $('.monitor-content-bg').hide();
         }else{
             $('.left-nav').animate({left: '0px'}, 100);
-            $('.page-content').animate({left: '221px'}, 100);
+            $('.monitor-content').animate({left: '221px'}, 100);
             if($(window).width()<768){
-                $('.page-content-bg').show();
+                $('.monitor-content-bg').show();
             }
         }
 
     });
 
-    $('.page-content-bg').click(function(event) {
+    $('.monitor-content-bg').click(function(event) {
         $('.left-nav').animate({left: '-221px'}, 100);
-        $('.page-content').animate({left: '0px'}, 100);
+        $('.monitor-content').animate({left: '0px'}, 100);
         $(this).hide();
     });
 
