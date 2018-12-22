@@ -37,5 +37,7 @@ public class Video {
 
     private String videoPicture;
 
+    private String videoUrl;
+
 
 }

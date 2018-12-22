@@ -2,21 +2,15 @@
 
 
 <head th:fragment="common_header">
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <title>NiKiShare</title>
     <meta name="keywords" content="NiKiShare，新番，剧情片吧，电影票房吧，电影吧，2018最新电影">
     <meta name="description" content="2018最新电影，韩国电视剧、香港TVB电视剧、日本动漫、日剧、美剧、综艺的在线观看，每天第一时间更新，放送好看的迅雷电影，百度网盘下载。">
     <link rel="canonical" href="http://www.banlidy.com/">
     <meta name="mobile-agent" content="format=html5;url=https://m.banlidy.com/">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta http-equiv="Cache-Control" content="no-transform">
     <meta name="applicable-device" content="pc,mobile">
     <link th:href=" ${application.CDN} + 'www/css/bootstrap.min.css' " rel="stylesheet" type="text/css">
     <link th:href=" ${application.CDN} + 'www/css/swiper.min.css' " rel="stylesheet" type="text/css">
@@ -32,8 +26,6 @@
     <script type="text/javascript" th:src="${application.CDN} + 'www/js/openBox.js'"></script>
     <script type="text/javascript" th:src="${application.CDN} + 'www/js/bootstrap.min.js'"></script>
     <script type="text/javascript" th:src="${application.CDN} + 'www/js/xbdb.js'"></script>
-
-
 </head>
 
 <!--头部开始-->
@@ -81,6 +73,7 @@
 
 <!--最近更新结束-->
 <div class="layout-box clearfix" th:fragment="common_movie">
+
     <div class="box-title">
         <h3 class="m-0"><i class="icon iconfont text-color"></i>动漫</h3>
         <div class="more pull-right"><a href="http://www.banlidy.com/list1/" class="text-muted" title="更多">更多 <i
@@ -132,162 +125,42 @@
             <div class="box-video-text-list p-0">
 
                 <ul class="clearfix" style="margin-bottom:0px; margin-top:0px;">
-                    <li class="list p-0 "><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11855.html" title="海王"><em
-                            class="num active">1</em>海王</a></li>
-                    <li class="list p-0 "><span class="pull-right text-color">9.1</span><a
-                            href="http://www.banlidy.com/vod/11749.html" title="毒液：致命守护者"><em
-                            class="num active">2</em>毒液：致命守护者</a></li>
-                    <li class="list p-0 "><span class="pull-right text-color">10.0</span><a
-                            href="http://www.banlidy.com/vod/11889.html" title="特种兵归来系列"><em class="num ">3</em>特种兵归来系列</a>
+
+                    <li class="list p-0 " th:each=" v , step : ${session.bulletin} ">
+                        <span class="pull-right text-color" th:text="${v.supportSum}">8.0</span>
+                        <a href="http://www.banlidy.com/vod/11855.html" title="海王">
+                            <em class="num active" th:text=" ${step.index+1} ">1
+                            </em>
+                            <span th:text="${v.videoName}">海王</span>
+                        </a>
                     </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.9</span><a
-                            href="http://www.banlidy.com/vod/11607.html" title="网络谜踪"><em class="num ">4</em>网络谜踪</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
-                    <li class="list p-0 hidden-md"><span class="pull-right text-color">8.0</span><a
-                            href="http://www.banlidy.com/vod/11884.html" title="李茶的姑妈"><em class="num ">5</em>李茶的姑妈</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
     </div>
 
     <ul class="col-md-8 col-sm-12 col-xs-12 p-0 clearfix">
-        <li class="col-md-3 col-sm-3 col-xs-4 ">
+        <li class="col-md-3 col-sm-3 col-xs-4 " th:each=" v : ${session.video} ">
             <a class="video-pic loading"
-               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538593487.jpg"
-               href="http://www.banlidy.com/vod/11900.html" title="愤怒的黄牛"
-               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538593487.jpg&quot;);">
+               href="http://www.banlidy.com/vod/11900.html" th:title="${v.videoName}"
+               th:attr=" style= 'background-image:url(' + ${v.videoUrl} + ')' ">
                 <span class="player"></span>
-                <span class="score">9.3</span>
+                <span class="score" th:text="${v.supportSum}">9.3</span>
                 <span class="note text-bg-r">超清</span>
             </a>
             <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11900.html"
-                                                            title="愤怒的黄牛">愤怒的黄牛</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">马东锡,宋智孝,金圣武,金敏载,朴智焕</div>
+                                                            th:title="${v.videoName}" th:text="${v.videoName}">愤怒的黄牛</a>
+            </h5></div>
+            <div class="subtitle text-muted text-overflow hidden-xs" th:text="${v.videoInfo}"></div>
         </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 ">
-            <a class="video-pic loading"
-               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2527369948.jpg"
-               href="http://www.banlidy.com/vod/11899.html" title="保镖"
-               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2527369948.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">10.0</span>
-                <span class="note text-bg-r">超清</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11899.html"
-                                                            title="保镖">保镖</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">尚格·云顿,Dimitri,Thivaios,凯文·让森斯,Sam,Louwyck
-            </div>
-        </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 ">
-            <a class="video-pic loading"
-               data-original="http://img1.doubanio.com/view/photo/s_ratio_poster/public/p2536762001.jpg"
-               href="http://www.banlidy.com/vod/11898.html" title="千次伤我心"
-               style="background-image: url(&quot;http://img1.doubanio.com/view/photo/s_ratio_poster/public/p2536762001.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">6.3</span>
-                <span class="note text-bg-r">超清</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11898.html"
-                                                            title="千次伤我心">千次伤我心</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">
-                贝拉·索恩,理查德·哈蒙,德蒙特·莫罗尼,艾米·普赖斯-弗朗西斯,肖恩·本森,路易斯·赫特哈姆,托马斯·埃尔姆斯,萨拉·汤普森
-            </div>
-        </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 ">
-            <a class="video-pic loading"
-               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541540687.jpg"
-               href="http://www.banlidy.com/vod/11878.html" title="国家宝藏 第二季"
-               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541540687.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">10.0</span>
-                <span class="note text-bg-r">更新至02集</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11878.html"
-                                                            title="国家宝藏 第二季">国家宝藏 第二季</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">张国立,蓝天野,黎明,蒋雯丽,宋佳,岳云鹏,翟天临</div>
-        </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 ">
-            <a class="video-pic loading"
-               data-original="http://wx4.sinaimg.cn/mw690/006r0ILSgy1fy9313kia6j306r08jt9a.jpg"
-               href="http://www.banlidy.com/vod/11897.html" title="必由之路"
-               style="background-image: url(&quot;http://wx4.sinaimg.cn/mw690/006r0ILSgy1fy9313kia6j306r08jt9a.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">10.0</span>
-                <span class="note text-bg-r">更新至06集</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11897.html"
-                                                            title="必由之路">必由之路</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">央视</div>
-        </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 ">
-            <a class="video-pic loading"
-               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537243896.jpg"
-               href="http://www.banlidy.com/vod/11895.html" title="此房是我造"
-               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537243896.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">8.3</span>
-                <span class="note text-bg-r">超清</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11895.html"
-                                                            title="此房是我造">此房是我造</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">
-                马特·狄龙,布鲁诺·甘茨,乌玛·瑟曼,希芳·法隆,苏菲·格拉宝,丽莉·克亚芙,杰瑞米·戴维斯,爱德华·斯皮伊尔斯,大卫·拜利,刘智泰,克里斯蒂安·阿诺德,CohenDay,RoccoDay,杰克尔·法尔斯特伦,奥赛·伊克希尔,MarijanaJankovic,AliceNordmark,LisaSjöholm,CarinaSkenhede,RobertG.Slade
-            </div>
-        </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
-            <a class="video-pic loading"
-               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540362936.jpg"
-               href="http://www.banlidy.com/vod/11894.html" title="所有邪佞之人"
-               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2540362936.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">7.3</span>
-                <span class="note text-bg-r">超清</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11894.html"
-                                                            title="所有邪佞之人">所有邪佞之人</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">
-                威廉·菲德内尔,米洛·吉布森,西尔维娅·侯克斯,艾略特·科万,格本加·阿金纳格贝,约瑟夫·米尔森,雅沃尔·巴哈罗夫,明格斯·约翰斯顿,里纳特·希什马塔林,本·洛伊德·霍尔姆斯,SaifAl-Warith,PerryFitzpatrick,StevenBartle,MartinMednikarov,RayBullockJnr
-            </div>
-        </li>
-        <li class="col-md-3 col-sm-3 col-xs-4 hidden-xs">
-            <a class="video-pic loading"
-               data-original="http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2536656057.jpg"
-               href="http://www.banlidy.com/vod/11893.html" title="阴阳眼之瞳灵公馆"
-               style="background-image: url(&quot;http://img3.doubanio.com/view/photo/s_ratio_poster/public/p2536656057.jpg&quot;);">
-                <span class="player"></span>
-                <span class="score">2.0</span>
-                <span class="note text-bg-r">超清</span>
-            </a>
-            <div class="title"><h5 class="text-overflow"><a href="http://www.banlidy.com/vod/11893.html"
-                                                            title="阴阳眼之瞳灵公馆">阴阳眼之瞳灵公馆</a></h5></div>
-            <div class="subtitle text-muted text-overflow hidden-xs">苑琼丹,景岗山,文熙,胡蓉蓉,王海祥,徐冬梅,荆民强,柳禹安,叶子清,王大磊
-            </div>
-        </li>
+
     </ul>
     <div class="box-video-footer visible-xs clearfix"><a href="http://www.banlidy.com/list1/" class="text-more"
                                                          title="查看更多">查看更多 <i
             class="icon iconfont icon-right pull-right"></i></a></div>
 </div>
+
 
 <div class="layout-box clearfix" th:fragment="common_files">
     <div class="box-title">

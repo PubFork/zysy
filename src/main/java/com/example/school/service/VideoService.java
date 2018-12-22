@@ -26,7 +26,7 @@ public interface VideoService {
      * @return [ LIST(VIDEO) ]
      * @author admin
      */
-    public List<Video> queryVideoByCatAndLimitOrderByPlaySumAsc(String name, Integer limit);
+    public List<Video> queryVideoByCatAndLimitOrderByPlaySumDesc(String name, Integer limit);
 
     public int selectCount();
 

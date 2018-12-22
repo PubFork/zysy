@@ -38,8 +38,8 @@ public class VideoServiceImpl implements VideoService {
     }
 
 
-    public List<Video> queryVideoByCatAndLimitOrderByPlaySumAsc(String name, Integer limit) {
-        return videoMapper.queryVideoByCatAndLimitOrderByPlaySumAsc(name, limit);
+    public List<Video> queryVideoByCatAndLimitOrderByPlaySumDesc(String name, Integer limit) {
+        return videoMapper.queryVideoByCatAndLimitOrderByPlaySumDesc(name, limit);
     }
 
     @Override

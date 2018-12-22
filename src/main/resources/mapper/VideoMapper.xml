@@ -1,238 +1,258 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.school.mapper.VideoMapper" >
-  <resultMap id="BaseResultMap" type="com.example.school.pojo.Video" >
-    <id column="videoId" property="videoId" jdbcType="INTEGER" />
-    <result column="videoName" property="videoName" jdbcType="VARCHAR" />
-    <result column="videoinfo" property="videoInfo" jdbcType="VARCHAR" />
-    <result column="userId" property="userId" jdbcType="INTEGER" />
-    <result column="videouptime" property="videoUpTime" jdbcType="TIMESTAMP" />
-    <result column="vedioCategoryId" property="videoCategoryId" jdbcType="INTEGER" />
-    <result column="playsum" property="playSum" jdbcType="INTEGER" />
-    <result column="commentsum" property="commentSum" jdbcType="INTEGER" />
-    <result column="collectsum" property="collectSum" jdbcType="INTEGER" />
-    <result column="supportsum" property="supportSum" jdbcType="INTEGER" />
-    <result column="opposesum" property="opposeSum" jdbcType="INTEGER" />
-    <result column="state" property="state" jdbcType="INTEGER" />
-    <result column="weight" property="weight" jdbcType="INTEGER" />
-    <result column="price" property="price" jdbcType="INTEGER" />
-    <result column="videoPicture" property="videoPicture" jdbcType="VARCHAR" />
-  </resultMap>
-  <sql id="Base_Column_List" >
-    videoId, videoName, videoinfo, userId, videouptime, vedioCategoryId, playsum, commentsum, 
-    collectsum, supportsum, opposesum, state, weight, price, videoPicture
-  </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from video
-    where videoId = #{videoid,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from video
-    where videoId = #{videoid,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.example.school.pojo.Video" >
-    insert into video (videoId, videoName, videoinfo, 
-      userId, videouptime, vedioCategoryId, 
-      playsum, commentsum, collectsum, 
-      supportsum, opposesum, state, 
-      weight, price, videoPicture
-      )
-    values (#{videoid,jdbcType=INTEGER}, #{videoname,jdbcType=VARCHAR}, #{videoinfo,jdbcType=VARCHAR}, 
-      #{userid,jdbcType=INTEGER}, #{videouptime,jdbcType=TIMESTAMP}, #{vediocategoryid,jdbcType=INTEGER}, 
-      #{playsum,jdbcType=INTEGER}, #{commentsum,jdbcType=INTEGER}, #{collectsum,jdbcType=INTEGER}, 
-      #{supportsum,jdbcType=INTEGER}, #{opposesum,jdbcType=INTEGER}, #{state,jdbcType=INTEGER}, 
-      #{weight,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{videopicture,jdbcType=VARCHAR}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.example.school.pojo.Video" >
-    insert into video
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="videoId != null" >
+<mapper namespace="com.example.school.mapper.VideoMapper">
+    <resultMap id="BaseResultMap" type="com.example.school.pojo.Video">
+        <id column="videoId" property="videoId" jdbcType="INTEGER"/>
+        <result column="videoName" property="videoName" jdbcType="VARCHAR"/>
+        <result column="videoinfo" property="videoInfo" jdbcType="VARCHAR"/>
+        <result column="userId" property="userId" jdbcType="INTEGER"/>
+        <result column="videouptime" property="videoUpTime" jdbcType="TIMESTAMP"/>
+        <result column="vedioCategoryId" property="videoCategoryId" jdbcType="INTEGER"/>
+        <result column="playsum" property="playSum" jdbcType="INTEGER"/>
+        <result column="commentsum" property="commentSum" jdbcType="INTEGER"/>
+        <result column="collectsum" property="collectSum" jdbcType="INTEGER"/>
+        <result column="supportsum" property="supportSum" jdbcType="INTEGER"/>
+        <result column="opposesum" property="opposeSum" jdbcType="INTEGER"/>
+        <result column="state" property="state" jdbcType="INTEGER"/>
+        <result column="weight" property="weight" jdbcType="INTEGER"/>
+        <result column="price" property="price" jdbcType="INTEGER"/>
+        <result column="videoPicture" property="videoPicture" jdbcType="VARCHAR"/>
+        <result column="videoUrl" property="videoUrl" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
         videoId,
-      </if>
-      <if test="videoName != null" >
         videoName,
-      </if>
-      <if test="videoInfo != null" >
         videoinfo,
-      </if>
-      <if test="userId != null" >
         userId,
-      </if>
-      <if test="videoUpTime != null" >
         videouptime,
-      </if>
-      <if test="videoCategoryId != null" >
         vedioCategoryId,
-      </if>
-      <if test="playSum != null" >
         playsum,
-      </if>
-      <if test="commentSum != null" >
         commentsum,
-      </if>
-      <if test="collectSum != null" >
         collectsum,
-      </if>
-      <if test="supportSum != null" >
         supportsum,
-      </if>
-      <if test="opposeSum != null" >
         opposesum,
-      </if>
-      <if test="state != null" >
         state,
-      </if>
-      <if test="weight != null" >
         weight,
-      </if>
-      <if test="price != null" >
         price,
-      </if>
-      <if test="videoPicture != null" >
-        videoPicture,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="videoId != null" >
-        #{videoId,jdbcType=INTEGER},
-      </if>
-      <if test="videoName != null" >
-        #{videoName,jdbcType=VARCHAR},
-      </if>
-      <if test="videoInfo != null" >
-        #{videoInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="userId != null" >
-        #{userId,jdbcType=INTEGER},
-      </if>
-      <if test="videoUpTime != null" >
-        #{videoUpTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="videoCategoryId != null" >
-        #{videoCategoryId,jdbcType=INTEGER},
-      </if>
-      <if test="playSum != null" >
-        #{playSum,jdbcType=INTEGER},
-      </if>
-      <if test="commentSum != null" >
-        #{commentSum,jdbcType=INTEGER},
-      </if>
-      <if test="collectSum != null" >
-        #{collectSum,jdbcType=INTEGER},
-      </if>
-      <if test="supportSum != null" >
-        #{supportSum,jdbcType=INTEGER},
-      </if>
-      <if test="opposeSum != null" >
-        #{opposeSum,jdbcType=INTEGER},
-      </if>
-      <if test="state != null" >
-        #{state,jdbcType=INTEGER},
-      </if>
-      <if test="weight != null" >
-        #{weight,jdbcType=INTEGER},
-      </if>
-      <if test="price != null" >
-        #{price,jdbcType=INTEGER},
-      </if>
-      <if test="videoPicture != null" >
-        #{videoPicture,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.school.pojo.Video" >
-    update video
-    <set >
-      <if test="videoname != null" >
-        videoName = #{videoname,jdbcType=VARCHAR},
-      </if>
-      <if test="videoinfo != null" >
-        videoinfo = #{videoinfo,jdbcType=VARCHAR},
-      </if>
-      <if test="userid != null" >
-        userId = #{userid,jdbcType=INTEGER},
-      </if>
-      <if test="videouptime != null" >
-        videouptime = #{videouptime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="vediocategoryid != null" >
-        vedioCategoryId = #{vediocategoryid,jdbcType=INTEGER},
-      </if>
-      <if test="playsum != null" >
-        playsum = #{playsum,jdbcType=INTEGER},
-      </if>
-      <if test="commentsum != null" >
-        commentsum = #{commentsum,jdbcType=INTEGER},
-      </if>
-      <if test="collectsum != null" >
-        collectsum = #{collectsum,jdbcType=INTEGER},
-      </if>
-      <if test="supportsum != null" >
-        supportsum = #{supportsum,jdbcType=INTEGER},
-      </if>
-      <if test="opposesum != null" >
-        opposesum = #{opposesum,jdbcType=INTEGER},
-      </if>
-      <if test="state != null" >
-        state = #{state,jdbcType=INTEGER},
-      </if>
-      <if test="weight != null" >
-        weight = #{weight,jdbcType=INTEGER},
-      </if>
-      <if test="price != null" >
-        price = #{price,jdbcType=INTEGER},
-      </if>
-      <if test="videopicture != null" >
-        videoPicture = #{videopicture,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where videoId = #{videoid,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.school.pojo.Video" >
-    update video
-    set videoName = #{videoname,jdbcType=VARCHAR},
-      videoinfo = #{videoinfo,jdbcType=VARCHAR},
-      userId = #{userid,jdbcType=INTEGER},
-      videouptime = #{videouptime,jdbcType=TIMESTAMP},
-      vedioCategoryId = #{vediocategoryid,jdbcType=INTEGER},
-      playsum = #{playsum,jdbcType=INTEGER},
-      commentsum = #{commentsum,jdbcType=INTEGER},
-      collectsum = #{collectsum,jdbcType=INTEGER},
-      supportsum = #{supportsum,jdbcType=INTEGER},
-      opposesum = #{opposesum,jdbcType=INTEGER},
-      state = #{state,jdbcType=INTEGER},
-      weight = #{weight,jdbcType=INTEGER},
-      price = #{price,jdbcType=INTEGER},
-      videoPicture = #{videopicture,jdbcType=VARCHAR}
-    where videoId = #{videoid,jdbcType=INTEGER}
-  </update>
+        videoPicture
+    </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from video
+        where videoId = #{videoid,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete
+        from video
+        where videoId = #{videoid,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.example.school.pojo.Video">
+        insert into video (videoId, videoName, videoinfo,
+                           userId, videouptime, vedioCategoryId,
+                           playsum, commentsum, collectsum,
+                           supportsum, opposesum, state,
+                           weight, price, videoPicture)
+        values (#{videoid,jdbcType=INTEGER}, #{videoname,jdbcType=VARCHAR}, #{videoinfo,jdbcType=VARCHAR},
+                #{userid,jdbcType=INTEGER}, #{videouptime,jdbcType=TIMESTAMP}, #{vediocategoryid,jdbcType=INTEGER},
+                #{playsum,jdbcType=INTEGER}, #{commentsum,jdbcType=INTEGER}, #{collectsum,jdbcType=INTEGER},
+                #{supportsum,jdbcType=INTEGER}, #{opposesum,jdbcType=INTEGER}, #{state,jdbcType=INTEGER},
+                #{weight,jdbcType=INTEGER}, #{price,jdbcType=INTEGER}, #{videopicture,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" parameterType="com.example.school.pojo.Video">
+        insert into video
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="videoId != null">
+                videoId,
+            </if>
+            <if test="videoName != null">
+                videoName,
+            </if>
+            <if test="videoInfo != null">
+                videoinfo,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="videoUpTime != null">
+                videouptime,
+            </if>
+            <if test="videoCategoryId != null">
+                vedioCategoryId,
+            </if>
+            <if test="playSum != null">
+                playsum,
+            </if>
+            <if test="commentSum != null">
+                commentsum,
+            </if>
+            <if test="collectSum != null">
+                collectsum,
+            </if>
+            <if test="supportSum != null">
+                supportsum,
+            </if>
+            <if test="opposeSum != null">
+                opposesum,
+            </if>
+            <if test="state != null">
+                state,
+            </if>
+            <if test="weight != null">
+                weight,
+            </if>
+            <if test="price != null">
+                price,
+            </if>
+            <if test="videoPicture != null">
+                videoPicture,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="videoId != null">
+                #{videoId,jdbcType=INTEGER},
+            </if>
+            <if test="videoName != null">
+                #{videoName,jdbcType=VARCHAR},
+            </if>
+            <if test="videoInfo != null">
+                #{videoInfo,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="videoUpTime != null">
+                #{videoUpTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="videoCategoryId != null">
+                #{videoCategoryId,jdbcType=INTEGER},
+            </if>
+            <if test="playSum != null">
+                #{playSum,jdbcType=INTEGER},
+            </if>
+            <if test="commentSum != null">
+                #{commentSum,jdbcType=INTEGER},
+            </if>
+            <if test="collectSum != null">
+                #{collectSum,jdbcType=INTEGER},
+            </if>
+            <if test="supportSum != null">
+                #{supportSum,jdbcType=INTEGER},
+            </if>
+            <if test="opposeSum != null">
+                #{opposeSum,jdbcType=INTEGER},
+            </if>
+            <if test="state != null">
+                #{state,jdbcType=INTEGER},
+            </if>
+            <if test="weight != null">
+                #{weight,jdbcType=INTEGER},
+            </if>
+            <if test="price != null">
+                #{price,jdbcType=INTEGER},
+            </if>
+            <if test="videoPicture != null">
+                #{videoPicture,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.school.pojo.Video">
+        update video
+        <set>
+            <if test="videoname != null">
+                videoName = #{videoname,jdbcType=VARCHAR},
+            </if>
+            <if test="videoinfo != null">
+                videoinfo = #{videoinfo,jdbcType=VARCHAR},
+            </if>
+            <if test="userid != null">
+                userId = #{userid,jdbcType=INTEGER},
+            </if>
+            <if test="videouptime != null">
+                videouptime = #{videouptime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="vediocategoryid != null">
+                vedioCategoryId = #{vediocategoryid,jdbcType=INTEGER},
+            </if>
+            <if test="playsum != null">
+                playsum = #{playsum,jdbcType=INTEGER},
+            </if>
+            <if test="commentsum != null">
+                commentsum = #{commentsum,jdbcType=INTEGER},
+            </if>
+            <if test="collectsum != null">
+                collectsum = #{collectsum,jdbcType=INTEGER},
+            </if>
+            <if test="supportsum != null">
+                supportsum = #{supportsum,jdbcType=INTEGER},
+            </if>
+            <if test="opposesum != null">
+                opposesum = #{opposesum,jdbcType=INTEGER},
+            </if>
+            <if test="state != null">
+                state = #{state,jdbcType=INTEGER},
+            </if>
+            <if test="weight != null">
+                weight = #{weight,jdbcType=INTEGER},
+            </if>
+            <if test="price != null">
+                price = #{price,jdbcType=INTEGER},
+            </if>
+            <if test="videopicture != null">
+                videoPicture = #{videopicture,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where videoId = #{videoid,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.school.pojo.Video">
+        update video
+        set videoName       = #{videoname,jdbcType=VARCHAR},
+            videoinfo       = #{videoinfo,jdbcType=VARCHAR},
+            userId          = #{userid,jdbcType=INTEGER},
+            videouptime     = #{videouptime,jdbcType=TIMESTAMP},
+            vedioCategoryId = #{vediocategoryid,jdbcType=INTEGER},
+            playsum         = #{playsum,jdbcType=INTEGER},
+            commentsum      = #{commentsum,jdbcType=INTEGER},
+            collectsum      = #{collectsum,jdbcType=INTEGER},
+            supportsum      = #{supportsum,jdbcType=INTEGER},
+            opposesum       = #{opposesum,jdbcType=INTEGER},
+            state           = #{state,jdbcType=INTEGER},
+            weight          = #{weight,jdbcType=INTEGER},
+            price           = #{price,jdbcType=INTEGER},
+            videoPicture    = #{videopicture,jdbcType=VARCHAR}
+        where videoId = #{videoid,jdbcType=INTEGER}
+    </update>
 
-  <select id="queryVideoByCatAndLimitOrderByDateDesc" resultMap="BaseResultMap">
+    <select id="queryVideoByCatAndLimitOrderByDateDesc" resultMap="BaseResultMap">
 
-      SELECT v.* FROM videocategory vc RIGHT JOIN video v ON
+        select *
+        from video v
+                 left join videocategory c on v.vedioCategoryId = c.videoCategoryId
+        where v.state = 0
+          and c.videoCategoryname = #{name}
+        order by  v.videouptime desc , v.videoId desc
+        limit #{limit}
 
-      vc.videocategoryId = v.vedioCategoryId WHERE vc.videocategoryname=#{name}
 
-      order  by videouptime desc
+    </select>
 
+    <select id="queryVideoByCatAndLimitOrderByPlaySumDesc" resultMap="BaseResultMap">
 
-  </select>
+        select *
+        from video v
+                 left join videocategory c on v.vedioCategoryId = c.videoCategoryId
+        where v.state = 0
+          and c.videoCategoryname = #{name}
+        order by v.playsum desc
+        limit #{limit}
 
-  <select id="queryVideoByCatAndLimitOrderByDateAsc" resultMap="BaseResultMap">
+    </select>
 
-      SELECT v.* FROM videocategory vc RIGHT JOIN video v ON
+    <select id="selectCount" resultMap="BaseResultMap">
 
-      vc.videocategoryId = v.vedioCategoryId WHERE vc.videocategoryname=#{name}order by playsum asc
+        select count(*)
+        from video
 
-  </select>
-
-  <select id="selectCount" resultMap="BaseResultMap">
-
-    select count(*) from video
-
-  </select>
+    </select>
 
 </mapper>

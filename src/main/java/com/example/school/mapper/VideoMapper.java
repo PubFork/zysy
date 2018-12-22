@@ -41,7 +41,7 @@ public interface VideoMapper {
      * @return [ LIST(VIDEO) ]
      * @author admin
      */
-    public List<Video> queryVideoByCatAndLimitOrderByPlaySumAsc(@Param("name") String name, @Param("limit") Integer limit);
+    public List<Video> queryVideoByCatAndLimitOrderByPlaySumDesc(@Param("name") String name, @Param("limit") Integer limit);
 
     public int selectCount();
 }
