@@ -8,24 +8,25 @@
         <result column="videoCategoryParentName" property="videoCategoryParentName" jdbcType="VARCHAR"/>
     </resultMap>
     <sql id="Base_Column_List">
-    videoCategoryId, videoCategoryName
-  </sql>
+        videoCategoryId,
+        videoCategoryName
+    </sql>
     <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
         select
         <include refid="Base_Column_List"/>
         from videocategory
         where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
     </select>
+
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from videocategory
-    where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
-  </delete>
+        delete
+        from videocategory
+        where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
+    </delete>
     <insert id="insert" parameterType="com.example.school.pojo.VideoCategory">
-    insert into videocategory (videoCategoryId, videoCategoryName
-      )
-    values (#{videocategoryId,jdbcType=INTEGER}, #{videocategoryName,jdbcType=VARCHAR}
-      )
-  </insert>
+        insert into videocategory (videoCategoryId, videoCategoryName)
+        values (#{videocategoryId,jdbcType=INTEGER}, #{videocategoryName,jdbcType=VARCHAR})
+    </insert>
     <insert id="insertSelective" parameterType="com.example.school.pojo.VideoCategory">
         insert into videocategory
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -55,8 +56,15 @@
         where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
     </update>
     <update id="updateByPrimaryKey" parameterType="com.example.school.pojo.VideoCategory">
-    update videocategory
-    set videoCategoryName = #{videocategoryName,jdbcType=VARCHAR}
-    where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
-  </update>
+        update videocategory
+        set videoCategoryName = #{videocategoryName,jdbcType=VARCHAR}
+        where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
+    </update>
+
+    <select id="queryVideoCategoryByParentId" resultMap="BaseResultMap">
+        select v.*
+        from videocategory v
+        where v.videoCategoryParentId in
+              (select g.videoCategoryId from videocategory g where g.videoCategoryname = #{name})
+    </select>
 </mapper>

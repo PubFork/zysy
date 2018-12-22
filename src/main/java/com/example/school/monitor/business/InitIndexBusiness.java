@@ -1,4 +1,4 @@
-package com.example.school.monitor.business.index;
+package com.example.school.monitor.business;
 
 import com.example.school.pojo.Video;
 

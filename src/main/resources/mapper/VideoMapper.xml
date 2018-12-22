@@ -225,27 +225,15 @@
 
     <select id="queryVideoByCatAndLimitOrderByDateDesc" resultMap="BaseResultMap">
 
-        select *
-        from video v
-                 left join videocategory c on v.vedioCategoryId = c.videoCategoryId
-        where v.state = 0
-          and c.videoCategoryname = #{name}
-        order by  v.videouptime desc , v.videoId desc
-        limit #{limit}
+        select * from video where videoCategory = #{name}
+        order by videouptime desc limit #{limit}
 
 
     </select>
 
     <select id="queryVideoByCatAndLimitOrderByPlaySumDesc" resultMap="BaseResultMap">
-
-        select *
-        from video v
-                 left join videocategory c on v.vedioCategoryId = c.videoCategoryId
-        where v.state = 0
-          and c.videoCategoryname = #{name}
-        order by v.playsum desc
-        limit #{limit}
-
+        select * from video where videoCategory = #{name}
+        order by playsum desc limit #{limit}
     </select>
 
     <select id="selectCount" resultMap="BaseResultMap">
