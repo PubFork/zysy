@@ -17,7 +17,7 @@ spring:
     url: jdbc:mysql://localhost/zysy
     username: root
     #password: ad310e80d6f3ef1848f49e71.
-    password: mysql
+    password: admin
   servlet:
     multipart:
       max-file-size: 500MB

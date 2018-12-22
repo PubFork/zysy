@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.school.mapper.VideoCategoryMapper">
+    <resultMap id="BaseResultMap" type="com.example.school.pojo.VideoCategory">
+        <id column="videoCategoryId" property="videoCategoryId" jdbcType="INTEGER"/>
+        <result column="videoCategoryName" property="videoCategoryName" jdbcType="VARCHAR"/>
+        <result column="videoCategoryParentId" property="videoCategoryParentId" jdbcType="INTEGER"/>
+        <result column="videoCategoryParentName" property="videoCategoryParentName" jdbcType="VARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    videoCategoryId, videoCategoryName
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        from videocategory
+        where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from videocategory
+    where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.example.school.pojo.VideoCategory">
+    insert into videocategory (videoCategoryId, videoCategoryName
+      )
+    values (#{videocategoryId,jdbcType=INTEGER}, #{videocategoryName,jdbcType=VARCHAR}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.example.school.pojo.VideoCategory">
+        insert into videocategory
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="videocategoryId != null">
+                videoCategoryId,
+            </if>
+            <if test="videocategoryName != null">
+                videoCategoryName,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="videocategoryId != null">
+                #{videocategoryId,jdbcType=INTEGER},
+            </if>
+            <if test="videocategoryName != null">
+                #{videocategoryName,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.example.school.pojo.VideoCategory">
+        update videocategory
+        <set>
+            <if test="videocategoryName != null">
+                videoCategoryName = #{videocategoryName,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.example.school.pojo.VideoCategory">
+    update videocategory
+    set videoCategoryName = #{videocategoryName,jdbcType=VARCHAR}
+    where videoCategoryId = #{videocategoryId,jdbcType=INTEGER}
+  </update>
+</mapper>

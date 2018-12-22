@@ -13,7 +13,8 @@
 
  Date: 22/12/2018 23:06:13
 */
-
+create database zysy;
+use zysy;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
