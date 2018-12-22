@@ -209,4 +209,30 @@
       videoPicture = #{videopicture,jdbcType=VARCHAR}
     where videoId = #{videoid,jdbcType=INTEGER}
   </update>
+
+  <select id="queryVideoByCatAndLimitOrderByDateDesc" resultMap="BaseResultMap">
+
+      SELECT v.* FROM videocategory vc RIGHT JOIN video v ON
+
+      vc.videocategoryId = v.vedioCategoryId WHERE vc.videocategoryname=#{name}
+
+      order  by videouptime desc
+
+
+  </select>
+
+  <select id="queryVideoByCatAndLimitOrderByDateAsc" resultMap="BaseResultMap">
+
+      SELECT v.* FROM videocategory vc RIGHT JOIN video v ON
+
+      vc.videocategoryId = v.vedioCategoryId WHERE vc.videocategoryname=#{name}order by playsum asc
+
+  </select>
+
+  <select id="selectCount" resultMap="BaseResultMap">
+
+    select count(*) from video
+
+  </select>
+
 </mapper>

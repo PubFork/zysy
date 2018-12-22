@@ -10,7 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>2018最新电影，电视剧，手机在线观看的网站 _ NiKiShare(BanliDy)</title>
+    <title>NiKiShare</title>
     <meta name="keywords" content="NiKiShare，新番，剧情片吧，电影票房吧，电影吧，2018最新电影">
     <meta name="description" content="2018最新电影，韩国电视剧、香港TVB电视剧、日本动漫、日剧、美剧、综艺的在线观看，每天第一时间更新，放送好看的迅雷电影，百度网盘下载。">
     <link rel="canonical" href="http://www.banlidy.com/">
@@ -55,7 +55,9 @@
                         <button type="submit" class="btn btn-search"><i class="icon iconfont"></i></button>
                     </form>
                 </div>
-                <div class="user_login hidden-xs" id="user_login" title="点击登录"><i class="icon iconfont"></i></div>
+                <div class="user_login hidden-xs" id="user_login" title="点击登录"><i class="icon iconfont">
+                    <a th:href="@{'/login/login_do'}"></a>
+                    <!--<a href="login.html" th:href="@{/login/login_do}"></a>--></i></div>
                 <div class="user_playlog hidden-xs" id="user_playlog" title="播放记录"><i class="icon iconfont"></i>
                     <div id="playlog_list" class="playlog_list">
                         <div class="playlog-tool"><a class="playlog-clear" rel="nofollow" href="javascript:;"

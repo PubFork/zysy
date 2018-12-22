@@ -6,6 +6,8 @@ import com.example.school.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @ClassName VideoServiceImpl
  * @Description TODO
@@ -24,9 +26,24 @@ public class VideoServiceImpl implements VideoService {
         try {
             videoMapper.insertSelective(video);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return false;
         }
+    }
+
+    @Override
+    public List<Video> queryVideoByCatAndLimitOrderByDateDesc(String name, Integer limit) {
+        return videoMapper.queryVideoByCatAndLimitOrderByDateDesc(name, limit);
+    }
+
+
+    public List<Video> queryVideoByCatAndLimitOrderByPlaySumAsc(String name, Integer limit) {
+        return videoMapper.queryVideoByCatAndLimitOrderByPlaySumAsc(name, limit);
+    }
+
+    @Override
+    public int selectCount(){
+        return videoMapper.selectCount();
     }
 }

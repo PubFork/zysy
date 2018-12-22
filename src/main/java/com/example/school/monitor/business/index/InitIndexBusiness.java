@@ -13,7 +13,7 @@ public interface InitIndexBusiness {
      * @return [ LIST(VIDEO) ]
      * @author admin
      */
-    public List<Video> queryVideoByCatAndLimitOrderByDateDesc( String name , Integer limit );
+    public List<Video> queryVideoByCatAndLimitOrderByDateAsc( String name , Integer limit );
 
     /**
      * TODO : 根据视频分类名称查询视频,根据播放次数倒序排序

@@ -13,10 +13,11 @@ spring:
       max-lifetime: 1800000
       connection-timeout: 30000
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.105.96.18:3306/zysy
+    #url: jdbc:mysql://47.105.96.18:3306/zysy
+    url: jdbc:mysql://localhost/zysy
     username: root
-    password: ad310e80d6f3ef1848f49e71.
-    
+    #password: ad310e80d6f3ef1848f49e71.
+    password: admin
   servlet:
     multipart:
       max-file-size: 500MB

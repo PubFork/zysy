@@ -41,4 +41,10 @@ public class InterfaceController {
 		return "movie.html";
 	}
 
+	@GetMapping("/talk")
+	public String talk() {
+
+		return "talk.html";
+	}
+
 }

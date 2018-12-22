@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Objects;
+import java.util.List;
+import java.util.Map;
 
 import com.example.school.pojo.Video;
 import com.example.school.service.VideoService;
@@ -15,6 +18,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.aliyun.oss.OSSClient;
@@ -29,6 +33,8 @@ public class UpVideoController {
     private static final String ACCESS_KEY_ID = "LTAIsAPAnAV1YgIf";
     private static final String ACCESS_KEY_SECRET = "WjJsMAGTlYHfdxjyvREAITnU0VQXPd";
     private static final String BUCKET_NAME = "netschool";
+
+    Map<String,Object> map= new HashMap<String,Object>();
 
     @Autowired
     private VideoService videoService;
@@ -85,6 +91,17 @@ public class UpVideoController {
             return "upVideo.html";
         }
         return "thanksPost.html";
+    }
+
+    @RequestMapping("/queryByDate")
+    @ResponseBody
+    public List<Video> queryVideoByCatAndLimitOrderByDateDesc(String name , Integer limit){
+
+        int flag = videoService.selectCount();
+        List<Video> list = videoService.queryVideoByCatAndLimitOrderByDateDesc(name, flag);
+
+        return list;
+
     }
 
 
