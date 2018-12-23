@@ -52,7 +52,6 @@ public class IndexController {
         List<VideoCategory> postCategories = videoCategoryService.queryVideoCategoryByParentId("投稿");
         session.setAttribute("postCategories",postCategories);
 
-
     }
 
     @GetMapping("/")

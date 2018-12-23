@@ -47,9 +47,11 @@
                         <button type="submit" class="btn btn-search"><i class="icon iconfont"></i></button>
                     </form>
                 </div>
-                <div class="user_login hidden-xs" id="user_login" title="点击登录"><i class="icon iconfont">
-                    <a th:href="@{'/login/login_do'}"></a>
-                    <!--<a href="login.html" th:href="@{/login/login_do}"></a>--></i></div>
+                <a th:href="@{ ${application.CDN} + 'login/login_do'}">
+                    <div class="user_login hidden-xs" id="user_login" title="点击登录">
+                        <i class="icon iconfont"></i>
+                    </div>
+                </a>
                 <div class="user_playlog hidden-xs" id="user_playlog" title="播放记录"><i class="icon iconfont"></i>
                     <div id="playlog_list" class="playlog_list">
                         <div class="playlog-tool"><a class="playlog-clear" rel="nofollow" href="javascript:;"
